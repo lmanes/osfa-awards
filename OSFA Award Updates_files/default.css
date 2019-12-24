@@ -1,0 +1,574 @@
+html {
+	/* [02-22-08] Visible vertical scrollbar which disables correctly
+	 * and allows normal horizontal scrollbar behaviour.
+	 */
+	overflow-y: scroll !important;
+}
+body {
+   font-family: arial,helvetica,sans-serif;
+	/* for Firefox; keep vertical scrollbar visible: */
+	/* [09-01-07] required by leightbox, apparently
+	overflow-y: scroll;
+	*/
+}
+
+
+/* ..........................................PROCESSING MODAL DIALOG STYLES */
+div[aria-labelledby='ui-dialog-title-divProcessingDialog'] div.ui-dialog-titlebar,
+div[aria-labelledby='ui-dialog-title-divTimeoutDialog'] .ui-dialog-titlebar-close {
+	display: none;
+}
+
+a.link { color:blue; text-decoration:none; padding:0 10px; }
+a.link:hover { text-decoration:underline; }
+
+/* temporary; remove temp-eval classes when "SF Eval" table is removed */
+td.temp-eval { height:22px; }/* //test2 */
+td.temp-eval-camo { background-color:#fffae0; }/* //test2 */
+.temp-eval-chk { cursor:help; }/* //test2 */
+
+/*//test-next 3 styles moved to TAB_BUDGET_UPDATE?*/
+#tblMain .cellText.dropdown { padding:3px 4px; }
+#tblMain .cellText.dropdown select { font-size:85%; }
+#tblMain td.cellHeader, #tblMain td.cellText { padding:4px; vertical-align:top; }
+a.override { text-decoration:none; font-size:90%; color:#777; }
+a.override span::after { content:"+"; border:solid 1px #777; padding:0 3px; font-size:85%; margin-left:5px; Xfont-family:courier new,courier,lucida console,monospace; }
+a.override.collapse span::after { content:"\2013"; }
+a.override:hover { text-decoration:underline; }
+td.cellText.override { cursor:pointer; font-weight:bold; }
+td.cellText.override::before { content:"+"; border:solid 1px #aaa; color:#555; float:right; padding:0 3px; font-size:75%; margin-right:4px; margin-top:1px; }
+td.cellText.override.collapse::before { content:"-"; color:#333; }
+td.cellText.override.collapse { color:black; }
+td.cellText.override.collapse .override { display:block; }
+td.cellHeader .override.collapse { display:block; }
+/*//test-move this code?*/
+/* ............................................... TAB_BUDGET_UPDATE STYLES */
+.tblLeftRight > tbody > tr > td { vertical-align:top }
+.tblLeftRight .tblLeft { margin:10px 10px 0 0; }
+.tblLeftRight .tblRight { margin:10px 0 0; }
+.tblLeftRight tr.error1 { background-color:#fbb; }
+.tblLeftRight tr.error1 td { font-size:75%; font-style:italic; font-weight:bold; text-align:center; border-left:solid 1px black; border-right:solid 1px black; }
+.tblLeftRight tr.error2 td { border-top:solid 1px #955; }
+.tblLeftRight td.error, .tblLeftRight td.error-select { background-color:#fbb; border-top:none !important; }
+.tblLeftRight td.error input { border:solid 2px #d00 !important; } /* error trumps */
+.tblLeftRight td.error input.override { background-color:#fcecff !important; }
+.tblLeftRight td.error-select select { border:solid 2px #d00 !important; } /* error trumps */
+#tblBudgetDemographics td > input { margin-right:2px; }
+#tblBudgetDemographics td > span { color:#555; float:right; font-size:95%; text-align:right; white-space:nowrap; width:100%; }
+#tblBudgetDemographics .cellText { padding:2px 4px; }
+#tblBudgetDemographics .cellText.disabled { background-color:#eee; }
+#tblBudgetDemographics .cellText.disabled input,
+#tblBudgetDemographics .cellText.disabled select { background-color:#eee; border:solid 1px transparent; }
+#tblBudgetDemographics input.override { color:black; background-color:#dcf; border:solid 1px #a9d; }
+/*//test #tblBudgetDemographics .cellText > span { float:right; }*/
+/*//test#tblBudgetDemographics .cellText.major > span { display:block; float:none; padding-left:4px; }*/
+/*//test2 #tblBudgetAmounts td.eval-camo { background-color:#fffae0; } */
+/*#tblTempSFEval td.temp-eval { height:25px; }/* //test2 */
+#tblBudgetAmounts .cellText.disabled { background-color:#eee; }
+#tblBudgetAmounts .cellText.disabled input,
+#tblBudgetAmounts .cellText.disabled select { background-color:#eee; border:solid 1px transparent; }
+#tblBudgetAmounts .cellText.blocked { border-left:solid 1px purple; border-right:solid 1px purple; background-color:#edf; }
+#tblBudgetAmounts .cellText.blocked input {  background-color:#f3e6ff; font-weight:bold; border:solid 1px #aaa; }
+#tblBudgetAmounts .cellText.blocked.first { border-top:solid 1px purple; }
+#tblBudgetAmounts .cellText.blocked.last { border-bottom:solid 1px purple; }
+/* //test3 - next 3: */
+#tblBudgetAmounts .cellText span.disbursed { cursor:help; margin-right:5px; vertical-align:middle; }
+#tblBudgetAmounts .cellText span.disbursed + input { vertical-align:middle; }
+#tblBudgetAmounts .cellText.disabled span.disbursed { color:#777; }
+#tblBudgetAmounts tr.calc { background-color:#e9e0ff; color:#555; font-family:courier new,courier,lucida console,monospace; font-size:75%; }
+#tblBudgetAmounts tr.calc td { border-left:solid 1px black; border-right:solid 1px black; padding:0 6px; text-align:right; }
+#tblBudgetAmounts tr.calc td:first-child { background-color:#ebebe0; }
+#tblBudgetAmounts tr.calc td:last-child { padding-right:4px; }
+#tblBudgetAmounts tr.calc td.disabled { background-color:#eee; }
+#tblBudgetAmounts tr.calcEdit td { border-top:solid 1px transparent; }
+#tblBudgetAmounts input.otherCostLabel { background-color:#f6f6e9; font-weight:bold; }
+.tblLeftRight input.dirty, .tblLeftRight td.dirty { border:solid 2px orange !important; }
+#divBudgetRevisionError { font-weight:bold; font-family:verdana,arial,helvetica,sans-serif; }
+
+/* ................................................... TAB_DOCUMENTS STYLES */
+/* needs to come before generic select style is defined                     */
+/*//test
+#cellDeleteHeader {
+	color: #606060;
+	font-size: 70%;
+}
+*/
+#tblDocuments tr[name='rowData'] td {
+	padding: 5px;
+}
+/*//test
+#tblDocuments tr.rowDisabled,
+#tblDocuments tr.rowDisabled input[type='text'],
+#tblDocuments tr.rowDisabled select {
+	background-color: #ffd0d0;
+}*/
+/*//test - move this style?*/
+tr.rowDisabled,
+tr.rowDisabled input[type='text'],
+tr.rowDisabled select {
+	background-color: #ffd0d0;
+}
+
+#tblDocuments td.cellTextErrorDocument ul {
+	margin: 3px 0 0 0;
+	padding-left: 20px;
+}
+#tblDocuments td.cellTextErrorDocument li {
+	margin-left: 45px;
+}
+#tblDocuments td.cellErrorBorderBottom {
+	border-bottom: 2px solid #e00000;
+}
+
+/* .................................................. TAB_MULTOFFERS STYLES */
+/* needs to come before generic select style is defined                     */
+.mo_applications {
+	font-size: 110%;
+}
+.mo_applications select {
+	color: blue;
+	font-size: 125%;
+}
+.mo_applications select.disabled {
+	background-color: #C0C0C0;
+}
+
+.tab_SaveNeeded {
+	color: #e00000;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-weight: bold;
+	padding: 0 10px;
+}
+
+/*................................................. ELEMENT-SPECIFIC STYLES */
+
+blockquote.compressed {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.lineBreakSmall { margin:10px; }
+div.lineBreakSmallest { margin: 5px; }
+
+div.photo {
+	background-color: white;
+	border: 2px solid #333;
+	padding: 3px;
+	position:absolute;
+/* not necessary hopefully
+	height: 152px;
+	xwidth: 122px;
+*/
+}
+div.photo img {
+	border: 1px solid #555;
+}
+
+div.updatedError,
+div.updatedSuccess,
+div.updatedWarning {
+	border: 4px solid #00b000;
+	color: #333;
+	display: none;
+	font-size: 110%;
+	font-style: italic;
+	font-weight: bold;
+	margin: 7px 0 0 0;
+	padding: 5px;
+	text-align: center;
+}
+div.updatedError { border: 4px solid #e00000; }
+div.updatedWarning { border: 4px solid #ffbb00; }
+
+img.imageLink {
+	cursor: pointer;
+}
+/* not used
+p.small {
+	margin-top: 5px;
+	margin-bottom: 5px;
+} */
+p.spacer {
+	margin: 8px;
+}
+/* not used
+p.spacerSmall {
+	margin: 3px;
+} */
+
+table.borderThin,
+table.borderThinPlus {
+	background-color: #FFF;
+	border-collapse: collapse;
+}
+table.borderThinPlus {
+	border: 1px solid black;
+}
+
+/*//test*/
+td.checkbox_focus { background-color:yellow !important; }
+
+td.pageActive {
+	background-color: #FFFAE0;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 10px;
+}
+
+td.tab {
+	-moz-border-radium-toprleft: 3px;
+	-moz-border-radium-topright: 3px;
+	background-color: #FFFAE0;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	cursor: pointer;
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-weight: bold;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	white-space: nowrap;
+}
+td.tabInactive {
+	background-color: #E6E6FA;
+	border-bottom: 1px solid black;
+	border-right: 1px solid #555;
+	border-left: 1px solid #555;
+	border-top: 1px solid #555;
+	color: #555;
+}
+/* //test */
+td.tabInactive.tabDirty { background-color:#fda;/*fdd;*/ }
+td.tabDirty { background-color:#ffbb66;/*faa;*/ }
+td.tabError,td.tabInactive.tabError {
+	background-color: #e00000;
+	color: white;
+}
+td.tabSpacer {
+	border-bottom: 1px solid black;
+/*	padding-left: 5px; */
+}
+
+#txtFindStudentKey, #txtFindSystemKey {
+	background-color: #EEE;
+	border: 1px solid #666;
+	padding-left: 4px;
+}
+
+input#txtAwardYear {
+	background-color: #FFFAE0;
+	border: 1px solid #AAA;
+	font-size: 110%;
+	font-weight: bold;
+	padding-left: 2px;
+	text-align: center;
+	width: 3em;
+}
+
+input.inputText {
+	border: 1px solid #777;
+	font-family: courier new,courier,lucida console,monospace;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+input.highlightField,
+#txtFindStudentKey.highlightField,
+#txtFindSystemKey.highlightField {
+	background-color: yellow !important;/*//test*/
+	/*//testborder: 1px solid black;*/
+	border: 1px solid #555 !important;/*//test*/
+}
+input.error {
+	border: 1px solid #e00000;
+}
+
+input.button,
+input.buttonJavascript {
+	cursor: pointer;
+}
+input.buttonJavascript {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 85%;
+	width: 125px;
+}
+/* //test - added next style: */
+input.button.submit { color:purple; font-weight:bold; padding:5px 10px; }
+
+select {
+	background-color: white;  /* for disabled Firefox select fields */
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 14px;
+	border: 1px solid #555;
+}
+select:focus {  /* Firefox only, but IE does it automatically */
+	background-color: #08246B;  /* matches IE's color */
+	color: white;
+}
+
+tr.newRow {
+	background-color: #d0ffd0;
+	border-top: solid 1px #474; /* //test #a0cca0;*/
+}
+
+/* ............................................................ BASE STYLES */
+
+.cellText {
+	border: 1px solid black;
+	font-family: courier new,courier,lucida console,monospace;
+	font-size: 80%;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.cellHeader {
+	background-color: #EBEBE0;
+	border: 1px solid black;
+	font-size: 80%;
+	font-weight: bold;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: right;
+	white-space: nowrap;
+}
+.cellHeaderBorderNone {
+	border: none;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.cellHeaderDELETE {
+	color: #606060;
+	font-size: 70%;
+	width: 35px;
+}
+
+.cellTextError,
+.cellTextErrorAward,
+.cellTextErrorDocument {
+	border: 1px solid black;
+	color: #e00000;
+	font-size: 80%;
+	font-style: italic;
+	font-weight: bold;
+	padding: 3px;
+}
+.cellTextErrorAward {
+	border: none;
+	border-top: 1px solid black;
+	padding-left: 10px;
+}
+.cellTextErrorDocument {
+	/*background-color: #ffd0d0;*/
+	background: url('/sisOSFA/images/Error16.png') no-repeat 5px 5px;
+	border: none;
+	border-top: 2px solid #e00000;
+	color: #e00000;
+	padding: 3px 7px 0 7px;
+}
+.cellTextPackageAward {
+	border: none;
+	border-top: 1px solid black;
+	color: #404040;
+	font-family: courier new,courier,lucida console,monospace;
+	font-size: 75%;
+	padding-bottom: 0px;
+	padding-right: 5px;
+	padding-top: 0px;
+}
+
+.colorNoPackageAward {
+	background-color: #FFD0D0;
+}
+.colorPackageAward {
+	/* //test background-color: #E9E0FF;*/
+	background-color: #edf;
+}
+
+.inquiryMessage {
+	color: #EEE;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.fontNewAward {
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 14px;
+}
+
+.labelError {
+	color: #e00000;
+   font-family: arial,helvetica,sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.labelStudentName {
+	color: blue;
+	font-family: courier new,courier,lucida console,monospace;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.linkDotted {
+	border-bottom: dotted #333 1px;
+	text-decoration: none;
+}
+
+.mainLinks {
+	padding: 4px 0 1px 0;
+}
+.mainLinks a {
+	color: #303090;
+	margin-right: 15px;
+	text-decoration: none;
+}
+.mainLinks a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+/*//test*/
+.noBorderLeft { border-left:none; }
+.noBorderRight { border-right:none; }
+
+.nowrap { white-space:nowrap; }
+
+.override { color:blue; }
+
+.rowHeader {
+	background-color: #C0C0C0;
+	border: 1px solid black;
+	font-family: verdana,arial;
+	font-weight: bold;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.rowSpacer { background-color:#FFFAE0; }
+
+.spanToggleImage { float:left; padding-top:3px }
+.spanToggleImage img { height:13px; width:13px; }
+
+/* ........................................................ OVERRIDE STYLES */
+#mainCollapse { padding:2px 1px; vertical-align:top; } /*override rowHeader*/
+.aidHoldUpdate > div { display:table; }
+.aidHoldUpdate > div > div { display:table-row; }
+.aidHoldUpdate > div > div > div { display:table-cell; }
+.aidHoldUpdate select { margin-right:6px; }
+.aidHoldUpdate option { padding-right:20px; }
+.aidHoldUpdate span.delete {
+	background-color: white;
+	border: solid 1px #b66; /*//test was a33*/
+	color: #b66;
+	cursor: pointer;
+	font-size: 80%;
+	margin-left:-40px;
+	margin-right:25px;
+	margin-top:-1px;
+	padding: 0 2px;
+	position: absolute;
+}
+
+
+/* ................................................................ BORDERS */
+.borderNone {
+	border: none;
+}
+.borderSidesNone {
+	border-left: none;
+	border-right: none;
+}
+.borderTopNo {
+	border-top: none;
+}
+.borderTopOnly {
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+/* .................................................................. COLOR */
+.bgLightRed {
+	background-color: #ffd0d0;
+}
+.blue {
+	color: blue;
+}
+.green {
+	color: green;
+}
+.red {
+	/*//testcolor: #e00000;*/
+	color: #e00000 !important;
+}
+
+/* ................................................................. CURSOR */
+.pointer {
+	cursor: pointer;
+}
+
+/* ........................................................ FONT ATTRIBUTES */
+.fontFixed {
+	font-family: courier new,courier,lucida console,monospace;
+}
+.smaller3 {
+	font-size: 75%;
+}
+.smaller2 {
+	font-size: 85%;
+}
+.smaller {
+	font-size: 90%;
+}
+
+/* ................................................................. HEIGHT */
+.height23 {
+	height: 23px;
+}
+
+/* ............................................................. TEXT-ALIGN */
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.top {
+	vertical-align: top;
+}
+
+/* ............................................................. VISIBILITY */
+.visible {
+	visibility: visible;
+}
+.invisible {
+	visibility: hidden;
+}
+.hide { display:none; }
+.show { display:inherit !important; }/* //test */
+
+
+@media print { /* the following applies only to when a page is printed */
+
+body
+{
+	font-size: 90%;
+}
+
+.noprint,
+img.imageLink,
+input.buttonJavascript
+{
+	display: none;
+}
+
+} /* end of @media print block */
