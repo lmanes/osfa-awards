@@ -154,6 +154,48 @@
 		</tr>
 		<tr> <!-- tabs -->
 			<td>
+                <!-- lauren moving the student info around -->
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input name="txtAwardYear" type="text" value="2020" maxlength="4" id="txtAwardYear" onchange="document.forms[0].bttnSubmitFind.click()">
+                            </td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap="nowrap" class="labelStudentName">
+                                Yerfdog,Charlie O
+                            </td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap="nowrap" class="labelStudentName">
+                                7000000
+                            </td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap="nowrap" class="noprint">Date of birth:&nbsp;</td>
+                            <td nowrap="nowrap" class="noprint">4/05/89</td>
+                            <td nowrap="nowrap" class="noprint">&nbsp;&nbsp;&nbsp;&nbsp;SSN: 100-00-0001</td>
+                            <td class="noprint" style="text-align:center;vertical-align:bottom;" width="50%" nowrap="nowrap">
+                                <a id="ancTOD" href="javascript:toggleOverrideDetail()" class="override" style="display: none;">
+                                Show Override Detail
+                                <span></span>
+                                </a>
+                            </td>
+                            <!--//test added style; remove all " X" attributes-->
+                            <td xxxwidth="90%" align="right" style="white-space:nowrap">
+                                <div id="pnlPhotoID">
+                                   <button id="bttnPhoto" tabindex="-1" style="margin:0;padding:0;" onclick="javascript:return false;">
+                                        Photo
+                                        <img src="./OSFA Award Updates_files/sm_down_arrow.gif" height="9" width="9" alt="">
+                                    </button>
+                                    <div id="divPhoto" class="photo" style="display:none;">
+                                        <img id="imgPhotoID" alt="" width="120" height="150" src="./OSFA Award Updates_files/photoid.aspx">
+                                    </div>
+                                </div>
+                            </td>
+                       </tr>
+                   </tbody>
+                </table>
+                <!-- end student info -->
+
 				<table id="tblTabs" cellspacing="0" cellpadding="0" border="0">
 					<tbody>
                         <tr>
@@ -186,45 +228,7 @@
 	<tbody>
 		<tr><!-- student info -->
 			<td class="pageActive">
-				<table cellspacing="0" cellpadding="0" border="0" width="100%">
-					<tbody>
-                        <tr>
-    						<td>
-                                <input name="txtAwardYear" type="text" value="2020" maxlength="4" id="txtAwardYear" onchange="document.forms[0].bttnSubmitFind.click()">
-                            </td>
-    						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    						<td nowrap="nowrap" class="labelStudentName">
-    							Yerfdog,Charlie O
-    						</td>
-    						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    						<td nowrap="nowrap" class="labelStudentName">
-    							7000000
-    						</td>
-    						<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    						<td nowrap="nowrap" class="noprint">Date of birth:&nbsp;</td>
-    						<td nowrap="nowrap" class="noprint">4/05/89</td>
-    						<td nowrap="nowrap" class="noprint">&nbsp;&nbsp;&nbsp;&nbsp;SSN: 100-00-0001</td>
-    						<td class="noprint" style="text-align:center;vertical-align:bottom;" width="50%" nowrap="nowrap">
-                                <a id="ancTOD" href="javascript:toggleOverrideDetail()" class="override" style="display: none;">
-    		                    Show Override Detail
-                                <span></span>
-                                </a>
-                            </td>
-    	                    <!--//test added style; remove all " X" attributes-->
-    						<td xxxwidth="90%" align="right" style="white-space:nowrap">
-    							<div id="pnlPhotoID">
-    		                       <button id="bttnPhoto" tabindex="-1" style="margin:0;padding:0;" onclick="javascript:return false;">
-    									Photo
-    									<img src="./OSFA Award Updates_files/sm_down_arrow.gif" height="9" width="9" alt="">
-    								</button>
-    								<div id="divPhoto" class="photo" style="display:none;">
-    									<img id="imgPhotoID" alt="" width="120" height="150" src="./OSFA Award Updates_files/photoid.aspx">
-    								</div>
-                                </div>
-    						</td>
-	                   </tr>
-	               </tbody>
-                </table>
+
                 <!-- LM: unknown div? -->
 				<div class="labelError small" style="margin:4px 0"></div>
                 <!-- LM: end unknown div -->
