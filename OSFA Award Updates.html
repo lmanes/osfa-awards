@@ -152,7 +152,7 @@
                 <img height="7" src="./OSFA Award Updates_files/spacer.gif" width="1" alt="">
             </td>
 		</tr>
-		<tr> <!-- tabs -->
+		<tr> <!-- tabs row -->
 			<td>
                 <!-- lauren moving the student info around -->
                 <table cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -196,6 +196,96 @@
                 </table>
                 <!-- end student info -->
 
+                <!-- lauren moving the metadata table -->
+                <table class="borderThin" width="100%" id="tblMain">
+                    <tbody>
+                        <tr>
+                            <td id="mainCollapse" class="rowHeader pointer" rowspan="6" width="1%" onclick="toggleMainData(0)" title="Click to hide primary data table">
+                                <img src="./OSFA Award Updates_files/collapse.gif" alt="" style="width:13px;height:13px">
+                            </td>
+                            <td class="cellHeader" width="10%">Campus:</td>
+                            <td class="cellText" width="13%">Seattle</td>
+                            <td class="cellHeader" width="12%">College:</td>
+                            <td class="cellText" width="13%"></td>
+                            <td class="cellHeader" width="11%">Major:</td>
+                            <td class="cellText" width="14%"></td>
+                            <td class="cellHeader" width="13%">Program Eligibility:</td>
+                            <td class="cellText" width="13%"><span class="smaller2">0 - No&nbsp;restrictions</span></td>
+                        </tr>
+                        <tr>
+                            <td class="cellHeader">Class:</td>
+                            <td class="cellText"></td>
+                            <td class="cellHeader">Wants WorkStudy:</td>
+                            <td class="cellText dropdown">
+                                <select name="dropWorkStudy" id="dropWorkStudy" autocode="T1">
+                                    <option selected="selected" value="N">NO</option>
+                                    <option value="Y">YES</option>
+
+                                </select>
+                            </td>
+                            <td class="cellHeader">Marital Status:</td>
+                            <td class="cellText">Married</td>
+                            <td class="cellHeader">Military Dependent:</td>
+                            <td class="cellText">No</td>
+                        </tr>
+                        <tr>
+                            <td class="cellHeader">Dependency:</td>
+                            <td class="cellText">Independent</td>
+                            <td class="cellHeader">Housing:</td>
+                            <td class="cellText">On-Campus</td>
+                            <td class="cellHeader">Family Size:</td>
+                            <td class="cellText">3, 1 in college</td>
+                            <td class="cellHeader">Parent Contribution:</td>
+                            <td class="cellText">0</td>
+                        </tr>
+                        <tr>
+                            <td class="cellHeader">On Time:</td>
+                            <td class="cellText dropdown">
+                                <select name="dropOnTime" id="dropOnTime" autocode="T1">
+                                   <option value="N">NO</option>
+                                   <option selected="selected" value="Y">YES</option>
+                                </select>
+                            </td>
+                            <td class="cellHeader">FAFSA Receipt Date:</td>
+                            <td class="cellText">0/00/00</td>
+                            <td class="cellHeader">Residency:</td>
+                            <td class="cellText">No</td>
+                            <td class="cellHeader">Budget Blocked:</td>
+                            <td class="cellText">Summer, Autumn</td>
+                        </tr>
+                        <tr>
+                            <td class="cellHeader">Budget Code:</td>
+                            <td class="cellText" colspan="3">3 - Not living with parents</td>
+                            <td class="cellHeader">Budget Quarters:</td>
+                            <td class="cellText"><span id="spanBudgetQuarters">Autumn Winter Spring </span></td>
+                            <td class="cellHeader">Budget Date:</td>
+                            <td class="cellText">9/19/19</td>
+                        </tr>
+                        <tr>
+                            <td class="cellHeader">Veteran Status:</td>
+                            <td class="cellText">
+                                0 - NOT A VET
+                            </td>
+                            <td class="cellHeader">Veteran Benefit:</td>
+                            <td class="cellText"></td>
+                            <td class="cellHeader">Vet Tuition Types:</td>
+                            <td class="cellText" colspan="3"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot style="display:none"><!-- table footer includes the JS to expand/collapse -->
+                        <tr id="mainExpand" class="pointer" onclick="toggleMainData(1)" title="Click to show primary data table">
+                            <td class="rowHeader" colspan="8">
+                                <span class="spanToggleImage">
+                                    <img src="./OSFA Award Updates_files/expand.gif" alt="">
+                                </span>
+                                <span>Demographic Data</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- end metadata table -->
+
+                <!-- tabs actually located here -->
 				<table id="tblTabs" cellspacing="0" cellpadding="0" border="0">
 					<tbody>
                         <tr>
@@ -219,8 +309,9 @@
 						</tr>
 					</tbody>
                 </table>
+                <!-- end actual tabs table -->
 			</td>
-		</tr><!-- end tabs -->
+		</tr><!-- end tabs row-->
 	</tbody>
 </table>
 
@@ -232,92 +323,7 @@
                 <!-- LM: unknown div? -->
 				<div class="labelError small" style="margin:4px 0"></div>
                 <!-- LM: end unknown div -->
-				<table class="borderThin" width="100%" id="tblMain">
-					<tbody>
-                        <tr>
-							<td id="mainCollapse" class="rowHeader pointer" rowspan="6" width="1%" onclick="toggleMainData(0)" title="Click to hide primary data table">
-								<img src="./OSFA Award Updates_files/collapse.gif" alt="" style="width:13px;height:13px">
-							</td>
-							<td class="cellHeader" width="10%">Campus:</td>
-							<td class="cellText" width="13%">Seattle</td>
-							<td class="cellHeader" width="12%">College:</td>
-							<td class="cellText" width="13%"></td>
-							<td class="cellHeader" width="11%">Major:</td>
-							<td class="cellText" width="14%"></td>
-							<td class="cellHeader" width="13%">Program Eligibility:</td>
-							<td class="cellText" width="13%"><span class="smaller2">0 - No&nbsp;restrictions</span></td>
-						</tr>
-						<tr>
-							<td class="cellHeader">Class:</td>
-							<td class="cellText"></td>
-							<td class="cellHeader">Wants WorkStudy:</td>
-							<td class="cellText dropdown">
-                                <select name="dropWorkStudy" id="dropWorkStudy" autocode="T1">
-                                    <option selected="selected" value="N">NO</option>
-                                    <option value="Y">YES</option>
 
-                                </select>
-                            </td>
-							<td class="cellHeader">Marital Status:</td>
-							<td class="cellText">Married</td>
-							<td class="cellHeader">Military Dependent:</td>
-							<td class="cellText">No</td>
-						</tr>
-						<tr>
-							<td class="cellHeader">Dependency:</td>
-							<td class="cellText">Independent</td>
-							<td class="cellHeader">Housing:</td>
-							<td class="cellText">On-Campus</td>
-							<td class="cellHeader">Family Size:</td>
-							<td class="cellText">3, 1 in college</td>
-							<td class="cellHeader">Parent Contribution:</td>
-							<td class="cellText">0</td>
-						</tr>
-						<tr>
-							<td class="cellHeader">On Time:</td>
-							<td class="cellText dropdown">
-                                <select name="dropOnTime" id="dropOnTime" autocode="T1">
-                                   <option value="N">NO</option>
-	                               <option selected="selected" value="Y">YES</option>
-                                </select>
-                            </td>
-							<td class="cellHeader">FAFSA Receipt Date:</td>
-							<td class="cellText">0/00/00</td>
-							<td class="cellHeader">Residency:</td>
-							<td class="cellText">No</td>
-							<td class="cellHeader">Budget Blocked:</td>
-							<td class="cellText">Summer, Autumn</td>
-						</tr>
-						<tr>
-							<td class="cellHeader">Budget Code:</td>
-							<td class="cellText" colspan="3">3 - Not living with parents</td>
-							<td class="cellHeader">Budget Quarters:</td>
-							<td class="cellText"><span id="spanBudgetQuarters">Autumn Winter Spring </span></td>
-							<td class="cellHeader">Budget Date:</td>
-							<td class="cellText">9/19/19</td>
-						</tr>
-                        <tr>
-							<td class="cellHeader">Veteran Status:</td>
-                            <td class="cellText">
-                                0 - NOT A VET
-                            </td>
-                            <td class="cellHeader">Veteran Benefit:</td>
-                            <td class="cellText"></td>
-                            <td class="cellHeader">Vet Tuition Types:</td>
-                            <td class="cellText" colspan="3"></td>
-                        </tr>
-					</tbody>
-	                <tfoot style="display:none"><!-- table footer includes the JS to expand/collapse -->
-						<tr id="mainExpand" class="pointer" onclick="toggleMainData(1)" title="Click to show primary data table">
-							<td class="rowHeader" colspan="8">
-								<span class="spanToggleImage">
-									<img src="./OSFA Award Updates_files/expand.gif" alt="">
-								</span>
-								<span>Demographic Data</span>
-							</td>
-						</tr>
-					</tfoot>
-				</table>
 
 				<div id="divAwardStatusInquiry" style="DISPLAY: none"><!-- div id for collapsing awards status page? -->
 
