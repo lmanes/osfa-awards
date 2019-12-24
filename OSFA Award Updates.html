@@ -102,39 +102,42 @@
    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D7DE66C7">
 </div>
 
-<div class="container" style="border: 3px solid red; padding: 10px;">
+<div class="container" style="border: 3px solid red; padding: 10px; background-color: #bdbdbd;">
 <!-- search fields and datestamp row -->
-    <div class="row" style="background-color: #bdbdbd;">
-        <div class="col">
-            <strong>Student Number / SSN:</strong>
+    <div class="row">
+        <div class="col"> <!-- LM: TO DO: position this nicely -->
+            Page loaded at: <span id="spanDateTime">12/23/19 2:37 PM</span>
         </div>
-        <div class="col">
+    </div>
+<form>
+    <div class="form-row">
+        <div class="col-2">
+            <label for="txtFindStudentKey">
+                Student Number / SSN
+            </label>
             <input name="txtFindStudentKey" type="text" maxlength="11" id="txtFindStudentKey" size="11" title="Special Key Functions:
-                           N - New award
-                           S - go to Application Status
-                           U - go to Update menu of first award" class="" autocomplete="off" style="cursor: auto;" />
+               N - New award
+               S - go to Application Status
+               U - go to Update menu of first award" autocomplete="off" style="cursor: auto;" />
         </div>
-        <div class="col">
-            <strong>SK:</strong>
-        </div>
-        <div class="col">
+        <div class="col-2">
+            <label for="txtFindSystemKey">
+                System key
+            </label>
             <input name="txtFindSystemKey" type="text" maxlength="9" id="txtFindSystemKey" size="11">
         </div>
-        <div class="col">
+        <div class="col-2">
             <button class="button noprint" onclick="javascript:document.forms[0].bttnSubmitFind.click()" tabindex="-1" type="button">Find / Refresh </button> <!-- LM: why does this have tabindex -1? -->
-        </div>
-        <div class="col">
+            
             <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#find&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
         </div>
         <div class="col">
-            <div align="center" width="99%" class="inquiryMessage"></div> <!-- LM: what is this? -->
-        </div>
-        <div class="col">
-            <span id="spanDateTime">12/23/19 2:37 PM</span>
+            <div align="center" class="inquiryMessage"></div> <!-- LM: what is this? does it belong inside this form or not?  -->
         </div>
     </div>
-    <div class="row">
-        <div class="labelError"></div>
+</form>
+    <div class="row"><!-- LM: What is this? does it belong inside this form or not? -->
+        <div class="labelError col"></div>
     </div>
 </div>
  <!-- end search fields and datestamp row -->
