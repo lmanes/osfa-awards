@@ -5,9 +5,10 @@
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,8 +45,7 @@
 
 		<link type="text/css" href="./OSFA Award Updates_files/jquery-ui.css" rel="Stylesheet">
 		<link type="text/css" href="./OSFA Award Updates_files/default.css" rel="Stylesheet">
-		<!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,7 +54,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     </head>
-<body onkeypress="return keypressHandler(event)" onkeydown="return keydownHandler(event)" onunload="bodyUnload()" class="yui-skin-sam">
+<body onkeypress="return keypressHandler(event)" onkeydown="return keydownHandler(event)" onunload="bodyUnload()" >
 
 <!-- global nav -->
 <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" style="border:solid 5px #e6e6e6">
@@ -101,204 +101,195 @@
    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D7DE66C7">
 </div>
 
+<div class="container" style="border: 3px solid red; padding: 10px;">
+<!-- search fields and datestamp row -->
+    <div class="row" style="border: 3px solid blue; padding: 10px;">
+        <div class="col">
+            <strong>Student Number / SSN:</strong>
+        </div>
+        <div class="col">
+            <input name="txtFindStudentKey" type="text" maxlength="11" id="txtFindStudentKey" size="11" title="Special Key Functions:
+                           N - New award
+                           S - go to Application Status
+                           U - go to Update menu of first award" class="" autocomplete="off" style="cursor: auto;" />
+        </div>
+        <div class="col">
+            <strong>SK:</strong>
+        </div>
+        <div class="col">
+            <input name="txtFindSystemKey" type="text" maxlength="9" id="txtFindSystemKey" size="11">
+        </div>
+        <div class="col">
+            <input class="button noprint" onclick="javascript:document.forms[0].bttnSubmitFind.click()" tabindex="-1" type="button" value="Find / Refresh">
+        </div>
+        <div class="col">
+            <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#find&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
+        </div>
+        <div class="col">
+            <div align="center" width="99%" class="inquiryMessage"></div> <!-- LM: what is this? -->
+        </div>
+        <div class="col">
+            <div align="right">
+                <b><span id="spanDateTime">12/23/19 2:37 PM</span>
+                </b>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="labelError"></div>
+    </div>
+</div>
+ <!-- end search fields and datestamp row -->
+
+<!-- student info -->
+<div class="container" style="border: 3px solid purple; padding: 10px;">
+    <div class="row">
+        <div class="col">
+            <input name="txtAwardYear" type="text" value="2020" maxlength="4" id="txtAwardYear" onchange="document.forms[0].bttnSubmitFind.click()">
+        </div>
+        <div class="labelStudentName col">
+            Yerfdog,Charlie O
+        </div>
+        <div class="labelStudentName col">
+            7000000
+        </div>
+        <div class="noprint col">Date of birth:</div>
+        <div class="noprint col">4/05/89</div>
+        <div class="noprint col">SSN: 100-00-0001</div>
+        <div class="noprint col" style="text-align:center;vertical-align:bottom;" width="50%">
+            <a id="ancTOD" href="javascript:toggleOverrideDetail()" class="override" style="display: none;">
+            Show Override Detail
+            </a>
+        </div>
+        <!--//test added style; remove all " X" attributes-->
+        <div xxxwidth="90%" align="right" style="white-space:nowrap" class="col">
+            <div id="pnlPhotoID">
+               <button id="bttnPhoto" tabindex="-1" style="margin:0;padding:0;" onclick="javascript:return false;">
+                    Photo
+                    <img src="./OSFA Award Updates_files/sm_down_arrow.gif" height="9" width="9" alt="">
+                </button>
+                <div id="divPhoto" class="photo" style="display:none;">
+                    <img id="imgPhotoID" alt="" width="120" height="150" src="./OSFA Award Updates_files/photoid.aspx">
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+<!-- end student info -->
+
+<!-- metadata table -->
+<div id="tblMain" style="border: 3px solid green; padding: 10px;" class="container">
+    <div class="row">
+            <div id="mainCollapse" class="rowHeader pointer col" width="10%" onclick="toggleMainData(0)" title="Click to hide primary data table">
+                <img src="./OSFA Award Updates_files/collapse.gif" alt="" style="width:13px;height:13px">
+            </div>
+            <div class="cellHeader col">Campus:</div>
+            <div class="cellText col">Seattle</div>
+            <div class="cellHeader col">College:</div>
+            <div class="cellText col"></div>
+            <div class="cellHeader col">Major:</div>
+            <div class="cellText col"></div>
+            <div class="cellHeader col">Program Eligibility:</div>
+            <div class="cellText col"><span class="smaller2">0 - No&nbsp;restrictions</span></div>
+        </div>
+        <div class="row">
+            <div class="cellHeader col">Class:</div>
+            <div class="cellText col"></div>
+            <div class="cellHeader col">Wants WorkStudy:</div>
+            <div class="cellText dropdown col">
+                <select name="dropWorkStudy" id="dropWorkStudy" autocode="T1">
+                    <option selected="selected" value="N">NO</option>
+                    <option value="Y">YES</option>
+                </select>
+            </div>
+            <div class="cellHeader col">Marital Status:</div>
+            <div class="cellText col">Married</div>
+            <div class="cellHeader col">Military Dependent:</div>
+            <div class="cellText col">No</div>
+        </div>
+        <div class="row">
+            <div class="cellHeader col">Dependency:</div>
+            <div class="cellText col">Independent</div>
+            <div class="cellHeader col">Housing:</div>
+            <div class="cellText col">On-Campus</div>
+            <div class="cellHeader col">Family Size:</div>
+            <div class="cellText col">3, 1 in college</div>
+            <div class="cellHeader col">Parent Contribution:</div>
+            <div class="cellText col">0</div>
+        </div>
+        <div class="row">
+            <div class="cellHeader col">On Time:</div>
+            <div class="cellText dropdown col">
+                <select name="dropOnTime" id="dropOnTime" autocode="T1">
+                   <option value="N">NO</option>
+                   <option selected="selected" value="Y">YES</option>
+                </select>
+            </div>
+            <div class="cellHeader col">FAFSA Receipt Date:</div>
+            <div class="cellText col">0/00/00</div>
+            <div class="cellHeader col">Residency:</div>
+            <div class="cellText col">No</div>
+            <div class="cellHeader col">Budget Blocked:</div>
+            <div class="cellText col">Summer, Autumn</div>
+        </div>
+        <div class="row">
+            <div class="cellHeader col">Budget Code:</div>
+            <div class="cellText col">3 - Not living with parents</div>
+            <div class="cellHeader col">Budget Quarters:</div>
+            <div class="cellText col"><span id="spanBudgetQuarters">Autumn Winter Spring </span></div>
+            <div class="cellHeader col">Budget Date:</div>
+            <div class="cellText col">9/19/19</div>
+        </div>
+        <div class="row">
+            <div class="cellHeader col">Veteran Status:</div>
+            <div class="cellText col">
+                0 - NOT A VET
+            </div>
+            <div class="cellHeader col">Veteran Benefit:</div>
+            <div class="cellText col"></div>
+            <div class="cellHeader col">Vet Tuition Types:</div>
+            <div class="cellText col"></div>
+        </div>
+    <!--<tfoot style="display:none"><!-- table footer includes the JS to expand/collapse?
+        <tr id="mainExpand" class="pointer" onclick="toggleMainData(1)" title="Click to show primary data table">
+            <div class="rowHeader" colspan="8">
+                <span class="spanToggleImage">
+                    <img src="./OSFA Award Updates_files/expand.gif" alt="">
+                </span>
+                <span>Demographic Data</span>
+            </div>
+        </tr>
+    </tfoot>-->
+<!-- end metadata table -->
+
+<!-- application status table -->
+<div id="divAwardStatusInquiry" style="DISPLAY: none"><!-- div id for collapsing awards status page? -->
+    <div class="container" style="border: 3px solid orange; padding: 10px;">
+        <div class="row">
+            <div class="cellHeader col">Applic. Status:</div>
+            <div class="cellText col">40 - PRIORITY AWARD</div>
+            <div class="cellHeader col">Package Formula:</div>
+            <div class="cellText col">03 - Graduates With Need</div>
+            <div class="cellHeader col" >Package Date:</div>
+            <div class="cellText col">-</div>
+        </div>
+        <div class="row">
+            <div class="cellHeader col">Aid Holds:</div>
+            <div class="cellText col" id="cellAidHolds">
+                SC - Stafford Entrance Counseling (11/20/19)<br>
+                99 - Pending additional information (11/27/19)<br>
+                82 - Preliminary HB/DACA Award (9/09/09)<br>
+                GC - GPLUS Entrance Counseling (12/20/19)<br>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end application status table -->
+
 <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#bdbdbd" style="border: 3px solid red; padding: 10px;">
 	<tbody>
-		<tr><!-- search fields and datestamp row -->
-			<td>
-				<table cellspacing="0" cellpadding="0" width="100%" border="0" style="border: 3px solid blue; padding: 10px;">
-					<tbody>
-						<tr>
-							<td>&nbsp;</td>
-							<td nowrap="nowrap" class="nowrap">
-                                <strong>Student Number / SSN:</strong>
-								<input name="txtFindStudentKey" type="text" maxlength="11" id="txtFindStudentKey" size="11" title="Special Key Functions:
-                                   N - New award
-                                   S - go to Application Status
-                                   U - go to Update menu of first award" class="" autocomplete="off" style="cursor: auto;" />
-
-                                &nbsp;
-
-                                <strong>SK:</strong>
-								<input name="txtFindSystemKey" type="text" maxlength="9" id="txtFindSystemKey" size="11">
-    								<input class="button noprint" onclick="javascript:document.forms[0].bttnSubmitFind.click()" tabindex="-1" type="button" value="Find / Refresh">
-
-                                &nbsp;
-                                <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#find&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
-
-                            </td>
-							<td align="center" width="99%" class="inquiryMessage"></td>
-
-                            <td nowrap="nowrap" align="right">
-                                <b><span id="spanDateTime">12/23/19 2:37 PM</span>
-                                </b>
-                            </td>
-							<td>&nbsp;</td>
-						</tr>
-						<tr>
-							<td></td>
-							<td colspan="3" class="labelError"></td>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr> <!-- end search fields and datestamp row -->
 		<tr> <!-- tabs row -->
 			<td>
-                <!-- lauren moving the student info around -->
-                <table cellspacing="0" cellpadding="0" border="0" width="100%" style="border: 3px solid purple; padding: 10px;">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input name="txtAwardYear" type="text" value="2020" maxlength="4" id="txtAwardYear" onchange="document.forms[0].bttnSubmitFind.click()">
-                            </td>
-                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap="nowrap" class="labelStudentName">
-                                Yerfdog,Charlie O
-                            </td>
-                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap="nowrap" class="labelStudentName">
-                                7000000
-                            </td>
-                            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap="nowrap" class="noprint">Date of birth:&nbsp;</td>
-                            <td nowrap="nowrap" class="noprint">4/05/89</td>
-                            <td nowrap="nowrap" class="noprint">&nbsp;&nbsp;&nbsp;&nbsp;SSN: 100-00-0001</td>
-                            <td class="noprint" style="text-align:center;vertical-align:bottom;" width="50%" nowrap="nowrap">
-                                <a id="ancTOD" href="javascript:toggleOverrideDetail()" class="override" style="display: none;">
-                                Show Override Detail
-                                <span></span>
-                                </a>
-                            </td>
-                            <!--//test added style; remove all " X" attributes-->
-                            <td xxxwidth="90%" align="right" style="white-space:nowrap">
-                                <div id="pnlPhotoID">
-                                   <button id="bttnPhoto" tabindex="-1" style="margin:0;padding:0;" onclick="javascript:return false;">
-                                        Photo
-                                        <img src="./OSFA Award Updates_files/sm_down_arrow.gif" height="9" width="9" alt="">
-                                    </button>
-                                    <div id="divPhoto" class="photo" style="display:none;">
-                                        <img id="imgPhotoID" alt="" width="120" height="150" src="./OSFA Award Updates_files/photoid.aspx">
-                                    </div>
-                                </div>
-                            </td>
-                       </tr>
-                   </tbody>
-                </table>
-                <!-- end student info -->
-
-                <!-- lauren moving the metadata table -->
-                <table class="borderThin" width="100%" id="tblMain" style="border: 3px solid green; padding: 10px;">
-                    <tbody>
-                        <tr>
-                            <td id="mainCollapse" class="rowHeader pointer" rowspan="6" width="1%" onclick="toggleMainData(0)" title="Click to hide primary data table">
-                                <img src="./OSFA Award Updates_files/collapse.gif" alt="" style="width:13px;height:13px">
-                            </td>
-                            <td class="cellHeader" width="10%">Campus:</td>
-                            <td class="cellText" width="13%">Seattle</td>
-                            <td class="cellHeader" width="12%">College:</td>
-                            <td class="cellText" width="13%"></td>
-                            <td class="cellHeader" width="11%">Major:</td>
-                            <td class="cellText" width="14%"></td>
-                            <td class="cellHeader" width="13%">Program Eligibility:</td>
-                            <td class="cellText" width="13%"><span class="smaller2">0 - No&nbsp;restrictions</span></td>
-                        </tr>
-                        <tr>
-                            <td class="cellHeader">Class:</td>
-                            <td class="cellText"></td>
-                            <td class="cellHeader">Wants WorkStudy:</td>
-                            <td class="cellText dropdown">
-                                <select name="dropWorkStudy" id="dropWorkStudy" autocode="T1">
-                                    <option selected="selected" value="N">NO</option>
-                                    <option value="Y">YES</option>
-
-                                </select>
-                            </td>
-                            <td class="cellHeader">Marital Status:</td>
-                            <td class="cellText">Married</td>
-                            <td class="cellHeader">Military Dependent:</td>
-                            <td class="cellText">No</td>
-                        </tr>
-                        <tr>
-                            <td class="cellHeader">Dependency:</td>
-                            <td class="cellText">Independent</td>
-                            <td class="cellHeader">Housing:</td>
-                            <td class="cellText">On-Campus</td>
-                            <td class="cellHeader">Family Size:</td>
-                            <td class="cellText">3, 1 in college</td>
-                            <td class="cellHeader">Parent Contribution:</td>
-                            <td class="cellText">0</td>
-                        </tr>
-                        <tr>
-                            <td class="cellHeader">On Time:</td>
-                            <td class="cellText dropdown">
-                                <select name="dropOnTime" id="dropOnTime" autocode="T1">
-                                   <option value="N">NO</option>
-                                   <option selected="selected" value="Y">YES</option>
-                                </select>
-                            </td>
-                            <td class="cellHeader">FAFSA Receipt Date:</td>
-                            <td class="cellText">0/00/00</td>
-                            <td class="cellHeader">Residency:</td>
-                            <td class="cellText">No</td>
-                            <td class="cellHeader">Budget Blocked:</td>
-                            <td class="cellText">Summer, Autumn</td>
-                        </tr>
-                        <tr>
-                            <td class="cellHeader">Budget Code:</td>
-                            <td class="cellText" colspan="3">3 - Not living with parents</td>
-                            <td class="cellHeader">Budget Quarters:</td>
-                            <td class="cellText"><span id="spanBudgetQuarters">Autumn Winter Spring </span></td>
-                            <td class="cellHeader">Budget Date:</td>
-                            <td class="cellText">9/19/19</td>
-                        </tr>
-                        <tr>
-                            <td class="cellHeader">Veteran Status:</td>
-                            <td class="cellText">
-                                0 - NOT A VET
-                            </td>
-                            <td class="cellHeader">Veteran Benefit:</td>
-                            <td class="cellText"></td>
-                            <td class="cellHeader">Vet Tuition Types:</td>
-                            <td class="cellText" colspan="3"></td>
-                        </tr>
-                    </tbody>
-                    <tfoot style="display:none"><!-- table footer includes the JS to expand/collapse -->
-                        <tr id="mainExpand" class="pointer" onclick="toggleMainData(1)" title="Click to show primary data table">
-                            <td class="rowHeader" colspan="8">
-                                <span class="spanToggleImage">
-                                    <img src="./OSFA Award Updates_files/expand.gif" alt="">
-                                </span>
-                                <span>Demographic Data</span>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <!-- end metadata table -->
-
-                <!-- lauren moving application status table -->
-                <div id="divAwardStatusInquiry" style="DISPLAY: none"><!-- div id for collapsing awards status page? -->
-
-                    <div class="lineBreakSmallest"></div><!-- div for padding between tables -->
-
-                    <table class="borderThin" width="100%" style="border: 3px solid orange; padding: 10px;">
-                        <tbody>
-                            <tr>
-                                <td class="cellHeader" width="11%">Applic. Status:</td>
-                                <td class="cellText" width="25%" colspan="2">40 - PRIORITY AWARD</td>
-                                <td class="cellHeader" width="13%">Package Formula:</td>
-                                <td class="cellText" width="25%" colspan="2">03 - Graduates With Need</td>
-                                <td class="cellHeader" width="13%">Package Date:</td>
-                                <td class="cellText" width="13%">-</td>
-                            </tr>
-                            <tr>
-                                <td class="cellHeader">Aid Holds:</td>
-                                <td class="cellText" id="cellAidHolds" nowrap="nowrap" colspan="7">SC - Stafford Entrance Counseling (11/20/19)<br>99 - Pending additional information (11/27/19)<br>82 - Preliminary HB/DACA Award (9/09/09)<br>GC - GPLUS Entrance Counseling (12/20/19)<br></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <!-- end application status table -->
 
                 <!-- tabs actually located here -->
 				<table id="tblTabs" cellspacing="0" cellpadding="0" border="0" style="border: 3px solid pink; padding: 10px;">
@@ -1240,10 +1231,10 @@ gbIsUpdateAllowed=true;gbIsPageValid=true;giStudentNo=7000000;gsPackagingIndicat
 	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Yes, Keep Working</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">No, Logoff</span></button></div></div></div>
 
 	<!-- bootstrap -->
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
 	</body></html>
