@@ -57,7 +57,7 @@
 <body onkeypress="return keypressHandler(event)" onkeydown="return keydownHandler(event)" onunload="bodyUnload()" >
 
 <!-- global nav -->
-<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" style="border:solid 5px #e6e6e6">
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" style="border-bottom:solid 5px #e6e6e6">
     <tbody>
         <tr>
             <td class="rpad" width="100%" style="border-bottom:solid 1px #666666">
@@ -93,6 +93,7 @@
  <!-- end global nav -->
 
 <div id="divDebugInfo"></div>
+<!-- dunno what this stuff is -->
 <form method="post" action="https://it-devsis.s.uw.edu/sisOSFA/securid/default.aspx" id="form1" style="MARGIN: 0px" onsubmit="return editForm()" autocomplete="off">
 <div class="aspNetHidden">
     <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODUwNDMzNDI5DxYCHgpQYWdlTnVtYmVyAgEWAgIDD2QWBAITDw8WAh4HVmlzaWJsZWdkZAKjAQ9kFgICAQ9kFgICAQ8WBh4FY2xhc3MFGWNlbGxIZWFkZXIgY2VudGVyIHBvaW50ZXIeCWlubmVyaHRtbAW1AUZ1bmQmbmJzcDsgPGltZyBzcmM9Jy9zaXNPU0ZBL2ltYWdlcy9leHBhbmQuZ2lmJyBjbGFzcz0naW1hZ2VMaW5rJyBpZD0naW1hZ2VBd2FyZERldGFpbCcgaGVpZ2h0PScxMycgYWxpZ249J2Fic0JvdHRvbScgdnNwYWNlPScxJyB3aWR0aD0nMTMnIHRpdGxlPSdDbGljayB0byBzaG93L2hpZGUgYXdhcmQgZGV0YWlsJz4eB29uY2xpY2sFFWF3YXJkVGFibGVEZXRhaWxBbGwoKWRkQzOGr1MuDT2oNLgyACkrk80TtacIePBeVITZmrf0COw=">
@@ -103,7 +104,7 @@
 
 <div class="container" style="border: 3px solid red; padding: 10px;">
 <!-- search fields and datestamp row -->
-    <div class="row" style="border: 3px solid blue; padding: 10px;">
+    <div class="row" style="background-color: #bdbdbd;">
         <div class="col">
             <strong>Student Number / SSN:</strong>
         </div>
@@ -120,7 +121,7 @@
             <input name="txtFindSystemKey" type="text" maxlength="9" id="txtFindSystemKey" size="11">
         </div>
         <div class="col">
-            <input class="button noprint" onclick="javascript:document.forms[0].bttnSubmitFind.click()" tabindex="-1" type="button" value="Find / Refresh">
+            <button class="button noprint" onclick="javascript:document.forms[0].bttnSubmitFind.click()" tabindex="-1" type="button">Find / Refresh </button> <!-- LM: why does this have tabindex -1? -->
         </div>
         <div class="col">
             <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#find&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
@@ -129,10 +130,7 @@
             <div align="center" width="99%" class="inquiryMessage"></div> <!-- LM: what is this? -->
         </div>
         <div class="col">
-            <div align="right">
-                <b><span id="spanDateTime">12/23/19 2:37 PM</span>
-                </b>
-            </div>
+            <span id="spanDateTime">12/23/19 2:37 PM</span>
         </div>
     </div>
     <div class="row">
@@ -288,7 +286,7 @@
 
 <!-- ul with tabs -->
     <!-- TO DO: ADD BOOTSTRAP TAB JS PLUGIN https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior -->
-    <!-- TO DO: fix our JS that may have been based on elements that aren't here anymore --> 
+    <!-- TO DO: fix our JS that may have been based on elements that aren't here anymore -->
 <ul class="nav nav-tabs" id="tblTabs">
   <li class="nav-item">
     <a class="nav-link active" id="tabWorksheet" href="#"><span tabindex="0">OSFA Awards</span></a>
