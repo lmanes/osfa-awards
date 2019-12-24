@@ -5,12 +5,14 @@ html {
 	overflow-y: scroll !important;
 }
 body {
-   font-family: arial,helvetica,sans-serif;
+   font-family: arial,helvetica,sans-serif; width: 90%;
 	/* for Firefox; keep vertical scrollbar visible: */
 	/* [09-01-07] required by leightbox, apparently
 	overflow-y: scroll;
 	*/
 }
+
+table, tr, td { padding: 5px !important; margin: 5px !important; }
 
 
 /* ..........................................PROCESSING MODAL DIALOG STYLES */
