@@ -487,7 +487,7 @@
 
 <div class="table-responsive">
 
-<!-- new quarterly table, combined calculated amounts and awards -->
+    <!-- new quarterly table, combined calculated amounts and awards -->
     <table style="border: 3px solid purple; padding: 10px;" class="table table-sm table-bordered">
         <thead>
             <tr>
@@ -798,9 +798,9 @@
             </tbody>
         </table>
     </div>
-<!-- end new quarterly table -->
+    <!-- end new quarterly table -->
 
-<!-- debts table -->
+    <!-- debts table -->
     <table class="table table-sm table-bordered" style="border: 3px solid blue; padding: 10px;">
        <thead>
            <tr>
@@ -823,9 +823,9 @@
             </tr>
         </tbody>
     </table>
-<!-- end debts table -->
+    <!-- end debts table -->
 
-<!-- links table LM: TO DO-->
+    <!-- links table LM: TO DO-->
     <table>
             <tr>
 				<td class="cellHeader center" colspan="6">
@@ -840,7 +840,9 @@
 			</tr>
 		</tbody>
     </table>
-<!-- end links table -->
+    <!-- end links table -->
+
+</div>
 
 <!-- error and success messages -->
 <div>
@@ -866,198 +868,200 @@
 </div>
 <!-- end error and success messages -->
 
-<table>
-	<tr>
-		<td id="cellAwardLetterLabel" class="rowHeader" colspan="8">Award
-										Letter</td>
-	</tr>
-	<tr>
-		<td class="cellHeader" colspan="2"><span id="fontAwardLetterCommentLabel">Award
-											Letter Comments:</span></td>
-		<td class="cellText" width="200" colspan="6">
-
-										<div>
-											<select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
-			<option selected="selected" value="00">No award letter comment</option>
-			<option value="02">02 - STATE NEED GRANT AWARD IS ESTIMATED PENDING STATE LEGISLATIVE ACTION</option>
-			<option value="03">03 - WORK STUDY INFORMATION IS AVAILABLE AT: HTTP://WORKSTUDY.UW.EDU</option>
-			<option value="05">05 - Graduate PLUS loan is subject to credit approval</option>
-			<option value="06">06 - State Work Study awarded; sign &amp; return this letter</option>
-			<option value="07">07 - Parent Loan is subject to credit approval</option>
-			<option value="08">08 - See www.washington.edu/students/osfa/AmericaReads/introduction.html</option>
-			<option value="09">09 - University Opportunity Grant is a non-renewal award</option>
-			<option value="11">11 - SUMMER UNSUB STAFFORD LOANS ARE DISBURSED STARTING JULY 1ST</option>
-			<option value="12">12 - SUMMER SUMMER STAFFORD LOANS WILL DISBURSE STARTING JULY 1ST</option>
-			<option value="13">13 - Job info at www.washington.edu/students/osfa/ugaid/workstudy.html</option>
-			<option value="14">14 - ESTIMATED COLLEGE BOUND AWARD SUBJECT TO CONFIRMATION OF ELIGIBILITY</option>
-			<option value="15">15 - Aid has been adjusted due to withdrawal</option>
-			<option value="16">16 - We will send academic year awards during the summer</option>
-			<option value="17">17 - Application review has been completed.</option>
-			<option value="18">18 - Award is based on your projected Grad/Professional status for Autumn</option>
-			<option value="19">19 - Trio Grant replaces State Need Grant and/or other aid</option>
-			<option value="20">20 - Revised award due to change in resources</option>
-			<option value="21">21 - Revised award due to change in budget assumptions</option>
-			<option value="22">22 - REVISED AWARD AT YOUR REQUEST</option>
-			<option value="23">23 - Appeal approved: award reinstated with available funds.</option>
-			<option value="24">24 - Revision in type of aid--total offer amount unchanged</option>
-			<option value="25">25 - Revised award - additional funds available</option>
-			<option value="26">26 - Revised award--unclaimed/unused portion canceled</option>
-			<option value="27">27 - Revised award due to change in tuition</option>
-			<option value="28">28 - Aid revised -- reflects summer attendance</option>
-			<option value="29">29 - Award reflects use of projected income in evaluation</option>
-			<option value="30">30 - Work Study job info--http://www.washington.edu/students/osfa/ws1.html</option>
-			<option value="31">31 - Action required:  PLEASE RESPOND IMMEDIATELY</option>
-			<option value="32">32 - Aid revised based on new information from Federal Processor</option>
-			<option value="33">33 - State Need Grant based on less than half time enrollment.</option>
-			<option value="34">34 - THIS AWARD REFLECTS UW BOTHELL CAMPUS ONLY</option>
-			<option value="35">35 - THIS AWARD REFLECTS UW TACOMA CAMPUS ONLY</option>
-			<option value="36">36 - You must inform us of any changes in your financial situation</option>
-			<option value="37">37 - Aid may be revised based on your summer Work Study earnings</option>
-			<option value="38">38 - Aid award reflects participation in Summer Work Study Program</option>
-			<option value="39">39 - AID REVISED FOR 2016-17 DUE TO CHANGED INCOME INFO ON 2018 FAFSA.</option>
-			<option value="40">40 - ACADEMIC YEAR AWARD NOTICES WILL BE SENT IN JULY</option>
-			<option value="41">41 - Revised award based on actual Summer Work Study earnings</option>
-			<option value="42">42 - WORK STUDY FUNDING SOURCE REFLECTS YOUR JOB PLACEMENT</option>
-			<option value="43">43 - Revised award:  Federal Work Study award cancelled for non use</option>
-			<option value="44">44 - SUMMER PELL AMOUNT IS BASED ON PRIOR YEAR ELIGIBILITY</option>
-			<option value="45">45 - Renewal of scholarship is contingent on spring grades</option>
-			<option value="46">46 - FOR INFORMATION ABOUT ADDITIONAL LOAN ELIGIBILITY CONTACT OUR OFFICE</option>
-			<option value="47">47 - GRAD PLUS LOAN SUBJECT TO CREDIT CHECK/APPROVAL</option>
-			<option value="48">48 - STAFFORD LOAN CANCELED; YOU ARE NOT ENROLLED AT LEAST HALF-TIME SUMMER</option>
-			<option value="49">49 - Aid from tuition revenue not available to self-sustaining programs.</option>
-			<option value="50">50 - You may be eligible for more direct loan after class level advances</option>
-			<option value="51">51 - Health Professions loan promissory notes are signed in 129 Schmitz</option>
-			<option value="52">52 - Congratulations on the Academic Excellence merit tuition waiver award!</option>
-			<option value="53">53 - SUBMIT REQUESTED INFORMATION WITHIN 14 DAYS TO AVOID AID CANCELLATION.</option>
-			<option value="54">54 - Award may be revised based on aid received at previous school</option>
-			<option value="55">55 - Loans may be available for Early Fall Start; please contact our office</option>
-			<option value="56">56 - LOANS ARE PRORATED BECAUSE YOU WILL GRADUATE BEFORE SPRING QUARTER</option>
-			<option value="57">57 - PLEASE COMPLETE ENTRANCE COUNSELING WITHIN 14 DAYS AT STUDENTLOANS.GOV</option>
-			<option value="58">58 - THE SCHOLARSHIP AWARDED IS THE FINAL YEAR OF A 2-YEAR COMMITMENT</option>
-			<option value="59">59 - The aid you have been awarded is not based on need</option>
-			<option value="60">60 - 12 credit enrollment (10 for grads) is required for full time aid</option>
-			<option value="63">63 - AWARD MAY BE REVISED UPON RECEIPT OF VA EDUCATIONAL BENEFITS</option>
-			<option value="64">64 - ESTIMATED COLLEGE BOUND AWARD SUBJECT TO CONFIRMATION OF ELIGIBILITY</option>
-			<option value="65">65 - FIRST DISBURSEMENT OF PERKINS LOAN MUST OCCUR BY SEPTEMBER 30TH</option>
-			<option value="67">67 - FIRST DISBURSEMENT OF PERKINS LOAN MUST OCCUR BY SEPTEMBER 30TH</option>
-			<option value="69">69 - AWARD REFLECTS ESTIMATED TUITION AND AID LEVELS FOR 2019-2020</option>
-			<option value="70">70 - STATE NEED GRANTS ARE ESTIMATED FIGURES AND WILL BE ADJUSTED LATER</option>
-			<option value="71">71 - PERKINS LOANS MUST BE DISBURSED BEFORE 10/1/15 OR WILL BE CANCELED</option>
-			<option value="72">72 - WASHINGTON COLLEGE GRANT IS THE NEW NAME OF THE WA STATE NEED GRANT</option>
-			<option value="76">76 - PRELIMINARY AWARD; PENDING REVIEW OF YOUR FINAL HIGH SCHOOL TRANSCRIPT</option>
-			<option value="77">77 - Hold has been placed for requested documentation</option>
-			<option value="78">78 - ONE YEAR AWARD - ELIGIBILITY AND AMOUNTS MAY CHANGE IN FUTURE YEARS</option>
-			<option value="79">79 - Please see a financial aid counselor before claiming aid</option>
-			<option value="80">80 - You did not accept your aid by the reply deadline</option>
-			<option value="81">81 - Congratulations on your graduation.</option>
-			<option value="82">82 - Since you are not enrolled, our offer has been withdrawn</option>
-			<option value="83">83 - No response has been made to our request for information</option>
-			<option value="84">84 - Since you did not accept your offer of admission,</option>
-			<option value="85">85 - Canceled: Failure to make normal progress toward degree.</option>
-			<option value="86">86 - LOAN(S) CANCELED - NO PROMISSORY NOTE(S) SIGNED</option>
-			<option value="87">87 - PLEASE SIGN PROM NOTE(S) WITHIN 14 DAYS TO AVOID CANCELLATION</option>
-			<option value="88">88 - FUNDING LEVELS AND TUITION AMOUNTS FOR AUT-SPR ARE NOT CONFIRMED</option>
-			<option value="89">89 - COMPUTED WITH ESTIMATED TUITION, FEES AND FUNDING LEVELS FOR 2016-17</option>
-			<option value="97">97 - You declined your award offer -- aid has been canceled</option>
-			<option value="98">98 - Your financial aid offer has been canceled</option>
-
-		</select>
-										</div>
-										<div>
-											<select name="dropAwardLetterComment2" id="dropAwardLetterComment2" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-
-		</select>
-										</div>
-										<div>
-											<select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-
-		</select>
-										</div>
-										<div>
-											<select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-
-		</select>
-										</div>
-										<div>
-											<select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-
-		</select>
-										</div>
-										<div class="smallest"></div>
-									</td>
-	</tr>
-	<tr>
-		<td class="cellHeader" colspan="2">Award Letter Custom Comment:</td>
-		<td class="cellText" colspan="6"><input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60"></td>
-	</tr>
-	<tr>
-		<td class="cellHeader" valign="top" colspan="2">Print Award Letter:</td>
-		<td class="cellText" colspan="6"><font color="blue">YES</font>&nbsp;
-										Last Sent:
-										12/02/19&nbsp;&nbsp;
-										Set flag manually:<span id="radioPrintAwardLetter"><input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y"><label for="radioPrintAwardLetter_0">Yes&nbsp;</label><input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N"><label for="radioPrintAwardLetter_1">No</label></span>
-										&nbsp;
-									</td>
-	</tr>
-</tbody></table>
+<div class="container" style="border: 3px solid pink;">
+	<div class="row">
+		<div class="col" id="cellAwardLetterLabel">
+            Award Letter
+        </div>
+    </div>
+	<div class="row">
+		<div class="col">
+            <span id="fontAwardLetterCommentLabel">Award Letter Comments:</span>
+        </div>
+        <div class="col">
+			<div><!-- options for award letter comments dropdown -->
+				<select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
+        			<option selected="selected" value="00">No award letter comment</option>
+        			<option value="02">02 - STATE NEED GRANT AWARD IS ESTIMATED PENDING STATE LEGISLATIVE ACTION</option>
+        			<option value="03">03 - WORK STUDY INFORMATION IS AVAILABLE AT: HTTP://WORKSTUDY.UW.EDU</option>
+        			<option value="05">05 - Graduate PLUS loan is subject to credit approval</option>
+        			<option value="06">06 - State Work Study awarded; sign &amp; return this letter</option>
+        			<option value="07">07 - Parent Loan is subject to credit approval</option>
+        			<option value="08">08 - See www.washington.edu/students/osfa/AmericaReads/introduction.html</option>
+        			<option value="09">09 - University Opportunity Grant is a non-renewal award</option>
+        			<option value="11">11 - SUMMER UNSUB STAFFORD LOANS ARE DISBURSED STARTING JULY 1ST</option>
+        			<option value="12">12 - SUMMER SUMMER STAFFORD LOANS WILL DISBURSE STARTING JULY 1ST</option>
+        			<option value="13">13 - Job info at www.washington.edu/students/osfa/ugaid/workstudy.html</option>
+        			<option value="14">14 - ESTIMATED COLLEGE BOUND AWARD SUBJECT TO CONFIRMATION OF ELIGIBILITY</option>
+        			<option value="15">15 - Aid has been adjusted due to withdrawal</option>
+        			<option value="16">16 - We will send academic year awards during the summer</option>
+        			<option value="17">17 - Application review has been completed.</option>
+        			<option value="18">18 - Award is based on your projected Grad/Professional status for Autumn</option>
+        			<option value="19">19 - Trio Grant replaces State Need Grant and/or other aid</option>
+        			<option value="20">20 - Revised award due to change in resources</option>
+        			<option value="21">21 - Revised award due to change in budget assumptions</option>
+        			<option value="22">22 - REVISED AWARD AT YOUR REQUEST</option>
+        			<option value="23">23 - Appeal approved: award reinstated with available funds.</option>
+        			<option value="24">24 - Revision in type of aid--total offer amount unchanged</option>
+        			<option value="25">25 - Revised award - additional funds available</option>
+        			<option value="26">26 - Revised award--unclaimed/unused portion canceled</option>
+        			<option value="27">27 - Revised award due to change in tuition</option>
+        			<option value="28">28 - Aid revised -- reflects summer attendance</option>
+        			<option value="29">29 - Award reflects use of projected income in evaluation</option>
+        			<option value="30">30 - Work Study job info--http://www.washington.edu/students/osfa/ws1.html</option>
+        			<option value="31">31 - Action required:  PLEASE RESPOND IMMEDIATELY</option>
+        			<option value="32">32 - Aid revised based on new information from Federal Processor</option>
+        			<option value="33">33 - State Need Grant based on less than half time enrollment.</option>
+        			<option value="34">34 - THIS AWARD REFLECTS UW BOTHELL CAMPUS ONLY</option>
+        			<option value="35">35 - THIS AWARD REFLECTS UW TACOMA CAMPUS ONLY</option>
+        			<option value="36">36 - You must inform us of any changes in your financial situation</option>
+        			<option value="37">37 - Aid may be revised based on your summer Work Study earnings</option>
+        			<option value="38">38 - Aid award reflects participation in Summer Work Study Program</option>
+        			<option value="39">39 - AID REVISED FOR 2016-17 DUE TO CHANGED INCOME INFO ON 2018 FAFSA.</option>
+        			<option value="40">40 - ACADEMIC YEAR AWARD NOTICES WILL BE SENT IN JULY</option>
+        			<option value="41">41 - Revised award based on actual Summer Work Study earnings</option>
+        			<option value="42">42 - WORK STUDY FUNDING SOURCE REFLECTS YOUR JOB PLACEMENT</option>
+        			<option value="43">43 - Revised award:  Federal Work Study award cancelled for non use</option>
+        			<option value="44">44 - SUMMER PELL AMOUNT IS BASED ON PRIOR YEAR ELIGIBILITY</option>
+        			<option value="45">45 - Renewal of scholarship is contingent on spring grades</option>
+        			<option value="46">46 - FOR INFORMATION ABOUT ADDITIONAL LOAN ELIGIBILITY CONTACT OUR OFFICE</option>
+        			<option value="47">47 - GRAD PLUS LOAN SUBJECT TO CREDIT CHECK/APPROVAL</option>
+        			<option value="48">48 - STAFFORD LOAN CANCELED; YOU ARE NOT ENROLLED AT LEAST HALF-TIME SUMMER</option>
+        			<option value="49">49 - Aid from tuition revenue not available to self-sustaining programs.</option>
+        			<option value="50">50 - You may be eligible for more direct loan after class level advances</option>
+        			<option value="51">51 - Health Professions loan promissory notes are signed in 129 Schmitz</option>
+        			<option value="52">52 - Congratulations on the Academic Excellence merit tuition waiver award!</option>
+        			<option value="53">53 - SUBMIT REQUESTED INFORMATION WITHIN 14 DAYS TO AVOID AID CANCELLATION.</option>
+        			<option value="54">54 - Award may be revised based on aid received at previous school</option>
+        			<option value="55">55 - Loans may be available for Early Fall Start; please contact our office</option>
+        			<option value="56">56 - LOANS ARE PRORATED BECAUSE YOU WILL GRADUATE BEFORE SPRING QUARTER</option>
+        			<option value="57">57 - PLEASE COMPLETE ENTRANCE COUNSELING WITHIN 14 DAYS AT STUDENTLOANS.GOV</option>
+        			<option value="58">58 - THE SCHOLARSHIP AWARDED IS THE FINAL YEAR OF A 2-YEAR COMMITMENT</option>
+        			<option value="59">59 - The aid you have been awarded is not based on need</option>
+        			<option value="60">60 - 12 credit enrollment (10 for grads) is required for full time aid</option>
+        			<option value="63">63 - AWARD MAY BE REVISED UPON RECEIPT OF VA EDUCATIONAL BENEFITS</option>
+        			<option value="64">64 - ESTIMATED COLLEGE BOUND AWARD SUBJECT TO CONFIRMATION OF ELIGIBILITY</option>
+        			<option value="65">65 - FIRST DISBURSEMENT OF PERKINS LOAN MUST OCCUR BY SEPTEMBER 30TH</option>
+        			<option value="67">67 - FIRST DISBURSEMENT OF PERKINS LOAN MUST OCCUR BY SEPTEMBER 30TH</option>
+        			<option value="69">69 - AWARD REFLECTS ESTIMATED TUITION AND AID LEVELS FOR 2019-2020</option>
+        			<option value="70">70 - STATE NEED GRANTS ARE ESTIMATED FIGURES AND WILL BE ADJUSTED LATER</option>
+        			<option value="71">71 - PERKINS LOANS MUST BE DISBURSED BEFORE 10/1/15 OR WILL BE CANCELED</option>
+        			<option value="72">72 - WASHINGTON COLLEGE GRANT IS THE NEW NAME OF THE WA STATE NEED GRANT</option>
+        			<option value="76">76 - PRELIMINARY AWARD; PENDING REVIEW OF YOUR FINAL HIGH SCHOOL TRANSCRIPT</option>
+        			<option value="77">77 - Hold has been placed for requested documentation</option>
+        			<option value="78">78 - ONE YEAR AWARD - ELIGIBILITY AND AMOUNTS MAY CHANGE IN FUTURE YEARS</option>
+        			<option value="79">79 - Please see a financial aid counselor before claiming aid</option>
+        			<option value="80">80 - You did not accept your aid by the reply deadline</option>
+        			<option value="81">81 - Congratulations on your graduation.</option>
+        			<option value="82">82 - Since you are not enrolled, our offer has been withdrawn</option>
+        			<option value="83">83 - No response has been made to our request for information</option>
+        			<option value="84">84 - Since you did not accept your offer of admission,</option>
+        			<option value="85">85 - Canceled: Failure to make normal progress toward degree.</option>
+        			<option value="86">86 - LOAN(S) CANCELED - NO PROMISSORY NOTE(S) SIGNED</option>
+        			<option value="87">87 - PLEASE SIGN PROM NOTE(S) WITHIN 14 DAYS TO AVOID CANCELLATION</option>
+        			<option value="88">88 - FUNDING LEVELS AND TUITION AMOUNTS FOR AUT-SPR ARE NOT CONFIRMED</option>
+        			<option value="89">89 - COMPUTED WITH ESTIMATED TUITION, FEES AND FUNDING LEVELS FOR 2016-17</option>
+        			<option value="97">97 - You declined your award offer -- aid has been canceled</option>
+        			<option value="98">98 - Your financial aid offer has been canceled</option>
+        		</select>
+			</div>
+			<!-- LM: hiding this, not sure what it is
+            <div>
+				<select name="dropAwardLetterComment2" id="dropAwardLetterComment2" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                </select>
+			</div>
+			<div>
+				<select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                </select>
+			</div>
+			<div>
+				<select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                </select>
+			</div>
+			<div>
+    			<select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                </select>
+			</div>
+			<div class="smallest"></div>
+	         -->
+        </div>
+	<div class="row">
+		<div class="col">
+            Award Letter Custom Comment
+        </div>
+        <div class="col">
+    		<input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60">
+        </div>
+	</div>
+	<div class="row">
+		<div class="col">Print Award Letter:</div>
+		<div class="col">
+            <font color="blue">YES</font>&nbsp;
+			Last Sent:
+			12/02/19&nbsp;&nbsp;
+			Set flag manually:<span id="radioPrintAwardLetter"><input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y"><label for="radioPrintAwardLetter_0">Yes&nbsp;</label><input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N"><label for="radioPrintAwardLetter_1">No</label></span>
+        </div>
+	</div>
 </div>
 
-							<div class="lineBreakSmall"></div>
-							<table class="borderThinPlus" cellpadding="1" width="100%">
-								<tbody><tr>
-									<td class="rowHeader" colspan="2">Revision Comment</td>
-								</tr>
-								<tr>
-									<td class="cellHeader center" id="cellHeaderRevisionComment"><font id="fontHeaderRevisionComment">Enter
-											custom comment &nbsp;<i>OR</i><br>
-											select a prepared comment </font>
-									</td>
-									<td class="cellText"><span class="labelErrorSmall" id="spanRevisionError"></span><select name="dropRevision" id="dropRevision" autocode="T2">
-	<option value="00">Select a prepared revision comment</option>
-	<option value="02">02 - NEW FAFSA DATA SUBMITTED TO OSFA BY STUDENT AND/OR PARENT</option>
-	<option value="05">05 - PER ADMISSIONS REGISTRAR OR HOUSING INFORMATION</option>
-	<option value="07">07 - DEPARTMENTAL OR SAO INFORMATION/ON SAS OUTSIDE AID LIST</option>
-	<option value="08">08 - RECALCULATING INAS SCREENS ONLY.</option>
-	<option value="09">09 - CHANGED AWARD;CORRECTING TO MEET REGS/GUIDELINES</option>
-	<option value="10">10 - Aid adjusted due to withdrawal.</option>
-	<option value="11">11 - REVISED PER REQUEST BY STUDENT OR PARENT.</option>
-	<option value="12">12 - Per tax return information</option>
-	<option value="13">13 - Entry of document; no review done</option>
-	<option value="14">14 - Review of verification documents</option>
-	<option value="15">15 - Per student comment on E-award letter/email</option>
-	<option value="16">16 - Revised per payment schedule/guidelines</option>
-	<option value="18">18 - REFUND/REPAY REQUIREMENTS REVIEWED</option>
-	<option value="19">19 - TRANSFERRED WORK STUDY FUNDING PER STUDENT PLACEMENT</option>
-	<option value="20">20 - CORRECTED BOOKS/SUPPLIES/TRANSPORTATION TO MED/DENT AMOUNT</option>
-	<option value="21">21 - REVISED FOR NEW TUITION AMOUNT</option>
-	<option value="23">23 - REVISED PER CHANGES ON ISIR.                .</option>
-	<option value="24">24 - REVISION IN TYPE OF AWARD-TOTAL AID AMOUNT UNCHANGED</option>
-	<option value="25">25 - REVISED AWARD--ADDITIONAL FUNDS AVAILABLE</option>
-	<option value="26">26 - REVISED AWARD TO AMOUNT DISBURSED/PAID</option>
-	<option value="38">38 - WORK STUDY CANCELED FOR NON-UTILIZATION</option>
-	<option value="40">40 - PJ: Use proj inc, more accurately reflects circumstances</option>
-	<option value="41">41 - PJ: Budget adj reflects educ/non-discretionary costs</option>
-	<option value="45">45 - Aid at another school? Or NSLDS/school information.</option>
-	<option value="49">49 - Aid from tuition revenue not available to self-sustaining programs.</option>
-	<option value="51">51 - RF hold removed/withdrawal occured after 60% of p.period.</option>
-	<option value="52">52 - REVISED PER SCHOLARSHIP AWARD</option>
-	<option value="55">55 - REVISED PER NEW NEED</option>
-	<option value="61">61 - PER REGISTRAR'S DATA ON SRT611/SRT505</option>
-	<option value="67">67 - CHANGE/ADJUSTMENT MADE TO DETERMINE HPL ELIGIBILITY</option>
-	<option value="76">76 - Record has been sent to the record center</option>
-	<option value="86">86 - STUDENT IS OVERAWARDED; SUBJECT TO FURTHER REVIEW</option>
-	<option value="88">88 - No penalty imposed per UW cancellation of SPHSC 100, Aut 02</option>
-	<option value="94">94 - CANCELED - STUDENT IS NOT ENROLLED/WILL NOT ENROLL</option>
-	<option value="95">95 - CANCELED: SAP/PEP DROP</option>
-	<option value="96">96 - CANCELED: NO RESPONSE TO REQUEST FOR INFORMATION</option>
-	<option value="97">97 - AID CANCELED-NO AWARD LETTER RESP OR DECLINED AID</option>
+<div class="container">
+	<div class="row">
+        <div class="col">Revision Comment</div>
+    </div>
+	<div class="row">
+		<div class="col" id="cellHeaderRevisionComment">
+            <font id="fontHeaderRevisionComment">Enter custom comment<i>OR</i> select a prepared comment </font>
+		</div>
+		<div class="col">
+            <span class="labelErrorSmall" id="spanRevisionError"></span>
+            <select name="dropRevision" id="dropRevision" autocode="T2">
+            	<option value="00">Select a prepared revision comment</option>
+            	<option value="02">02 - NEW FAFSA DATA SUBMITTED TO OSFA BY STUDENT AND/OR PARENT</option>
+            	<option value="05">05 - PER ADMISSIONS REGISTRAR OR HOUSING INFORMATION</option>
+            	<option value="07">07 - DEPARTMENTAL OR SAO INFORMATION/ON SAS OUTSIDE AID LIST</option>
+            	<option value="08">08 - RECALCULATING INAS SCREENS ONLY.</option>
+            	<option value="09">09 - CHANGED AWARD;CORRECTING TO MEET REGS/GUIDELINES</option>
+            	<option value="10">10 - Aid adjusted due to withdrawal.</option>
+            	<option value="11">11 - REVISED PER REQUEST BY STUDENT OR PARENT.</option>
+            	<option value="12">12 - Per tax return information</option>
+            	<option value="13">13 - Entry of document; no review done</option>
+            	<option value="14">14 - Review of verification documents</option>
+            	<option value="15">15 - Per student comment on E-award letter/email</option>
+            	<option value="16">16 - Revised per payment schedule/guidelines</option>
+            	<option value="18">18 - REFUND/REPAY REQUIREMENTS REVIEWED</option>
+            	<option value="19">19 - TRANSFERRED WORK STUDY FUNDING PER STUDENT PLACEMENT</option>
+            	<option value="20">20 - CORRECTED BOOKS/SUPPLIES/TRANSPORTATION TO MED/DENT AMOUNT</option>
+            	<option value="21">21 - REVISED FOR NEW TUITION AMOUNT</option>
+            	<option value="23">23 - REVISED PER CHANGES ON ISIR.                .</option>
+            	<option value="24">24 - REVISION IN TYPE OF AWARD-TOTAL AID AMOUNT UNCHANGED</option>
+            	<option value="25">25 - REVISED AWARD--ADDITIONAL FUNDS AVAILABLE</option>
+            	<option value="26">26 - REVISED AWARD TO AMOUNT DISBURSED/PAID</option>
+            	<option value="38">38 - WORK STUDY CANCELED FOR NON-UTILIZATION</option>
+            	<option value="40">40 - PJ: Use proj inc, more accurately reflects circumstances</option>
+            	<option value="41">41 - PJ: Budget adj reflects educ/non-discretionary costs</option>
+            	<option value="45">45 - Aid at another school? Or NSLDS/school information.</option>
+            	<option value="49">49 - Aid from tuition revenue not available to self-sustaining programs.</option>
+            	<option value="51">51 - RF hold removed/withdrawal occured after 60% of p.period.</option>
+            	<option value="52">52 - REVISED PER SCHOLARSHIP AWARD</option>
+            	<option value="55">55 - REVISED PER NEW NEED</option>
+            	<option value="61">61 - PER REGISTRAR'S DATA ON SRT611/SRT505</option>
+            	<option value="67">67 - CHANGE/ADJUSTMENT MADE TO DETERMINE HPL ELIGIBILITY</option>
+            	<option value="76">76 - Record has been sent to the record center</option>
+            	<option value="86">86 - STUDENT IS OVERAWARDED; SUBJECT TO FURTHER REVIEW</option>
+            	<option value="88">88 - No penalty imposed per UW cancellation of SPHSC 100, Aut 02</option>
+            	<option value="94">94 - CANCELED - STUDENT IS NOT ENROLLED/WILL NOT ENROLL</option>
+            	<option value="95">95 - CANCELED: SAP/PEP DROP</option>
+            	<option value="96">96 - CANCELED: NO RESPONSE TO REQUEST FOR INFORMATION</option>
+            	<option value="97">97 - AID CANCELED-NO AWARD LETTER RESP OR DECLINED AID</option>
+            </select>
+			<input name="txtRevision" type="text" maxlength="70" id="txtRevision" class="inputText" size="70">
+        </div>
+    </div>
+</div>
 
-</select><br>
-										<input name="txtRevision" type="text" maxlength="70" id="txtRevision" class="inputText" size="70"></td>
-								</tr>
-							</tbody></table>
-							<input class="button submit noprint" id="bttnSubmit" style="MARGIN-TOP: 10px; WIDTH: 100px" type="submit" value="Submit">
-						</div>
+<input class="button submit noprint" id="bttnSubmit" style="MARGIN-TOP: 10px; WIDTH: 100px" type="submit" value="Submit">
+
+<!-- what are these, and why do they have a bunch of end table tags?
 						<div id="tabBudgetDiv" style="display: none;"><br><br><center><table><tbody><tr><th>loading...</th><th>&nbsp;</th><th><img src="./OSFA Award Updates_files/animated_activity.gif" alt=""></th></tr></tbody></table></center><br><br></div>
 						<div id="tabResourcesDiv" style="display: none;"><br><br><center><table><tbody><tr><th>loading...</th><th>&nbsp;</th><th><img src="./OSFA Award Updates_files/animated_activity.gif" alt=""></th></tr></tbody></table></center><br><br></div>
 						<div id="tabSNGDiv" style="display: none;"><br><br><center><table><tbody><tr><th>loading...</th><th>&nbsp;</th><th><img src="./OSFA Award Updates_files/animated_activity.gif" alt=""></th></tr></tbody></table></center><br><br></div>
@@ -1067,7 +1071,7 @@
 					</td>
 				</tr>
 			</tbody>
-		</table>
+		</table> -->
 
 		<input id="bttnSubmitFind" style="DISPLAY: none" onclick="submitFindClick()" type="submit" value="hidden find button" name="bttnSubmitFind" comment="cannot be first submit button in form">
 		<input id="bttnSubmitPackaging" style="DISPLAY: none" onclick="submitPackagingClick()" type="submit" value="hidden packaging button" name="bttnSubmitPackaging"> <input id="txtRepackageAwards" type="hidden" value="N" name="txtRepackageAwards">
@@ -1075,6 +1079,7 @@
 
 
 	</form>
+    <!-- this is the end of the form that contains the whole page. LM: is this correct, or should the /form just contain the stuff within the tab? --> 
 
 	<!-- timeout dialog window markup -->
 
