@@ -315,6 +315,7 @@
 
 <div class="table-responsive">
 
+<!-- new quarterly table, combined calculated amounts and awards -->
     <table style="border: 3px solid purple; padding: 10px;" class="table table-sm table-bordered">
         <thead>
             <tr>
@@ -485,7 +486,9 @@
             </tbody>
         </table>
     </div>
+<!-- end new quarterly table -->
 
+<!-- debts table -->
     <table class="table table-sm table-bordered" style="border: 3px solid blue; padding: 10px;">
        <thead>
            <tr>
@@ -508,7 +511,9 @@
             </tr>
         </tbody>
     </table>
+<!-- end debts table -->
 
+<!-- links table LM: TO DO-->
     <table>
             <tr>
 				<td class="cellHeader center" colspan="6">
@@ -523,6 +528,7 @@
 			</tr>
 		</tbody>
     </table>
+<!-- end links table -->
 
 <!-- error and success messages -->
 <div>
@@ -548,56 +554,66 @@
 </div>
 <!-- end error and success messages -->
 
-    <table class="borderThin" width="100%">
-    <tbody>
-    	<tr>
-    		<td class="cellHeader" width="13%">Application Status:</td>
-    		<td class="cellText" width="31%">
-                <select name="dropStatus" id="dropStatus" autocode="2" title="Special Key Functions:
-                   N - New award
-                   U - go to Update menu of first award">
-                	<option value="01">01 - NOT EVALUATED</option>
-                	<option value="02">02 - LATE FAF/UNEVAL</option>
-                	<option value="03">03 - NO NEED/UNEVAL</option>
-                	<option value="05">05 - FEE-BASED-UNEVAL</option>
-                	<option value="06">06 - INELIG FOR LOAN</option>
-                	<option value="07">07 - PENDING RE-APP</option>
-                	<option value="08">08 - MANUAL AWD ONLY</option>
-                	<option value="09">09 - UNEVAL/WASFA</option>
-                	<option value="22">22 - PRELIM: USING IM</option>
-                	<option value="23">23 - PRELIMINARY USING IM</option>
-                	<option value="24">24 - EVAL-SCHOL ONLY</option>
-                	<option value="25">25 - Prelim-Fee based</option>
-                	<option value="26">26 - PRELIM-NO LOANS</option>
-                	<option value="27">27 - PRELIM NO NEED</option>
-                	<option value="28">28 - LATE PRELIM AWD</option>
-                	<option value="29">29 - PRELIMINARY AWARD</option>
-                	<option value="30">30 - DENIED</option>
-                	<option selected="selected" value="40">40 - PRIORITY AWARD</option>
-                	<option value="41">41 - AWD-NEED NOT MET</option>
-                	<option value="42">42 - FINAL USING IM</option>
-                	<option value="43">43 - AWRD:UNMET REQD</option>
-                	<option value="45">45 - FEE BASED PRIORITY</option>
-                	<option value="46">46 - AWRD-NO LOANS</option>
-                	<option value="47">47 - KATRINA STD</option>
-                	<option value="49">49 - AWRD-DON'T REVISE</option>
-                	<option value="51">51 - AWARDED LATE AID ONLY</option>
-                	<option value="56">56 - LATE:NO LOANS</option>
-                	<option value="58">58 - DEP STD UNSUB ONLY</option>
-                	<option value="59">59 - NON-NEED AID ONLY</option>
-                	<option value="60">60 - CANCELED</option>
-                	<option value="78">78 - WASFA PRELIM AWD</option>
-                	<option value="79">79 - WASFA AWARD</option>
-                	<option value="86">86 - AT RECORDS CENTER</option>
-                </select>
+<!-- application stuff -- this should move to the top and not be a table? -->
+    <table class="table table-sm table-bordered" style="border: 3px solid orange;">
+        <thead>
+            <tr>
+                <th scope="col" colspan="2">Application stuff</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+                <th scope="row">Application Status:</th>
+                <td class="cellText">
+                    <select name="dropStatus" id="dropStatus" autocode="2" title="Special Key Functions:
+                       N - New award
+                       U - go to Update menu of first award">
+                    	<option value="01">01 - NOT EVALUATED</option>
+                    	<option value="02">02 - LATE FAF/UNEVAL</option>
+                    	<option value="03">03 - NO NEED/UNEVAL</option>
+                    	<option value="05">05 - FEE-BASED-UNEVAL</option>
+                    	<option value="06">06 - INELIG FOR LOAN</option>
+                    	<option value="07">07 - PENDING RE-APP</option>
+                    	<option value="08">08 - MANUAL AWD ONLY</option>
+                    	<option value="09">09 - UNEVAL/WASFA</option>
+                    	<option value="22">22 - PRELIM: USING IM</option>
+                    	<option value="23">23 - PRELIMINARY USING IM</option>
+                    	<option value="24">24 - EVAL-SCHOL ONLY</option>
+                    	<option value="25">25 - Prelim-Fee based</option>
+                    	<option value="26">26 - PRELIM-NO LOANS</option>
+                    	<option value="27">27 - PRELIM NO NEED</option>
+                    	<option value="28">28 - LATE PRELIM AWD</option>
+                    	<option value="29">29 - PRELIMINARY AWARD</option>
+                    	<option value="30">30 - DENIED</option>
+                    	<option selected="selected" value="40">40 - PRIORITY AWARD</option>
+                    	<option value="41">41 - AWD-NEED NOT MET</option>
+                    	<option value="42">42 - FINAL USING IM</option>
+                    	<option value="43">43 - AWRD:UNMET REQD</option>
+                    	<option value="45">45 - FEE BASED PRIORITY</option>
+                    	<option value="46">46 - AWRD-NO LOANS</option>
+                    	<option value="47">47 - KATRINA STD</option>
+                    	<option value="49">49 - AWRD-DON'T REVISE</option>
+                    	<option value="51">51 - AWARDED LATE AID ONLY</option>
+                    	<option value="56">56 - LATE:NO LOANS</option>
+                    	<option value="58">58 - DEP STD UNSUB ONLY</option>
+                    	<option value="59">59 - NON-NEED AID ONLY</option>
+                    	<option value="60">60 - CANCELED</option>
+                    	<option value="78">78 - WASFA PRELIM AWD</option>
+                    	<option value="79">79 - WASFA AWARD</option>
+                    	<option value="86">86 - AT RECORDS CENTER</option>
+                    </select>
             </td>
-    		<td class="cellHeader" width="11%">Package Formula:</td>
-    		<td class="cellText" width="28%">03 - Graduates With Need</td>
-    		<td class="cellHeader" width="10%">Package Date:</td>
-    		<td class="cellText" width="7%">-</td>
+        </tr>
+        <tr>
+            <th scope="row">Package Formula:</th>
+    		<td class="cellText">03 - Graduates With Need</td>
+        </tr>
+        <tr>
+    		<th scope="row">Package Date:</th>
+    		<td>-</td>
     	</tr>
     	<tr>
-    		<td class="cellHeader">Aid Holds:</td>
+    		<th scope="row">Aid Holds:</th>
     		<td class="cellText aidHoldUpdate" xxxid="cellAidHolds2" width="400" colspan="3" comment="width tag required">
     			<div>
     				<div>
@@ -674,158 +690,25 @@
     						<span id="spanHoldDate1" style="">11/20/19</span>
                        </div>
     				</div>
-    				<div>
-    					<div>
-    						<select name="dropHoldCode2" id="dropHoldCode2" onchange="dropDownListChange(this)" autocode="T2" style="">
-                            	<option value="00">No aid hold</option>
-                            	<option value="AC">AC - ACG eligibility change</option>
-                            	<option value="CB">CB - Temp - college bound under review</option>
-                            	<option value="C7">C7 - DOCUMENTATION/MEMO RESPONSE HOLD PLACED BY CAROL MOYE</option>
-                            	<option value="C8">C8 - OTHER CONDITION MUST BE MET - SEE FILE. (CAROL MOYE)</option>
-                            	<option value="FC">FC - Hold aid pending loan rate change process</option>
-                            	<option value="GC">GC - GPLUS Entrance Counseling</option>
-                            	<option value="H7">H7 - DOCUMENATION/MEMO RESPONSE HOLD PLACED BY DIANA HERRMANN</option>
-                            	<option value="H8">H8 - CONDITIONAL AWARD/OTHER HOLD TYPE PLACED BY DIANA HERRMANN</option>
-                            	<option value="IC">IC - Ineligible Course</option>
-                            	<option value="I7">I7 - DOCUMENTATION/MEMO RESPONSE HOLD PLACED BY MARIE HALLAM</option>
-                            	<option value="J7">J7 - DOCUMENATION/MEMO RESPONSE HOLD PLACED BY DIANE NOECKER</option>
-                            	<option value="J8">J8 - CONDTIONAL AWARD/OTHER HOLD TYPE PLACED BY DIANE NOECKER</option>
-                            	<option value="LP">LP - Loan problem</option>
-                            	<option value="LS">LS - Student will be dropped for low scholarship</option>
-                            	<option value="MO">MO - MTF</option>
-                            	<option value="M8">M8 - CONDITIONAL AWARD/OTHER HOLD TYPE PLACED BY CAROL MOYE</option>
-                            	<option value="OA">OA - Overawarded</option>
-                            	<option value="PE">PE - PEP HOLD CODE</option>
-                            	<option value="QA">QA - QA STUDY</option>
-                            	<option value="RF">RF - Owes Refund</option>
-                            	<option value="RL">RL - Pending request for loan reduction</option>
-                            	<option value="RZ">RZ - Residency change</option>
-                            	<option value="R1">R1 - See Rachel/systems counselor</option>
-                            	<option value="SC">SC - Stafford Entrance Counseling</option>
-                            	<option value="SM">SM - SMART grant eligibility change</option>
-                            	<option value="S1">S1 - See Shari King</option>
-                            	<option value="TC">TC - Teach Entrance Counseling</option>
-                            	<option value="VA">VA - hold for review of va resources</option>
-                            	<option value="V7">V7 - DOCUMENTATION/MEMO RESPONSE HOLD PLACED BY BOTHELL CAMPUS</option>
-                            	<option value="WD">WD - Assumed Withdrawn</option>
-                            	<option value="W1">W1 - Pending resource update review</option>
-                            	<option value="XB">XB - Summer B term only</option>
-                            	<option value="X1">X1 - HOLD AWARD LETTER FOR FURTHER CHECKING OR SUMMER AID REVISION</option>
-                            	<option value="YO">YO - Hold award letter/notification; allow aid to disburse</option>
-                            	<option value="YU">YU - HOLD LETTER/AID--PEP DROP</option>
-                            	<option value="Y0">Y0 - Hold award letter/notification; allow aid to disburse</option>
-                            	<option value="Z7">Z7 - HOLD FOR DOCUMENTATION/MEMO RESPONSE : TACOMA CAMPUS</option>
-                            	<option value="Z8">Z8 - CONDITIONAL AWARD/OTHER HOLD TYPE PLACED BY JAMES FLOWERS</option>
-                            	<option value="01">01 - OLD PEP DROP</option>
-                            	<option value="02">02 - DEFAULT/REPAYMENT</option>
-                            	<option value="04">04 - INELIGIBLE (F &amp; A)</option>
-                            	<option value="30">30 - MAY BE GRADUATING</option>
-                            	<option value="39">39 - Has edit 399 in following year</option>
-                            	<option value="45">45 - MISSING FINANCIAL AID TRANSCRIPTS</option>
-                            	<option value="55">55 - NEED STUDENT INCOME STATEMENT</option>
-                            	<option value="61">61 - PEP DROP FOR SUMMER QUARTER</option>
-                            	<option value="62">62 - PEP DROP FOR AUTUMN QUARTER</option>
-                            	<option value="63">63 - PEP DROP FOR AUTUMN QUARTER</option>
-                            	<option value="64">64 - PEP DROP FOR WINTER QUARTER</option>
-                            	<option value="65">65 - PEP DROP FOR SPRING QUARTER</option>
-                            	<option value="66">66 - PEP DROP-ANNUAL</option>
-                            	<option value="67">67 - PEP DROP-X DROP</option>
-                            	<option value="70">70 - AWARD LETTER NEEDS STUDENT'S SIGNATURE</option>
-                            	<option value="71">71 - NEED TO CHECK PRIOR QTR GRADES/NEW CLASS LEVEL</option>
-                            	<option value="74">74 - NEED INDEPENDENCE DOCUMENTATION</option>
-                            	<option value="77">77 - REQUESTED DOCUMENTATION/MEMO RESPONSE MISSING</option>
-                            	<option value="78">78 - OTHER CONDITION TO BE MET - SEE FILE</option>
-                            	<option value="79">79 - MUST SEE COUNSELOR</option>
-                            	<option value="82">82 - Preliminary HB/DACA Award</option>
-                            	<option value="93">93 - RELOADED INFORMATION CHANGES ELIGIBILITY</option>
-                            	<option value="97">97 - MISSING DOCUMENTATION FOR 1996-97</option>
-                            	<option value="98">98 - MISSING DOCUMENTATION FOR 1997-98</option>
-                            	<option selected="selected" value="99">99 - Pending additional information</option>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <select name="dropHoldCode1" id="dropHoldCode1" onchange="dropDownListChange(this)" autocode="T2" style="">
+                                <option value="00">No aid hold</option>
                             </select>
-    					</div>
-    					<div>
-    						<span id="spanHoldDateX2" class="delete" onclick="removeAidHold(2)" style="" title="Remove hold">X</span>
-    						<span id="spanHoldDate2" style="">11/27/19</span>
-    					</div>
-    				</div>
-    				<div>
-    					<div>
-    						<select name="dropHoldCode3" id="dropHoldCode3" onchange="dropDownListChange(this)" autocode="T2" style="">
-                            	<option value="00">No aid hold</option>
-                            	<option value="AC">AC - ACG eligibility change</option>
-                            	<option value="CB">CB - Temp - college bound under review</option>
-                            	<option value="C7">C7 - DOCUMENTATION/MEMO RESPONSE HOLD PLACED BY CAROL MOYE</option>
-                            	<option value="C8">C8 - OTHER CONDITION MUST BE MET - SEE FILE. (CAROL MOYE)</option>
-                            	<option value="FC">FC - Hold aid pending loan rate change process</option>
-                            	<option value="GC">GC - GPLUS Entrance Counseling</option>
-                            	<option value="H7">H7 - DOCUMENATION/MEMO RESPONSE HOLD PLACED BY DIANA HERRMANN</option>
-                            	<option value="H8">H8 - CONDITIONAL AWARD/OTHER HOLD TYPE PLACED BY DIANA HERRMANN</option>
-                            	<option value="IC">IC - Ineligible Course</option>
-                            	<option value="I7">I7 - DOCUMENTATION/MEMO RESPONSE HOLD PLACED BY MARIE HALLAM</option>
-                            	<option value="J7">J7 - DOCUMENATION/MEMO RESPONSE HOLD PLACED BY DIANE NOECKER</option>
-                            	<option value="J8">J8 - CONDTIONAL AWARD/OTHER HOLD TYPE PLACED BY DIANE NOECKER</option>
-                            	<option value="LP">LP - Loan problem</option>
-                            	<option value="LS">LS - Student will be dropped for low scholarship</option>
-                            	<option value="MO">MO - MTF</option>
-                            	<option value="M8">M8 - CONDITIONAL AWARD/OTHER HOLD TYPE PLACED BY CAROL MOYE</option>
-                            	<option value="OA">OA - Overawarded</option>
-                            	<option value="PE">PE - PEP HOLD CODE</option>
-                            	<option value="QA">QA - QA STUDY</option>
-                            	<option value="RF">RF - Owes Refund</option>
-                            	<option value="RL">RL - Pending request for loan reduction</option>
-                            	<option value="RZ">RZ - Residency change</option>
-                            	<option value="R1">R1 - See Rachel/systems counselor</option>
-                            	<option value="SC">SC - Stafford Entrance Counseling</option>
-                            	<option value="SM">SM - SMART grant eligibility change</option>
-                            	<option value="S1">S1 - See Shari King</option>
-                            	<option value="TC">TC - Teach Entrance Counseling</option>
-                            	<option value="VA">VA - hold for review of va resources</option>
-                            	<option value="V7">V7 - DOCUMENTATION/MEMO RESPONSE HOLD PLACED BY BOTHELL CAMPUS</option>
-                            	<option value="WD">WD - Assumed Withdrawn</option>
-                            	<option value="W1">W1 - Pending resource update review</option>
-                            	<option value="XB">XB - Summer B term only</option>
-                            	<option value="X1">X1 - HOLD AWARD LETTER FOR FURTHER CHECKING OR SUMMER AID REVISION</option>
-                            	<option value="YO">YO - Hold award letter/notification; allow aid to disburse</option>
-                            	<option value="YU">YU - HOLD LETTER/AID--PEP DROP</option>
-                            	<option value="Y0">Y0 - Hold award letter/notification; allow aid to disburse</option>
-                            	<option value="Z7">Z7 - HOLD FOR DOCUMENTATION/MEMO RESPONSE : TACOMA CAMPUS</option>
-                            	<option value="Z8">Z8 - CONDITIONAL AWARD/OTHER HOLD TYPE PLACED BY JAMES FLOWERS</option>
-                            	<option value="01">01 - OLD PEP DROP</option>
-                            	<option value="02">02 - DEFAULT/REPAYMENT</option>
-                            	<option value="04">04 - INELIGIBLE (F &amp; A)</option>
-                            	<option value="30">30 - MAY BE GRADUATING</option>
-                            	<option value="39">39 - Has edit 399 in following year</option>
-                            	<option value="45">45 - MISSING FINANCIAL AID TRANSCRIPTS</option>
-                            	<option value="55">55 - NEED STUDENT INCOME STATEMENT</option>
-                            	<option value="61">61 - PEP DROP FOR SUMMER QUARTER</option>
-                            	<option value="62">62 - PEP DROP FOR AUTUMN QUARTER</option>
-                            	<option value="63">63 - PEP DROP FOR AUTUMN QUARTER</option>
-                            	<option value="64">64 - PEP DROP FOR WINTER QUARTER</option>
-                            	<option value="65">65 - PEP DROP FOR SPRING QUARTER</option>
-                            	<option value="66">66 - PEP DROP-ANNUAL</option>
-                            	<option value="67">67 - PEP DROP-X DROP</option>
-                            	<option value="70">70 - AWARD LETTER NEEDS STUDENT'S SIGNATURE</option>
-                            	<option value="71">71 - NEED TO CHECK PRIOR QTR GRADES/NEW CLASS LEVEL</option>
-                            	<option value="74">74 - NEED INDEPENDENCE DOCUMENTATION</option>
-                            	<option value="77">77 - REQUESTED DOCUMENTATION/MEMO RESPONSE MISSING</option>
-                            	<option value="78">78 - OTHER CONDITION TO BE MET - SEE FILE</option>
-                            	<option value="79">79 - MUST SEE COUNSELOR</option>
-                            	<option selected="selected" value="82">82 - Preliminary HB/DACA Award</option>
-                            	<option value="93">93 - RELOADED INFORMATION CHANGES ELIGIBILITY</option>
-                            	<option value="97">97 - MISSING DOCUMENTATION FOR 1996-97</option>
-                            	<option value="98">98 - MISSING DOCUMENTATION FOR 1997-98</option>
-                            	<option value="99">99 - Pending additional information</option>
-                            </select>
-    					</div>
-    					<div>
-    						<span id="spanHoldDateX3" class="delete" onclick="removeAidHold(3)" style="" title="Remove hold">X</span>
-    						<span id="spanHoldDate3" style="">9/09/09</span>
-    					</div>
-    				</div>
+                        </div>
+                        <div>
+                            <span id="spanHoldDateX1" class="delete" onclick="removeAidHold(1)" style="" title="Remove hold">X</span>
+                            <span id="spanHoldDate1" style=""></span>
+                       </div>
+                    </div>
                 </div>
     		</td>
-    		<td class="cellHeader">Allow Packaging:</td>
-    		<td class="cellText">
+        </tr>
+        <tr>
+    		<th scope="row">Allow Packaging:</th>
+    		<td>
                 <select name="dropBatchPackage" id="dropBatchPackage" class="smaller" autocode="T1">
                        <option selected="selected" value="Y">YES</option>
                        <option value="N">NO</option>
@@ -833,15 +716,16 @@
             </td>
     	</tr>
     	<tr>
-    		<td class="cellHeader">Application Comment:</td>
-            <td class="cellText" colspan="5"><input name="txtApplicationComment" type="text" value="0" maxlength="70" id="txtApplicationComment" class="inputText" size="70"></td>
+    		<th scope="row">Application Comment:</th>
+            <td class="cellText" colspan="5">
+                <input name="txtApplicationComment" type="text" value="0" maxlength="70" id="txtApplicationComment" class="inputText" size="70">
+            </td>
     	</tr>
-    </tbody>
+        </tbody>
     </table>
+<!-- end application stuff -->
 
-					<div class="lineBreakSmallest"></div>
-
-					<table id="tblAwards_1" class="borderThinPlus" cellpadding="1" width="100%">
+	<table id="tblAwards_1" class="borderThinPlus" cellpadding="1" width="100%">
 	                    <tbody>
                             <tr>
                                 <td class="rowHeader" colspan="8">OSFA Awards &nbsp;
