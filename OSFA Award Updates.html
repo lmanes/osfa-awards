@@ -105,9 +105,9 @@
 <div class="container" style="border: 3px solid red; padding: 10px; background-color: #bdbdbd;">
 <!-- search fields and datestamp row -->
     <div class="row">
-        <div class="col"> <!-- LM: TO DO: position this nicely -->
+        <span class="col text-right"> <!-- LM: TO DO: position this nicely -->
             Page loaded at: <span id="spanDateTime">12/23/19 2:37 PM</span>
-        </div>
+        </span>
     </div>
     <form>
         <div class="form-row">
@@ -178,7 +178,8 @@
 </div>
 <!-- end student info -->
 
-<div class="container-sm">
+<!-- new metadata table -->
+<div class="container">
     <div class="row">
         <div class="col" style="background: pink;">
             <div class="row">
@@ -239,6 +240,10 @@
                             <dt>Marital status</dt>
                             <dd>Married<dt>
                         </div>
+                        <div class="col">
+                            <dt>Housing</dt>
+                            <dd>On campus<dt>
+                        </div>
                     </div>
                 </dl>
             </div>
@@ -274,28 +279,14 @@
                 </dl>
             </div>
         </div>
-
     </div>
 </div>
+<!-- end new metadata table -->
 
 <!-- metadata table -->
 <div id="tblMain" style="border: 3px solid green; padding: 10px;" class="container">
-    <div class="row">
-            <div id="mainCollapse" class="rowHeader pointer col" width="10%" onclick="toggleMainData(0)" title="Click to hide primary data table">
-                <img src="./OSFA Award Updates_files/collapse.gif" alt="" style="width:13px;height:13px">
-            </div>
-            <div class="cellHeader col">Campus:</div>
-            <div class="cellText col">Seattle</div>
-            <div class="cellHeader col">College:</div>
-            <div class="cellText col"></div>
-            <div class="cellHeader col">Major:</div>
-            <div class="cellText col"></div>
-            <div class="cellHeader col">Program Eligibility:</div>
-            <div class="cellText col"><span class="smaller2">0 - No&nbsp;restrictions</span></div>
-        </div>
         <div class="row">
-            <div class="cellHeader col">Class:</div>
-            <div class="cellText col"></div>
+
             <div class="cellHeader col">Wants WorkStudy:</div>
             <div class="cellText dropdown col">
                 <select name="dropWorkStudy" id="dropWorkStudy" autocode="T1">
@@ -303,18 +294,9 @@
                     <option value="Y">YES</option>
                 </select>
             </div>
-            <div class="cellHeader col">Marital Status:</div>
-            <div class="cellText col">Married</div>
-            <div class="cellHeader col">Military Dependent:</div>
-            <div class="cellText col">No</div>
         </div>
         <div class="row">
-            <div class="cellHeader col">Dependency:</div>
-            <div class="cellText col">Independent</div>
-            <div class="cellHeader col">Housing:</div>
-            <div class="cellText col">On-Campus</div>
-            <div class="cellHeader col">Family Size:</div>
-            <div class="cellText col">3, 1 in college</div>
+
             <div class="cellHeader col">Parent Contribution:</div>
             <div class="cellText col">0</div>
         </div>
@@ -328,8 +310,6 @@
             </div>
             <div class="cellHeader col">FAFSA Receipt Date:</div>
             <div class="cellText col">0/00/00</div>
-            <div class="cellHeader col">Residency:</div>
-            <div class="cellText col">No</div>
             <div class="cellHeader col">Budget Blocked:</div>
             <div class="cellText col">Summer, Autumn</div>
         </div>
@@ -341,16 +321,7 @@
             <div class="cellHeader col">Budget Date:</div>
             <div class="cellText col">9/19/19</div>
         </div>
-        <div class="row">
-            <div class="cellHeader col">Veteran Status:</div>
-            <div class="cellText col">
-                0 - NOT A VET
-            </div>
-            <div class="cellHeader col">Veteran Benefit:</div>
-            <div class="cellText col"></div>
-            <div class="cellHeader col">Vet Tuition Types:</div>
-            <div class="cellText col"></div>
-        </div>
+
     <!--<tfoot style="display:none"><!-- table footer includes the JS to expand/collapse?
         <tr id="mainExpand" class="pointer" onclick="toggleMainData(1)" title="Click to show primary data table">
             <div class="rowHeader" colspan="8">
@@ -363,8 +334,8 @@
     </tfoot>-->
 <!-- end metadata table -->
 
-<!-- application status table -->
-<div id="divAwardStatusInquiry" class="container" style="border: 3px solid orange; padding: 10px;"><!-- div id for collapsing awards status page? -->
+<!-- application status table
+<div id="divAwardStatusInquiry" class="container" style="border: 3px solid orange; padding: 10px;"><!-- div id for collapsing awards status page?
     <div class="row">
         <div class="cellHeader col">Applic. Status:</div>
         <div class="cellText col">40 - PRIORITY AWARD</div>
@@ -383,7 +354,7 @@
         </div>
     </div>
 </div>
-<!-- end application status table -->
+end application status table -->
 
 <!-- application stuff - moved up from the bottom, WIP -->
 <table class="table table-sm table-bordered" style="border: 3px solid blue;">
