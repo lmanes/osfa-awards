@@ -427,9 +427,9 @@ end application status table -->
         <div class="col">
             Aid Holds
         </div>
-        <div class="colcellText aidHoldUpdate" xxxid="cellAidHolds2" width="400" colspan="3" comment="width tag required">
-            <div>
-                <div>
+        <div class="colcellText aidHoldUpdate col" xxxid="cellAidHolds2" width="400" comment="width tag required">
+            <div class="row">
+                <div class="col">
                     <div>
                         <select name="dropHoldCode1" id="dropHoldCode1" onchange="dropDownListChange(this)" autocode="T2" style="">
                             <option value="00">No aid hold</option>
@@ -498,27 +498,31 @@ end application status table -->
                             <option value="99">99 - Pending additional information</option>
                         </select>
                     </div>
-                    <div>
-                        <span id="spanHoldDateX1" class="delete" onclick="removeAidHold(1)" style="" title="Remove hold">X</span>
-                        <span id="spanHoldDate1" style="">11/20/19</span>
-                   </div>
+                <div class="col">
+                    <span id="spanHoldDateX1" class="delete" onclick="removeAidHold(1)" style="" title="Remove hold">X</span>
+                </div>
+                <div class="col">
+                    <span id="spanHoldDate1" style="">11/20/19</span>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="row">
+                <div class="col">
                     <div>
                         <select name="dropHoldCode1" id="dropHoldCode1" onchange="dropDownListChange(this)" autocode="T2" style="">
                             <option value="00">No aid hold</option>
                         </select>
                     </div>
-                    <div>
-                        <span id="spanHoldDateX1" class="delete" onclick="removeAidHold(1)" style="" title="Remove hold">X</span>
-                        <span id="spanHoldDate1" style=""></span>
-                   </div>
                 </div>
-            </div>
+                <div class="col">
+                    <span id="spanHoldDateX1" class="delete" onclick="removeAidHold(1)" style="" title="Remove hold">X</span>
+                </div>
+                <div class="col">
+                    <span id="spanHoldDate1" style=""></span>
+                </div>
+           </div>
         </div>
     </div>
+</div>
     <div class="row">
         <div class="col">
             Allow Packaging
