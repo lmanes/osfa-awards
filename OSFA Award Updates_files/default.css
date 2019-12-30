@@ -5,7 +5,7 @@ html {
 	overflow-y: scroll !important;
 }
 body {
-   font-family: arial,helvetica,sans-serif; width: 90%;
+   font-family: arial,helvetica,sans-serif;
 	/* for Firefox; keep vertical scrollbar visible: */
 	/* [09-01-07] required by leightbox, apparently
 	overflow-y: scroll;
