@@ -735,11 +735,15 @@ end application status table -->
                     <td>$9,534</td>
                     <td>$38,171</td>
                 </tr>
-                <tr>
-                    <th scope="col" colspan=6 style="background: #e7e7e7;">
+                <tr style="background: #e7e7e7;">
+                    <th scope="col" colspan=7>
                         OSFA Awards
                         <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
                     </th>
+                    <td>
+                        <input id="bttnAwardPackaging" onclick="document.forms[0].bttnSubmitPackaging.click()" tabindex="-1" type="button" class="button" value="Generate package">
+    						<input name="txtHuskyPromiseFlag" type="hidden" id="txtHuskyPromiseFlag">
+                    </td>
                 </tr>
                 <tr id="rowAward_1_1">
                     <th scope="row" onclick="awardTableDetail(1)">
@@ -878,7 +882,7 @@ end application status table -->
                 </tr>
                 <!-- end data row that I don't understand -->
 
-                <tr colspan=6>
+                <tr colspan=8>
                     <td><a>Add another award ...</a></td>
                 </tr>
                 <tr id="rowAwardTotals_1">
@@ -888,8 +892,6 @@ end application status table -->
                     <td id="cellWinterTotal_1" class="cellText right borderNone">$3,333</td>
                     <td id="cellSpringTotal_1" class="cellText right borderNone">$3,333</td>
                     <td id="cellTotal_1" class="cellText right borderNone">$11,000</td>
-                    <td><input id="bttnAwardPackaging" onclick="document.forms[0].bttnSubmitPackaging.click()" tabindex="-1" type="button" class="button" value="Package Query">
-            										<input name="txtHuskyPromiseFlag" type="hidden" id="txtHuskyPromiseFlag"></td>
                     <td>
                         <input class="buttonJavascript" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards">
                         <input class="buttonJavascript" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards">
