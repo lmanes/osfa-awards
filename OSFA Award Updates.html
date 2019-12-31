@@ -331,7 +331,7 @@
 </div>
 <!-- end new metadata table -->
 
-<!-- metadata table -->
+<!-- old metadata table TO DO -->
 <div id="tblMain" style="border: 3px solid green; padding: 10px;" class="container-fluid">
         <div class="row">
 
@@ -360,6 +360,8 @@
             <div class="cellText col">0/00/00</div>
 
         </div>
+    </div>
+</div>
 
 
     <!--<tfoot style="display:none"><!-- table footer includes the JS to expand/collapse?
@@ -374,7 +376,7 @@
     </tfoot>-->
 <!-- end metadata table -->
 
-<!-- application status table
+<!-- old application status table
 <div id="divAwardStatusInquiry" class="container" style="border: 3px solid orange; padding: 10px;"><!-- div id for collapsing awards status page?
     <div class="row">
         <div class="cellHeader col">Applic. Status:</div>
@@ -407,62 +409,93 @@ end application status table -->
     </div>
     <div class="row">
         <div class="col">
-            Application Status
+            <div class="row">
+                <div class="col">
+                    <label for="dropStatus">
+                        Application Status
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <select name="dropStatus" id="dropStatus" autocode="2" title="Special Key Functions:
+                       N - New award
+                       U - go to Update menu of first award">
+                        <option value="01">01 - NOT EVALUATED</option>
+                        <option value="02">02 - LATE FAF/UNEVAL</option>
+                        <option value="03">03 - NO NEED/UNEVAL</option>
+                        <option value="05">05 - FEE-BASED-UNEVAL</option>
+                        <option value="06">06 - INELIG FOR LOAN</option>
+                        <option value="07">07 - PENDING RE-APP</option>
+                        <option value="08">08 - MANUAL AWD ONLY</option>
+                        <option value="09">09 - UNEVAL/WASFA</option>
+                        <option value="22">22 - PRELIM: USING IM</option>
+                        <option value="23">23 - PRELIMINARY USING IM</option>
+                        <option value="24">24 - EVAL-SCHOL ONLY</option>
+                        <option value="25">25 - Prelim-Fee based</option>
+                        <option value="26">26 - PRELIM-NO LOANS</option>
+                        <option value="27">27 - PRELIM NO NEED</option>
+                        <option value="28">28 - LATE PRELIM AWD</option>
+                        <option value="29">29 - PRELIMINARY AWARD</option>
+                        <option value="30">30 - DENIED</option>
+                        <option selected="selected" value="40">40 - PRIORITY AWARD</option>
+                        <option value="41">41 - AWD-NEED NOT MET</option>
+                        <option value="42">42 - FINAL USING IM</option>
+                        <option value="43">43 - AWRD:UNMET REQD</option>
+                        <option value="45">45 - FEE BASED PRIORITY</option>
+                        <option value="46">46 - AWRD-NO LOANS</option>
+                        <option value="47">47 - KATRINA STD</option>
+                        <option value="49">49 - AWRD-DON'T REVISE</option>
+                        <option value="51">51 - AWARDED LATE AID ONLY</option>
+                        <option value="56">56 - LATE:NO LOANS</option>
+                        <option value="58">58 - DEP STD UNSUB ONLY</option>
+                        <option value="59">59 - NON-NEED AID ONLY</option>
+                        <option value="60">60 - CANCELED</option>
+                        <option value="78">78 - WASFA PRELIM AWD</option>
+                        <option value="79">79 - WASFA AWARD</option>
+                        <option value="86">86 - AT RECORDS CENTER</option>
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="col">
-            <select name="dropStatus" id="dropStatus" autocode="2" title="Special Key Functions:
-               N - New award
-               U - go to Update menu of first award">
-                <option value="01">01 - NOT EVALUATED</option>
-                <option value="02">02 - LATE FAF/UNEVAL</option>
-                <option value="03">03 - NO NEED/UNEVAL</option>
-                <option value="05">05 - FEE-BASED-UNEVAL</option>
-                <option value="06">06 - INELIG FOR LOAN</option>
-                <option value="07">07 - PENDING RE-APP</option>
-                <option value="08">08 - MANUAL AWD ONLY</option>
-                <option value="09">09 - UNEVAL/WASFA</option>
-                <option value="22">22 - PRELIM: USING IM</option>
-                <option value="23">23 - PRELIMINARY USING IM</option>
-                <option value="24">24 - EVAL-SCHOL ONLY</option>
-                <option value="25">25 - Prelim-Fee based</option>
-                <option value="26">26 - PRELIM-NO LOANS</option>
-                <option value="27">27 - PRELIM NO NEED</option>
-                <option value="28">28 - LATE PRELIM AWD</option>
-                <option value="29">29 - PRELIMINARY AWARD</option>
-                <option value="30">30 - DENIED</option>
-                <option selected="selected" value="40">40 - PRIORITY AWARD</option>
-                <option value="41">41 - AWD-NEED NOT MET</option>
-                <option value="42">42 - FINAL USING IM</option>
-                <option value="43">43 - AWRD:UNMET REQD</option>
-                <option value="45">45 - FEE BASED PRIORITY</option>
-                <option value="46">46 - AWRD-NO LOANS</option>
-                <option value="47">47 - KATRINA STD</option>
-                <option value="49">49 - AWRD-DON'T REVISE</option>
-                <option value="51">51 - AWARDED LATE AID ONLY</option>
-                <option value="56">56 - LATE:NO LOANS</option>
-                <option value="58">58 - DEP STD UNSUB ONLY</option>
-                <option value="59">59 - NON-NEED AID ONLY</option>
-                <option value="60">60 - CANCELED</option>
-                <option value="78">78 - WASFA PRELIM AWD</option>
-                <option value="79">79 - WASFA AWARD</option>
-                <option value="86">86 - AT RECORDS CENTER</option>
-            </select>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            Package Formula
+            <div class="row">
+                <div class="col">
+                    Package Formula
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    03 - Graduates With Need
+                </div>
+            </div>
         </div>
         <div class="col">
-            03 - Graduates With Need
+            <div class="row">
+                <div class="col">
+                    Package Date
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    -
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
         <div class="col">
-            Package Date
-        </div>
-        <div class="col">
-            -
+            <div class="row">
+                <div class="col">
+                    Allow Packaging
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <select name="dropBatchPackage" id="dropBatchPackage" class="smaller" autocode="T1">
+                           <option selected="selected" value="Y">YES</option>
+                           <option value="N">NO</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -565,17 +598,7 @@ end application status table -->
         </div>
     </div>
 </div>
-    <div class="row">
-        <div class="col">
-            Allow Packaging
-        </div>
-        <div class="col">
-            <select name="dropBatchPackage" id="dropBatchPackage" class="smaller" autocode="T1">
-                   <option selected="selected" value="Y">YES</option>
-                   <option value="N">NO</option>
-            </select>
-        </div>
-    </div>
+
     <div class="row">
         <div class="col">
             Application Comment
