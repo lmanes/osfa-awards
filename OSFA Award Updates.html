@@ -103,48 +103,57 @@
    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D7DE66C7">
 </div>
 
-<div class="container-fluid" style="border: 3px solid red; padding: 10px; background-color: #bdbdbd;">
+<div class="container-fluid m-0 px-2 py-1" style="background-color: #bdbdbd;">
 <!-- search fields and datestamp row -->
-    <div class="row">
-        <span class="col text-right"> <!-- LM: TO DO: position this nicely -->
-            Page loaded at: <span id="spanDateTime">12/23/19 2:37 PM</span>
-        </span>
-    </div>
     <form>
         <div class="form-row">
-            <div class="col-2">
-                <label for="txtFindStudentKey">
-                    Student Number / SSN
-                </label>
-                <input name="txtFindStudentKey" type="text" maxlength="11" id="txtFindStudentKey" size="11" title="Special Key Functions:
-                   N - New award
-                   S - go to Application Status
-                   U - go to Update menu of first award" autocomplete="off" style="cursor: auto;" />
+            <div class="col-auto">
+                <div class="row">
+                    <div class="col-auto pr-0">
+                        <label for="txtFindStudentKey">
+                            <b>Student Number or SSN</b>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input name="txtFindStudentKey" type="text" maxlength="11" id="txtFindStudentKey" size="11" title="Special Key Functions:
+                        N - New award
+                        S - go to Application Status
+                        U - go to Update menu of first award" autocomplete="off" style="cursor: auto;" />
+                    </div>
+                </div>
             </div>
-            <div class="col-2">
-                <label for="txtFindSystemKey">
-                    System key
-                </label>
-                <input name="txtFindSystemKey" type="text" maxlength="9" id="txtFindSystemKey" size="11">
+            <div class="col-auto">
+                <div class="row">
+                    <div class="col pr-0">
+                        <label for="txtFindSystemKey">
+                            <b>System key</b>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input name="txtFindSystemKey" type="text" maxlength="9" id="txtFindSystemKey" size="11" />
+                    </div>
+                </div>
             </div>
-            <div class="col-2">
+            <div class="col-auto">
                 <button class="button noprint" onclick="javascript:document.forms[0].bttnSubmitFind.click()" tabindex="-1" type="button">Find / Refresh </button> <!-- LM: why does this have tabindex -1? -->
 
                 <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#find&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
             </div>
-            <div class="col">
-                <div align="center" class="inquiryMessage"></div> <!-- LM: what is this? does it belong inside this form or not?  -->
+            <div class="col ml-auto text-right">
+                <p class="m-0">Page loaded at: <span id="spanDateTime">12/23/19 2:37 PM</span></p>
             </div>
+            <div align="center" class="inquiryMessage"></div> <!-- LM: what is this? does it belong inside this form or not?  -->
+            <div><!-- LM: What is this? does it belong inside this form or not? -->
+                <div class="labelError"></div>
+            </div>
+
         </div>
     </form>
-    <div class="row"><!-- LM: What is this? does it belong inside this form or not? -->
-        <div class="labelError col"></div>
-    </div>
 </div>
  <!-- end search fields and datestamp row -->
 
 <!-- student info -->
-<div class="container-fluid" style="border: 3px solid purple; padding: 10px;">
+<div class="container-fluid m-0 p-3" style="">
     <div class="row">
         <div class="col">
             <input name="txtAwardYear" type="text" value="2020" maxlength="4" id="txtAwardYear" onchange="document.forms[0].bttnSubmitFind.click()">
@@ -180,14 +189,14 @@
 <!-- end student info -->
 
 <!-- new metadata table -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
+<div class="container-fluid student-metadata">
+    <div class="row mx-1">
+        <div class="col mr-1">
             <div class="row">
-                <div class="col" style="background: pink;">
+                <div class="col border border-dark rounded p-2 m-1">
                     <div class="row">
                         <div class="col">
-                            <h3>Student's University Status</h3>
+                            <h3 class="h5">Student's University Status</h3>
                         </div>
                     </div>
                     <dl>
@@ -223,10 +232,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col" style="background: grey;">
+                <div class="col border border-dark rounded p-2 m-1">
                     <div class="row">
                         <div class="col">
-                            <h3>Budget references</h3>
+                            <h3 class="h5">Budget references</h3>
                         </div>
                     </div>
                     <dl>
@@ -266,12 +275,12 @@
                 </div>
             </div>
         </div>
-        <div class="col" style="border: 2px solid orange;">
-            <div class="row" style="background: yellow;">
-                <div class="col">
+        <div class="col">
+            <div class="row">
+                <div class="col border border-dark rounded p-2 m-1">
                     <div class="row">
                         <div class="col">
-                            <h3>Dependency / Student Housing</h3>
+                            <h3 class="h5">Dependency / Student Housing</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -299,11 +308,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="background: purple">
-                <div class="col">
+            <div class="row">
+                <div class="col border border-dark rounded p-2 m-1">
                     <div class="row">
-                        <div class="col-12">
-                            <h3>Veteran / Military Status</h3>
+                        <div class="col">
+                            <h3 class="h5">Veteran / Military Status</h3>
                         </div>
                     </div>
                     <dl>
