@@ -218,17 +218,17 @@
 
 <!-- new metadata table -->
 <div class="container-fluid student-metadata">
-    <div class="row">
+    <div class="row"><!-- overrides button -->
         <div class="noprint col-12 text-right">
             <a id="ancTOD" href="javascript:toggleOverrideDetail()" class="override">
                 Show all overrides
             </a>
         </div>
-    </div>
+    </div><!-- end overrides button -->
     <div class="row mx-0">
         <div class="col mr-1">
-            <div class="row">
-                <div class="col border border-dark rounded p-2 m-1">
+            <div class="row"><!-- top row of metadata blocks -->
+                <div class="col border border-dark rounded p-2 m-1"><!-- student university status block -->
                     <div class="row">
                         <div class="col">
                             <h3 class="h5">Student's University Status</h3>
@@ -265,8 +265,38 @@
                         </div>
                     </dl>
                 </div>
-            </div>
-            <div class="row">
+                <div class="col border border-dark rounded p-2 m-1"><!-- dependency block -->
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="h5">Dependency / Student Housing</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <dl>
+                                <dt>Dependency</dt>
+                                <dd>Independent<dt>
+                        </div>
+                        <div class="col">
+                            <dt>Family size</dt>
+                            <dd>3, 1 in college<dt>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col">
+                                <dt>Marital status</dt>
+                                <dd>Married<dt>
+                            </div>
+                            <div class="col">
+                                <dt>Housing</dt>
+                                <dd>On campus<dt>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            <!--</div><!-- end top row of blocks 
+            <div class="row"><!-- bottom row of blocks -->
                 <div class="col border border-dark rounded p-2 m-1">
                     <div class="row">
                         <div class="col">
@@ -308,42 +338,6 @@
                         </div>
                     </dl>
                 </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="row">
-                <div class="col border border-dark rounded p-2 m-1">
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="h5">Dependency / Student Housing</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <dl>
-                                <dt>Dependency</dt>
-                                <dd>Independent<dt>
-                        </div>
-                        <div class="col">
-                            <dt>Family size</dt>
-                            <dd>3, 1 in college<dt>
-                            </dl>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col">
-                                <dt>Marital status</dt>
-                                <dd>Married<dt>
-                            </div>
-                            <div class="col">
-                                <dt>Housing</dt>
-                                <dd>On campus<dt>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col border border-dark rounded p-2 m-1">
                     <div class="row">
                         <div class="col">
@@ -373,7 +367,8 @@
                         </div>
                     </dl>
                 </div>
-            </div>
+            </div><!-- end bottom row of blocks -->
+
         </div>
     </div>
 </div>
