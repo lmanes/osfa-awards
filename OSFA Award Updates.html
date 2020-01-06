@@ -1023,11 +1023,33 @@ end application status table -->
             </label>
         </div>
         <div class="col border border-dark">
-			<div><!-- options for award letter comments dropdown -->
-				<select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
-        			<option value="53">53 - SUBMIT REQUESTED INFORMATION WITHIN 14 DAYS TO AVOID AID CANCELLATION.</option>
-        		</select>
-			</div>
+			<div class="row border border-danger"><!-- options for award letter comments dropdown -->
+				<div class="col">
+                    <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
+                        <option value="53">53 - SUBMIT REQUESTED INFORMATION WITHIN 14 DAYS TO AVOID AID CANCELLATION.</option>
+                    </select>
+	            </div>
+                <div class="col">
+                    X
+                </div>
+            </div>
+            <div class="row border border-danger"><!-- options for award letter comments dropdown -->
+                <div class="col">
+                    <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
+                        <option value="30">
+                            30 - Work Study job info--http://www.washington.edu/students/osfa/ws1.html
+                        </option>
+	                </select>
+                </div>
+                <div class="col">
+                    X
+                </div>
+            </div>
+            <div class="row border border-primary pl-3">
+                <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
+                    <option selected="selected" value="00">Select another award letter comment</option>
+                </select>
+            </div>
 			<!-- LM: hiding this, not sure what it is
             <div>
 				<select name="dropAwardLetterComment2" id="dropAwardLetterComment2" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
@@ -1050,7 +1072,7 @@ end application status table -->
         </div>
     </div>
 	<div class="row border border-dark">
-		<div class="col border border-dark">
+		<div class="col-auto border border-dark">
             <label for="txtAwardComment">
                 <b>Award Letter Custom Comment</b>
             </label>
@@ -1060,7 +1082,7 @@ end application status table -->
         </div>
 	</div>
 	<div class="row border border-dark">
-		<div class="col border border-dark">Print Award Letter:</div>
+		<div class="col-auto border border-dark">Print Award Letter:</div>
 		<div class="col border border-dark">
             <font>YES</font>&nbsp;
 			Last Sent:
