@@ -1009,106 +1009,120 @@ end application status table -->
 <!-- end error and success messages -->
 
 <div class="container-fluid" style="border: 3px solid pink;">
-	<div class="row border border-dark">
-		<div class="col border border-dark" id="cellAwardLetterLabel">
-            <h3 class="h6">
-                Award Letter
-            </h3>
-        </div>
-    </div>
-	<div class="row border border-dark">
-		<div class="col-auto border border-dark">
-            <label for="dropAwardLetterComment1">
-                <b>Award Letter Comments</b>
-            </label>
-        </div>
-        <div class="col border border-dark">
-			<div class="row border border-danger"><!-- options for award letter comments dropdown -->
-				<div class="col">
-                    <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
-                        <option value="53">53 - SUBMIT REQUESTED INFORMATION WITHIN 14 DAYS TO AVOID AID CANCELLATION.</option>
-                    </select>
-	            </div>
-                <div class="col">
-                    X
+    <div class="row">
+        <div class="col">
+            <div class="row border border-dark">
+        		<div class="col border border-dark" id="cellAwardLetterLabel">
+                    <h3 class="h6">
+                        Award Letter
+                    </h3>
                 </div>
             </div>
-            <div class="row border border-danger"><!-- options for award letter comments dropdown -->
-                <div class="col">
-                    <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
-                        <option value="30">
-                            30 - Work Study job info--http://www.washington.edu/students/osfa/ws1.html
-                        </option>
-	                </select>
+        	<div class="row border border-dark">
+        		<div class="col-auto border border-dark">
+                    <label for="dropAwardLetterComment1">
+                        <b>Award Letter Comments</b>
+                    </label>
                 </div>
-                <div class="col">
-                    X
+                <div class="col border border-dark">
+        			<div class="row border border-danger"><!-- options for award letter comments dropdown -->
+        				<div class="col">
+                            <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
+                                <option value="53">53 - SUBMIT REQUESTED INFORMATION WITHIN 14 DAYS TO AVOID AID CANCELLATION.</option>
+                            </select>
+        	            </div>
+                        <div class="col">
+                            X
+                        </div>
+                    </div>
+                    <div class="row border border-danger"><!-- options for award letter comments dropdown -->
+                        <div class="col">
+                            <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
+                                <option value="30">
+                                    30 - Work Study job info--http://www.washington.edu/students/osfa/ws1.html
+                                </option>
+        	                </select>
+                        </div>
+                        <div class="col">
+                            X
+                        </div>
+                    </div>
+                    <div class="row border border-primary pl-3">
+                        <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
+                            <option selected="selected" value="00">Select another award letter comment</option>
+                        </select>
+                    </div>
+        			<!-- LM: hiding this, not sure what it is
+                    <div>
+        				<select name="dropAwardLetterComment2" id="dropAwardLetterComment2" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                        </select>
+        			</div>
+        			<div>
+        				<select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                        </select>
+        			</div>
+        			<div>
+        				<select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                        </select>
+        			</div>
+        			<div>
+            			<select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                        </select>
+        			</div>
+        			<div class="smallest"></div>
+        	         -->
                 </div>
             </div>
-            <div class="row border border-primary pl-3">
-                <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
-                    <option selected="selected" value="00">Select another award letter comment</option>
-                </select>
+        	<div class="row border border-dark">
+        		<div class="col-auto border border-dark">
+                    <label for="txtAwardComment">
+                        <b>Award Letter Custom Comment</b>
+                    </label>
+                </div>
+                <div class="col border border-dark">
+            		<input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60">
+                </div>
+        	</div>
+        	<div class="row border border-dark">
+        		<div class="col-auto border border-dark">Print Award Letter:</div>
+        		<div class="col border border-dark">
+                    <font>YES</font>&nbsp;
+        			Last Sent:
+        			12/02/19&nbsp;&nbsp;
+        			Set flag manually:<span id="radioPrintAwardLetter"><input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y"><label for="radioPrintAwardLetter_0">Yes&nbsp;</label><input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N"><label for="radioPrintAwardLetter_1">No</label></span>
+                </div>
+        	</div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <h3 class="h6">
+                        Revision Comment
+                    </h3>
+                </div>
             </div>
-			<!-- LM: hiding this, not sure what it is
-            <div>
-				<select name="dropAwardLetterComment2" id="dropAwardLetterComment2" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                </select>
-			</div>
-			<div>
-				<select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                </select>
-			</div>
-			<div>
-				<select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                </select>
-			</div>
-			<div>
-    			<select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                </select>
-			</div>
-			<div class="smallest"></div>
-	         -->
+        	<div class="row">
+        		<div class="col-auto" id="cellHeaderRevisionComment">
+                    <font id="fontHeaderRevisionComment">Enter custom comment <i>OR</i> select a prepared comment </font>
+        		</div>
+        		<div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <span class="labelErrorSmall" id="spanRevisionError"></span>
+                            <select name="dropRevision" id="dropRevision" autocode="T2">
+                    	           <option value="00">Select a prepared revision comment</option>
+                    	           <option value="49">49 - Aid from tuition revenue not available to self-sustaining programs.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input name="txtRevision" type="text" maxlength="70" id="txtRevision" class="inputText" size="70">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-	<div class="row border border-dark">
-		<div class="col-auto border border-dark">
-            <label for="txtAwardComment">
-                <b>Award Letter Custom Comment</b>
-            </label>
-        </div>
-        <div class="col border border-dark">
-    		<input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60">
-        </div>
-	</div>
-	<div class="row border border-dark">
-		<div class="col-auto border border-dark">Print Award Letter:</div>
-		<div class="col border border-dark">
-            <font>YES</font>&nbsp;
-			Last Sent:
-			12/02/19&nbsp;&nbsp;
-			Set flag manually:<span id="radioPrintAwardLetter"><input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y"><label for="radioPrintAwardLetter_0">Yes&nbsp;</label><input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N"><label for="radioPrintAwardLetter_1">No</label></span>
-        </div>
-	</div>
-</div>
-
-<div class="container-fluid">
-	<div class="row">
-        <div class="col">Revision Comment</div>
-    </div>
-	<div class="row">
-		<div class="col-auto" id="cellHeaderRevisionComment">
-            <font id="fontHeaderRevisionComment">Enter custom comment<i>OR</i> select a prepared comment </font>
-		</div>
-		<div class="col">
-            <span class="labelErrorSmall" id="spanRevisionError"></span>
-            <select name="dropRevision" id="dropRevision" autocode="T2">
-            	<option value="00">Select a prepared revision comment</option>
-            	<option value="49">49 - Aid from tuition revenue not available to self-sustaining programs.</option>
-            </select>
-			<input name="txtRevision" type="text" maxlength="70" id="txtRevision" class="inputText" size="70">
-        </div>
-    </div>
 </div>
 
 <input class="button submit noprint" id="bttnSubmit" style="MARGIN-TOP: 10px; WIDTH: 100px" type="submit" value="Submit">
