@@ -743,308 +743,265 @@
 							</table>
 							<div class="lineBreakSmallest"></div>
 							<table id="tblAwards_1" class="borderThinPlus" cellpadding="1" width="100%">
-	<tbody><tr>
-		<td class="rowHeader" colspan="8">OSFA Awards &nbsp;<img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0"></td>
-	</tr>
-	<tr>
-		<td class="cellHeader center" width="10%">
-										<table cellspacing="0" cellpadding="0" width="100%">
-											<tbody><tr>
-												<td width="49%" align="left"><img class="noprint" id="imageCheckboxSelect" title="Tab stops on Action menu" alt="Tab stops on Action menu" onclick="awardTableSelectNoTab()" height="11" src="./OSFA Award Updates_files/checkboxOn.gif" width="11" vspace="3"></td>
-												<td>Action</td>
-												<td width="49%"></td>
-											</tr>
-										</tbody></table>
-									</td>
-		<td class="cellHeader center pointer" width="15%" onclick="awardTableDetailAll()">Fund&nbsp; <img src="./OSFA Award Updates_files/expand.gif" class="imageLink" id="imageAwardDetail" height="13" align="absBottom" vspace="1" width="13" title="Click to show/hide award detail"></td>
-		<td class="cellHeader center" width="10%">
-										<table cellspacing="0" cellpadding="0" width="100%" border="0">
-											<tbody><tr>
-												<td width="49%" align="left"><img class="noprint" id="imageCheckbox1" title="Initial cursor position on updates" onclick="setTabQuarterDefault(1)" height="11" src="./OSFA Award Updates_files/checkboxOff.gif" width="11" vspace="3"></td>
-												<td>Summer</td>
-												<td width="49%"></td>
-											</tr>
-										</tbody></table>
-									</td>
-		<td class="cellHeader center" width="10%">
-										<table cellspacing="0" cellpadding="0" width="100%" border="0">
-											<tbody><tr>
-												<td width="49%" align="left"><img class="noprint" id="imageCheckbox2" title="Initial cursor position on updates" alt="Initial cursor position on updates" onclick="setTabQuarterDefault(2)" height="11" src="./OSFA Award Updates_files/checkboxOn.gif" width="11" vspace="3"></td>
-												<td>Autumn</td>
-												<td width="49%"></td>
-											</tr>
-										</tbody></table>
-									</td>
-		<td class="cellHeader center" width="10%">
-										<table cellspacing="0" cellpadding="0" width="100%" border="0">
-											<tbody><tr>
-												<td width="49%" align="left"><img class="noprint" id="imageCheckbox3" title="Initial cursor position on updates" alt="Initial cursor position on updates" onclick="setTabQuarterDefault(3)" height="11" src="./OSFA Award Updates_files/checkboxOff.gif" width="11" vspace="3"></td>
-												<td>Winter</td>
-												<td width="49%"></td>
-											</tr>
-										</tbody></table>
-									</td>
-		<td class="cellHeader center" width="10%">
-										<table cellspacing="0" cellpadding="0" width="100%" border="0">
-											<tbody><tr>
-												<td width="49%" align="left"><img class="noprint" id="imageCheckbox4" title="Initial cursor position on updates" alt="Initial cursor position on updates" onclick="setTabQuarterDefault(4)" height="11" src="./OSFA Award Updates_files/checkboxOff.gif" width="11" vspace="3"></td>
-												<td>Spring</td>
-												<td width="49%"></td>
-											</tr>
-										</tbody></table>
-									</td>
-		<td class="cellHeader center" width="10%">Total</td>
-		<td class="cellHeader center" width="15%">Updated</td>
-	</tr>
-	<tr id="rowAward_1_1">
-		<td class="cellText borderTopOnly" align="center"><select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="A">Accept</option><option value="C">Cancel</option><option value="R">Reject</option><option value="U">Undo</option></select></td>
-		<td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(1)"><input type="hidden" name="txtAwardNumber_1" value="1"><input type="hidden" name="txtAwardText_1_1" value="703554">703554 - UNSUBS</td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="1667" orig_value="1667" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="1667" orig_value="1667" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSpring_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="1666" orig_value="1666" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right"><span id="cellAwardTotal_1_1" name="cellAwardTotal_1">5,000</span></td>
-		<td class="cellText borderTopOnly" align="center">12/26/19 RP</td>
-	</tr>
-	<tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="display:none" onclick="awardTableDetail(1)">
-		<td class="cellText right borderNone smaller3"></td>
-		<td class="cellText right borderNone smaller3">OFFERED:</td>
-		<td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;1667</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;1667</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;1666</td>
-		<td class="cellText right borderNone smaller3"></td>
-		<td class="cellText right borderNone smaller3"></td>
-	</tr>
-	<tr id="rowAward_1_2">
-		<td class="cellText borderTopOnly" align="center"><select id="editSelect_1_2" name="editSelect_1_2" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="D">Delete</option><option value="U">Undo</option></select></td>
-		<td class="cellText borderTopOnly" align="center"><input type="hidden" name="txtAwardNumber_1" value="2"><input type="hidden" name="txtAwardText_1_2" value="691410">691410 - SWS-S&nbsp;</td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="C" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">CANCELED</font></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSpring_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"></td>
-		<td class="cellText borderTopOnly" align="right"><span id="cellAwardTotal_1_2" name="cellAwardTotal_1">0</span></td>
-		<td class="cellText borderTopOnly" align="center">12/18/19 SW</td>
-	</tr>
-	<tr id="rowAward_1_3">
-		<td class="cellText borderTopOnly" align="center"><select id="editSelect_1_3" name="editSelect_1_3" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="A">Accept</option><option value="C">Cancel</option><option value="R">Reject</option><option value="U">Undo</option></select></td>
-		<td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(3)"><input type="hidden" name="txtAwardNumber_1" value="3"><input type="hidden" name="txtAwardText_1_3" value="691100">691100 - FWSP&nbsp;&nbsp;</td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="334" orig_value="334" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="333" orig_value="333" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSpring_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="333" orig_value="333" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right"><span id="cellAwardTotal_1_3" name="cellAwardTotal_1">1,000</span></td>
-		<td class="cellText borderTopOnly" align="center">12/26/19 RP</td>
-	</tr>
-	<tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail3" id="rowAwardDetail3" style="display:none" onclick="awardTableDetail(3)">
-		<td class="cellText right borderNone smaller3"></td>
-		<td class="cellText right borderNone smaller3">OFFERED:</td>
-		<td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;&nbsp;334</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;&nbsp;333</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;&nbsp;333</td>
-		<td class="cellText right borderNone smaller3"></td>
-		<td class="cellText right borderNone smaller3"></td>
-	</tr>
-	<tr id="rowAward_1_4">
-		<td class="cellText borderTopOnly" align="center"><select id="editSelect_1_4" name="editSelect_1_4" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="A">Accept</option><option value="C">Cancel</option><option value="R">Reject</option><option value="U">Undo</option></select></td>
-		<td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(4)"><input type="hidden" name="txtAwardNumber_1" value="4"><input type="hidden" name="txtAwardText_1_4" value="828072">828072 - UUG&nbsp;&nbsp;&nbsp;</td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="500" orig_value="500" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSpring_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="500" orig_value="500" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)" title="Special Key Functions:
-   A - Accept
-   C - Cancel
-   D - Detail toggle
-   N - New award
-   R - Reject
-   G,Q,Y - Key modifiers
-   T - divide Total into budget quarters
-   U - Undo changes"><br><font class="smaller2">OFFERED</font></td>
-		<td class="cellText borderTopOnly" align="right"><span id="cellAwardTotal_1_4" name="cellAwardTotal_1">1,000</span></td>
-		<td class="cellText borderTopOnly" align="center">12/26/19 RP</td>
-	</tr>
-	<tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail4" id="rowAwardDetail4" style="display:none" onclick="awardTableDetail(4)">
-		<td class="cellText right borderNone smaller3"></td>
-		<td class="cellText right borderNone smaller3">OFFERED:</td>
-		<td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-		<td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;&nbsp;500</td>
-		<td class="cellText right borderNone smaller3">12/26/19&nbsp;&nbsp;&nbsp;&nbsp;500</td>
-		<td class="cellText right borderNone smaller3"></td>
-		<td class="cellText right borderNone smaller3"></td>
-	</tr>
-	<tr id="rowAwardTotals_1">
-		<td class="cellHeader center" colspan="2" rowspan="5">
-										<table cellspacing="0" cellpadding="0" border="0" width="100%">
-											<tbody><tr>
-												<td align="right">
-													<p class="spacer">
-													<input class="buttonJavascript" id="bttnNewAward_1" onclick="awardTableRowAdd(this)" tabindex="-1" type="button" value="New Award">
-													</p>
-													<p class="spacer">
-													<input class="buttonJavascript" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards">
-													</p>
-												</td>
-												<td align="left">
-													<p class="spacer">
-													<input class="buttonJavascript" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards">
-													</p>
-													<p class="spacer">
-													<input class="buttonJavascript" id="bttnRejectAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;R&#39;)" tabindex="-1" type="button" value="Reject All Awards">
-													</p>
-												</td>
-											</tr>
-										</tbody></table>
-									</td>
-		<td id="cellSummerPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-		<td id="cellAutumnPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-		<td id="cellWinterPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-		<td id="cellSpringPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-		<td id="cellTotalPackageOffer_1" class="cellTextPackageAward" align="right"></td>
-		<td id="cellAwardPackagingButton" class="cellHeader center" rowspan="5"><input id="bttnAwardPackaging" onclick="document.forms[0].bttnSubmitPackaging.click()" tabindex="-1" type="button" class="button" value="Package Query">
-										<input name="txtHuskyPromiseFlag" type="hidden" id="txtHuskyPromiseFlag">
-									</td>
-	</tr>
-	<tr>
-		<td id="cellSummerTotal_1" class="cellText right borderNone">$0</td>
-		<td id="cellAutumnTotal_1" class="cellText right borderNone">$2,001</td>
-		<td id="cellWinterTotal_1" class="cellText right borderNone">$2,500</td>
-		<td id="cellSpringTotal_1" class="cellText right borderNone">$2,499</td>
-		<td id="cellTotal_1" class="cellText right borderNone">$7,000</td>
-	</tr>
-	<tr>
-		<td class="cellHeader" colspan="4">Remaining Need:</td>
-		<td class="cellText right borderSidesNone">$31,171</td>
-	</tr>
-	<tr>
-		<td class="cellHeader" colspan="4">Remaining Equity:</td>
-		<td class="cellText right borderSidesNone">$22,272</td>
-	</tr>
-	<tr>
-		<td class="cellHeader" colspan="4">Remaining Eligibility:</td>
-		<td class="cellText right borderSidesNone">$31,171</td>
-	</tr>
+	<tbody>
+        <tr>
+
+            <div class="table-responsive">
+
+                <!-- new quarterly table, combined calculated amounts and awards -->
+                <table style="border: 3px solid purple; padding: 10px;" class="table table-sm table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Summer</th>
+                            <th scope="col">Autumn</th>
+                            <th scope="col">Winter</th>
+                            <th scope="col">Spring</th>
+                            <th scope="col">Annual / Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            			<!-- <td class="pageActive"> LM: removing this for now, seems to be related to tab behavior -->
+
+                            <!-- LM: unknown div? -->
+            				<div class="labelError small" style="margin:4px 0"></div>
+                            <!-- LM: end unknown div -->
+                        <!-- the expand/collapse JS hangs on this tr -->
+                        <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
+                            <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
+                                <span class="spanToggleImage">
+                                    <img class="imageLink" id="imageCalculatedAmounts" src="./OSFA Award Updates_files/collapse.gif" alt="">
+                                </span>
+                                <span>Calculated Amounts</span>
+                            </td>
+                        </tr>
+                        <!-- end expand/collapse tr -->
+
+                        <!-- <div id="tabWorksheetDiv" style=""> LM: removing this for now -->
+                		<div id="divCalculatedAmounts"> <!-- LM: definitely almost certainly removed things that made the numbers go into the right cells -->
+                            <tr>
+                                <th scope="row">Student enrollment status</th>
+                                <td>L</td>
+                                <td>L</td>
+                                <td>L</td>
+                                <td>L</td>
+                                <td><!-- LM: do something to indicate that this cell is not relevant --> </td>
+                            </tr>
+                            <tr>
+                                <th scope="col" colspan=6 style="background: #e7e7e7;">Calculated amounts for reference</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total budget</th>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$38,171</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">INAS EFC (tooltip)</th>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Outside resources (tooltip)</th>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total equity</th>
+                                <td>$5,818</td>
+                                <td>$5,818</td>
+                                <td>$5,818</td>
+                                <td>$5,818</td>
+                                <td>$23,272</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total need</th>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$38,171</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total eligibility</th>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$9,534</td>
+                                <td>$38,171</td>
+                            </tr>
+                            <tr style="background: #e7e7e7;">
+                                <th scope="col" colspan=7>
+                                    OSFA Awards
+                                    <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
+                                </th>
+                                <td>
+                                    <input id="bttnAwardPackaging" onclick="document.forms[0].bttnSubmitPackaging.click()" tabindex="-1" type="button" class="button" value="Generate package">
+                						<input name="txtHuskyPromiseFlag" type="hidden" id="txtHuskyPromiseFlag">
+                                </td>
+                            </tr>
+                            <tr id="rowAward_1_1">
+                                <th scope="row" onclick="awardTableDetail(1)">
+                                    <input type="hidden" name="txtAwardNumber_1" value="1">
+                                    <input type="hidden" name="txtAwardText_1_1" value="703554">703554 - UNSUBS
+                                </th>
+                                <td>
+                                    <input type="text" id="txtSummer_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)">
+                                </td>
+                                <td>
+                                    <input type="text" id="txtAutumn_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="3334" orig_value="3334" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)">
+                                       <br><font class="smaller2">OFFERED</font>
+                                </td>
+                                <td>
+                                    <input type="text" id="txtWinter_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="3333" orig_value="3333" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">OFFERED</font
+                                </td>
+                                <td>
+                                    <input type="text" id="txtSpring_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="3333" orig_value="3333" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">OFFERED</font>
+                                </td>
+                                <td>
+                                    <span id="cellAwardTotal_1_1" name="cellAwardTotal_1">10,000</span>
+                                </td>
+                                <td class="cellText borderTopOnly" align="center">11/27/19 RP</td>
+
+                                <td class="cellText borderTopOnly" align="center">
+                                   <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                       <option value=""></option>
+                                       <option value="A">Accept</option>
+                                       <option value="C">Cancel</option>
+                                       <option value="R">Reject</option>
+                                       <option value="U">Undo</option>
+                                   </select>
+                                </td>
+                            </tr>
+                            <!-- LM: still need to understand this data row -->
+                            <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="display:none" onclick="awardTableDetail(1)">
+                        		<td class="cellText right borderNone smaller3"></td>
+                        		<td class="cellText right borderNone smaller3">OFFERED:</td>
+                        		<td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
+                        		<td class="cellText right borderNone smaller3">11/27/19&nbsp;&nbsp;&nbsp;3334</td>
+                        		<td class="cellText right borderNone smaller3">11/27/19&nbsp;&nbsp;&nbsp;3333</td>
+                        		<td class="cellText right borderNone smaller3">11/27/19&nbsp;&nbsp;&nbsp;3333</td>
+                        		<td class="cellText right borderNone smaller3"></td>
+                        		<td class="cellText right borderNone smaller3"></td>
+                        	</tr>
+                            <!-- end data row that I don't understand -->
+
+                            <tr id="rowAward_1_2">
+                                <th scope="row" onclick="awardTableDetail(2)">
+                                    <input type="hidden" name="txtAwardNumber_1" value="2"><input type="hidden" name="txtAwardText_1_2" value="691410">691410 - SWS-S
+                                </th>
+                                <td><input type="text" id="txtSummer_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="1000" orig_value="1000" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">OFFERED</font></td>
+                                <td><input type="text" id="txtAutumn_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"></td>
+                                <td><input type="text" id="txtWinter_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"></td>
+                                <td><input type="text" id="txtSpring_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"></td>
+                                <td>
+                                    <span id="cellAwardTotal_1_2" name="cellAwardTotal_1">1,000</span>
+                                </td>
+                                <td class="cellText borderTopOnly" align="center">12/18/19 LM</td>
+                                <td class="cellText borderTopOnly" align="center">
+                                    <select id="editSelect_1_2" name="editSelect_1_2" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="A">Accept</option><option value="C">Cancel</option><option value="R">Reject</option><option value="U">Undo</option></select></td>
+                            </tr>
+                            <!-- another example of data row I don't understand -->
+                            <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail2" id="rowAwardDetail2" style="display:none" onclick="awardTableDetail(2)">
+                                <td class="cellText right borderNone smaller3"></td>
+                                <td class="cellText right borderNone smaller3">OFFERED:</td>
+                                <td class="cellText right borderNone smaller3">12/18/19&nbsp;&nbsp;&nbsp;1000</td>
+                                <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
+                                <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
+                                <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
+                                <td class="cellText right borderNone smaller3"></td>
+                                <td class="cellText right borderNone smaller3"></td>
+                            </tr>
+                            <!-- end data row that I don't understand -->
+
+                            <tr colspan=8>
+                                <td><a>Add another award ...</a></td>
+                            </tr>
+                            <tr id="rowAwardTotals_1">
+                                <th scope="row">Totals</th>
+                                <td id="cellSummerTotal_1" class="cellText right borderNone">$1,000</td>
+                                <td id="cellAutumnTotal_1" class="cellText right borderNone">$3,334</td>
+                                <td id="cellWinterTotal_1" class="cellText right borderNone">$3,333</td>
+                                <td id="cellSpringTotal_1" class="cellText right borderNone">$3,333</td>
+                                <td id="cellTotal_1" class="cellText right borderNone">$11,000</td>
+                                <td>
+                                    <input class="buttonJavascript" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards"><br />
+                                    <input class="buttonJavascript" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards"><br />
+                                    <input class="buttonJavascript" id="bttnRejectAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;R&#39;)" tabindex="-1" type="button" value="Reject All Awards"><br />
+                                </td>
+                            </tr>
+                            <!-- LM: what is this row? -->
+                            <tr>
+                                <td id="cellSummerPackageTotal_1" class="cellTextPackageAward" align="right"></td>
+                                <td id="cellAutumnPackageTotal_1" class="cellTextPackageAward" align="right"></td>
+                                <td id="cellWinterPackageTotal_1" class="cellTextPackageAward" align="right"></td>
+                                <td id="cellSpringPackageTotal_1" class="cellTextPackageAward" align="right"></td>
+                                <td id="cellTotalPackageOffer_1" class="cellTextPackageAward" align="right"></td>
+                            </tr>
+                            <!-- end unknown row -->
+                            <tr>
+                                <th scope="row">Husky Promise</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">College Bound</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Remaining equity</th>
+                                <td>$5,818</td>
+                                <td>$5,818</td>
+                                <td>$5,818</td>
+                                <td>$5,818</td>
+                                <td>$23,272</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Remaining need</th>
+                                <td>$6,793</td>
+                                <td>$6,793</td>
+                                <td>$6,793</td>
+                                <td>$6,793</td>
+                                <td>$27,171</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Remaining eligibility</th>
+                                <td>$6,793</td>
+                                <td>$6,793</td>
+                                <td>$6,793</td>
+                                <td>$6,793</td>
+                                <td>$27,171</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total offer</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end new quarterly table -->
+
+
+       </tr>
 	<tr>
 		<td id="cellAwardLetterLabel" class="rowHeader" colspan="8">Award
 										Letter</td>
