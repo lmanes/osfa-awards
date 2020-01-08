@@ -178,7 +178,7 @@
 <!-- end header (grey bg) -->
 
 <!-- main table -->
-	<table cellspacing="0" cellpadding="0" width="100%" border="1">
+	<table cellspacing="0" cellpadding="0" width="95%" border="1" class="table p-3">
 		<tbody>
 			<tr>
 				<td class="pageActive">
@@ -535,7 +535,7 @@
                                     <tr>
                                         <div class="table-responsive"><!-- bootstrap container div for table -->
                                             <!-- new quarterly table, combined calculated amounts and awards -->
-                                            <table style="border: 3px solid purple; padding: 10px;" class="table table-sm table-bordered">
+                                            <table class="table table-sm table-bordered bg-light w-auto">
                                                 <thead>
                                                     <tr>
                                                         <th scope="col"></th>
@@ -708,8 +708,8 @@
                                                         </tr>
                                                         <!-- end data row that I don't understand -->
 
-                                                        <tr colspan=8>
-                                                            <td><a>Add another award ...</a></td>
+                                                        <tr>
+                                                            <td colspan=8><a>Add another award ...</a></td>
                                                         </tr>
                                                         <tr id="rowAwardTotals_1">
                                                             <th scope="row">Totals</th>
@@ -718,11 +718,13 @@
                                                             <td id="cellWinterTotal_1" class="cellText right borderNone">$3,333</td>
                                                             <td id="cellSpringTotal_1" class="cellText right borderNone">$3,333</td>
                                                             <td id="cellTotal_1" class="cellText right borderNone">$11,000</td>
-                                                            <td>
-                                                                <input class="buttonJavascript" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards"><br />
-                                                                <input class="buttonJavascript" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards"><br />
-                                                                <input class="buttonJavascript" id="bttnRejectAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;R&#39;)" tabindex="-1" type="button" value="Reject All Awards"><br />
-                                                            </td>
+                                                        </tr>
+                                                        <tr style="background: #e7e7e7;">
+                                                            <th scope="col" colspan=8>
+                                                                <input class="buttonJavascript p-1 m-2 w-auto" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards">
+                                                                <input class="buttonJavascript p-1 m-2 w-auto" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards">
+                                                                <input class="buttonJavascript p-1 m-2 w-auto" id="bttnRejectAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;R&#39;)" tabindex="-1" type="button" value="Reject All Awards">
+                                                            </th>
                                                         </tr>
                                                         <!-- LM: what is this row? -->
                                                         <tr>
