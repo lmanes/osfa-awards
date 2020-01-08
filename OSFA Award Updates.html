@@ -100,6 +100,7 @@
     </div>
 <!-- end asp stuff -->
 
+<!-- header (grey bg) including search and tab nav -->
 	<table cellspacing="0" cellpadding="0" width="100%" bgcolor="#bdbdbd" border="0">
         <tbody>
             <tr>
@@ -109,67 +110,82 @@
 			</tr>
 			<tr>
 				<td>
+                    <!-- search fields table -->
 					<table cellspacing="0" cellpadding="0" width="100%" border="0">
 						<tbody>
 							<tr>
 								<td>&nbsp;</td>
 								<td nowrap="nowrap" class="nowrap">
                                     <strong>Student Number / SSN:</strong>
-									<input name="txtFindStudentKey" type="text" maxlength="11" id="txtFindStudentKey" size="11" autocomplete="off>
+									<input name="txtFindStudentKey" type="text" maxlength="11" id="txtFindStudentKey" size="11" autocomplete="off">
 									&nbsp;
                                     <strong>SK:</strong>
 									<input name="txtFindSystemKey" type="text" maxlength="9" id="txtFindSystemKey" size="11">
 									<input class="button noprint" onclick="javascript:document.forms[0].bttnSubmitFind.click()" tabindex="-1" type="button" value="Find / Refresh"> &nbsp;<img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#find&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
 								</td>
 								<td align="center" width="99%" class="inquiryMessage"></td>
-								<td nowrap="nowrap" align="right"><b><span id="spanDateTime">1/07/20 2:58 PM</span></b></td>
+								<td nowrap="nowrap" align="right">
+                                    <b><span id="spanDateTime">1/07/20 2:58 PM</span></b>
+                                </td>
 								<td>&nbsp;</td>
 							</tr>
 							<tr>
 								<td></td>
 								<td colspan="3" class="labelError">
-
 								</td>
 							</tr>
 						</tbody>
 					</table>
+                    <!-- end search fields table -->
 				</td>
-			</tr>
-			<tr>
-				<td><img height="7" src="./OSFA Award Updates_files/spacer.gif" width="1" alt=""></td>
 			</tr>
 			<tr>
 				<td>
+                    <img height="7" src="./OSFA Award Updates_files/spacer.gif" width="1" alt="">
+                </td>
+			</tr>
+			<tr>
+				<td>
+                    <!-- tab nav table -->
 					<table id="tblTabs" cellspacing="0" cellpadding="0" border="0">
-						<tbody><tr>
-							<!-- DO NOT REMOVE SPAN TAGS -->
-							<td class="tabSpacer">&nbsp;</td>
-							<td class="tabSpacer">&nbsp;</td>
-							<td class="tab" id="tabWorksheet"><span tabindex="0">OSFA Awards</span></td>
-							<td class="tabSpacer">&nbsp;</td>
-							<td class="tab tabInactive" id="tabBudget" loaded="true"><span tabindex="-1">Budget</span></td>
-							<td class="tabSpacer">&nbsp;</td>
-							<td class="tab tabInactive" id="tabResources" loaded="true"><span tabindex="-1">Resources</span></td>
-							<td class="tabSpacer">&nbsp;</td>
-							<td class="tab tabInactive" id="tabSNG" loaded="true"><span tabindex="-1">SNG</span></td>
-							<td class="tabSpacer">&nbsp;</td>
-							<td class="tab tabInactive" id="tabEligibility" loaded="true"><span tabindex="-1">Eligibility</span></td>
-							<td class="tabSpacer" id="tabDocumentsSpacer">&nbsp;</td>
-							<td class="tab tabInactive" id="tabDocuments" loaded="true"><span tabindex="-1">Documents</span></td>
-							<td class="tabSpacer" id="tabMultipleOffersSpacer" style="display:none">&nbsp;</td>
-							<td class="tab tabInactive" id="tabMultipleOffers" style="display:none"><span>Multiple Offers</span></td>
-							<td class="tabSpacer" width="90%">&nbsp;</td>
-						</tr>
-					</tbody></table>
+						<tbody>
+                            <tr>
+    							<!-- DO NOT REMOVE SPAN TAGS -->
+    							<td class="tabSpacer">&nbsp;</td>
+    							<td class="tabSpacer">&nbsp;</td>
+    							<td class="tab" id="tabWorksheet"><span tabindex="0">OSFA Awards</span></td>
+    							<td class="tabSpacer">&nbsp;</td>
+    							<td class="tab tabInactive" id="tabBudget" loaded="true"><span tabindex="-1">Budget</span></td>
+    							<td class="tabSpacer">&nbsp;</td>
+    							<td class="tab tabInactive" id="tabResources" loaded="true"><span tabindex="-1">Resources</span></td>
+    							<td class="tabSpacer">&nbsp;</td>
+    							<td class="tab tabInactive" id="tabSNG" loaded="true"><span tabindex="-1">SNG</span></td>
+    							<td class="tabSpacer">&nbsp;</td>
+    							<td class="tab tabInactive" id="tabEligibility" loaded="true"><span tabindex="-1">Eligibility</span></td>
+    							<td class="tabSpacer" id="tabDocumentsSpacer">&nbsp;</td>
+    							<td class="tab tabInactive" id="tabDocuments" loaded="true"><span tabindex="-1">Documents</span></td>
+    							<td class="tabSpacer" id="tabMultipleOffersSpacer" style="display:none">&nbsp;</td>
+    							<td class="tab tabInactive" id="tabMultipleOffers" style="display:none"><span>Multiple Offers</span></td>
+    							<td class="tabSpacer" width="90%">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- end tab nav table -->
 				</td>
 			</tr>
-		</tbody></table>
-		<table cellspacing="0" cellpadding="0" width="100%" border="0">
-			<tbody>
-				<tr>
-					<td class="pageActive">
-						<table cellspacing="0" cellpadding="0" border="0" width="100%">
-							<tbody><tr>
+		</tbody>
+    </table>
+<!-- end header (grey bg) -->
+
+<!-- main table -->
+	<table cellspacing="0" cellpadding="0" width="100%" border="0">
+		<tbody>
+			<tr>
+				<td class="pageActive">
+                    <!-- student metadata table (name, ID, DOB, etc.) -->
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tbody>
+                            <tr>
 								<td><input name="txtAwardYear" type="text" value="2020" maxlength="4" id="txtAwardYear" onchange="document.forms[0].bttnSubmitFind.click()"></td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 								<td nowrap="nowrap" class="labelStudentName">
@@ -180,11 +196,21 @@
 									7000000
 								</td>
 								<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td nowrap="nowrap" class="noprint">Date of birth:&nbsp;</td>
-								<td nowrap="nowrap" class="noprint">4/05/89</td>
-								<td nowrap="nowrap" class="noprint">&nbsp;&nbsp;&nbsp;&nbsp;SSN: 100-00-0001</td>
-								<td class="noprint" style="text-align:center;vertical-align:bottom;" width="50%" nowrap="nowrap"><a id="ancTOD" href="javascript:toggleOverrideDetail()" class="override" style="display: inline;">
-									Show Override Detail<span></span></a></td>
+								<td nowrap="nowrap" class="noprint">
+                                    Date of birth:&nbsp;
+                                </td>
+								<td nowrap="nowrap" class="noprint">
+                                    4/05/89
+                                </td>
+								<td nowrap="nowrap" class="noprint">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;SSN: 100-00-0001
+                                </td>
+								<td class="noprint" style="text-align:center;vertical-align:bottom;" width="50%" nowrap="nowrap">
+                                    <a id="ancTOD" href="javascript:toggleOverrideDetail()" class="override" style="display: inline;">
+    									Show Override Detail
+                                        <span></span>
+                                    </a>
+                                </td>
 								<!--//test added style; remove all " X" attributes-->
 								<td xxxwidth="90%" align="right" style="white-space:nowrap">
 									<div id="pnlPhotoID">
@@ -196,14 +222,18 @@
 										<div id="divPhoto" class="photo" style="top: 117px; left: 1233px; display: none;">
 											<img id="imgPhotoID" alt="" width="120" height="150" src="./OSFA Award Updates_files/photoid.aspx">
 										</div>
-
-</div>
+                                    </div>
 								</td>
 							</tr>
-						</tbody></table>
-						<div class="labelError small" style="margin:4px 0"></div>
-						<table class="borderThin" width="100%" id="tblMain">
-							<tbody style="display: table-row-group;">
+						</tbody>
+                    </table>
+                    <!-- end student metadata table -->
+
+					<div class="labelError small" style="margin:4px 0"></div>
+
+                    <!-- demographic data table -->
+					<table class="borderThin" width="100%" id="tblMain">
+						<tbody style="display: table-row-group;">
 							<tr>
 								<td id="mainCollapse" class="rowHeader pointer" rowspan="6" width="1%" onclick="toggleMainData(0)" title="Click to hide primary data table">
 									<img src="./OSFA Award Updates_files/collapse.gif" alt="" style="width:13px;height:13px">
@@ -221,18 +251,19 @@
 								<td class="cellHeader">Class:</td>
 								<td class="cellText"></td>
 								<td class="cellHeader">Wants WorkStudy:</td>
-								<td class="cellText dropdown"><select name="dropWorkStudy" id="dropWorkStudy" autocode="T1">
-	<option selected="selected" value="N">NO</option>
-	<option value="Y">YES</option>
-
-</select></td>
-								<td class="cellHeader">Marital Status:</td>
-								<td class="cellText">Married</td>
-								<td class="cellHeader">Military Dependent:</td>
-								<td class="cellText">No</td>
+								<td class="cellText dropdown">
+                                    <select name="dropWorkStudy" id="dropWorkStudy" autocode="T1">
+	                                   <option selected="selected" value="N">NO</option>
+                                       <option value="Y">YES</option>
+                                   </select>
+                               </td>
+                               <td class="cellHeader">Marital Status:</td>
+                               <td class="cellText">Married</td>
+                               <td class="cellHeader">Military Dependent:</td>
+                               <td class="cellText">No</td>
 							</tr>
 							<tr>
-								<td class="cellHeader">Dependency:</td>
+                                <td class="cellHeader">Dependency:</td>
 								<td class="cellText">Independent</td>
 								<td class="cellHeader">Housing:</td>
 								<td class="cellText">On-Campus</td>
@@ -243,11 +274,12 @@
 							</tr>
 							<tr>
 								<td class="cellHeader">On Time:</td>
-								<td class="cellText dropdown"><select name="dropOnTime" id="dropOnTime" autocode="T1">
-	<option value="N">NO</option>
-	<option selected="selected" value="Y">YES</option>
-
-</select></td>
+								<td class="cellText dropdown">
+                                    <select name="dropOnTime" id="dropOnTime" autocode="T1">
+                                        <option value="N">NO</option>
+                                        <option selected="selected" value="Y">YES</option>
+                                    </select>
+                                </td>
 								<td class="cellHeader">FAFSA Receipt Date:</td>
 								<td class="cellText">0/00/00</td>
 								<td class="cellHeader">Residency:</td>
@@ -288,108 +320,139 @@
 								</td>
 							</tr>
 						</tfoot>
-						</table>
-						<div id="divAwardStatusInquiry" style="display: none;">
-							<div class="lineBreakSmallest"></div>
-							<table class="borderThin" width="100%">
-								<tbody><tr>
-									<td class="cellHeader" width="11%">Applic. Status:</td>
-									<td class="cellText" width="25%" colspan="2">40 - PRIORITY AWARD</td>
-									<td class="cellHeader" width="13%">Package Formula:</td>
-									<td class="cellText" width="25%" colspan="2">03 - Graduates With Need</td>
-									<td class="cellHeader" width="13%">Package Date:</td>
-									<td class="cellText" width="13%">-</td>
-								</tr>
-								<tr>
-									<td class="cellHeader">Aid Holds:</td>
-									<td class="cellText" id="cellAidHolds" nowrap="nowrap" colspan="7">SC - Stafford Entrance Counseling (11/20/19)<br>99 - Pending additional information (11/27/19)<br>82 - Preliminary HB/DACA Award (9/09/09)<br></td>
-								</tr>
-							</tbody></table>
+					</table>
+                    <!-- demographic data table -->
+
+                    <div id="divAwardStatusInquiry" style="display: none;">
+						<div class="lineBreakSmallest"></div>
+                            <!-- application status table -->
+                            <table class="borderThin" width="100%">
+								<tbody>
+                                    <tr>
+    									<td class="cellHeader" width="11%">Applic. Status:</td>
+    									<td class="cellText" width="25%" colspan="2">40 - PRIORITY AWARD</td>
+    									<td class="cellHeader" width="13%">Package Formula:</td>
+    									<td class="cellText" width="25%" colspan="2">03 - Graduates With Need</td>
+    									<td class="cellHeader" width="13%">Package Date:</td>
+    									<td class="cellText" width="13%">-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">Aid Holds:</td>
+                                        <td class="cellText" id="cellAidHolds" nowrap="nowrap" colspan="7">
+                                            SC - Stafford Entrance Counseling (11/20/19)<br>99 - Pending additional information (11/27/19)<br>82 - Preliminary HB/DACA Award (9/09/09)<br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- application status table -->
 						</div>
-						<div id="tabWorksheetDiv" style="display: block;">
+
+                        <div id="tabWorksheetDiv" style="display: block;">
 							<div class="lineBreakSmallest"></div>
+                            <!-- calculated amounts header -->
 							<table class="borderThin" id="tblCalculatedAmounts" width="100%">
-								<tbody><tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
-									<td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
-										<span class="spanToggleImage">
-											<img class="imageLink" id="imageCalculatedAmounts" src="./OSFA Award Updates_files/collapse.gif" alt="">
-										</span>
-										<span>Calculated Amounts</span>
-									</td>
-								</tr>
-							</tbody></table>
+								<tbody>
+                                    <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
+                                        <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
+                                            <span class="spanToggleImage">
+                                                <img class="imageLink" id="imageCalculatedAmounts" src="./OSFA Award Updates_files/collapse.gif" alt="">
+                                            </span>
+                                            <span>Calculated Amounts</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- end calculated amounts header -->
+
 							<div id="divCalculatedAmounts">
+                                <!-- calculated amounts data table -->
 								<table class="borderThin" width="100%">
-									<tbody><tr>
-										<td class="cellHeader borderTopNo" width="14%">Total Budget:</td>
-										<td class="cellText right borderTopNo" width="11%">$38,171</td>
-										<td class="cellHeader borderTopNo" width="14%">Total Eligibility:</td>
-										<td class="cellText right borderTopNo" width="11%">$38,171</td>
-										<td class="cellHeader borderTopNo" width="14%">INAS EFC:</td>
-										<td class="cellText right borderTopNo" width="11%">$2,351</td>
-										<td class="cellHeader borderTopNo" width="14%">Scheduled Pell:</td>
-										<td class="cellText right borderTopNo" width="11%">$3,845</td>
-									</tr>
-									<tr>
-										<td class="cellHeader">Total Resources:</td>
-										<td class="cellText right">$2,351</td>
-										<td class="cellHeader">Total Equity:</td>
-										<td class="cellText right">$23,272</td>
-										<td class="cellHeader">9-Month INAS EFC:</td>
-										<td class="cellText right">$2,351</td>
-										<td class="cellHeader">SNG Amount:</td>
-										<td class="cellText right">$6,449</td>
-									</tr>
-									<tr>
-										<td class="cellHeader">Total Need:</td>
-										<td class="cellText right">$35,820</td>
-										<td class="cellHeader">Summer-Only Costs:</td>
-										<td class="cellText right">$0</td>
-										<td class="cellHeader">CPS EFC:</td>
-										<td class="cellText right">$</td>
-										<td class="cellHeader">SNG Remaining Qrtrs:</td>
-										<td class="cellText right">0</td>
-									</tr>
-								</tbody></table>
+									<tbody>
+                                        <tr>
+    										<td class="cellHeader borderTopNo" width="14%">Total Budget:</td>
+    										<td class="cellText right borderTopNo" width="11%">$38,171</td>
+    										<td class="cellHeader borderTopNo" width="14%">Total Eligibility:</td>
+    										<td class="cellText right borderTopNo" width="11%">$38,171</td>
+    										<td class="cellHeader borderTopNo" width="14%">INAS EFC:</td>
+    										<td class="cellText right borderTopNo" width="11%">$2,351</td>
+    										<td class="cellHeader borderTopNo" width="14%">Scheduled Pell:</td>
+    										<td class="cellText right borderTopNo" width="11%">$3,845</td>
+    									</tr>
+    									<tr>
+    										<td class="cellHeader">Total Resources:</td>
+    										<td class="cellText right">$2,351</td>
+    										<td class="cellHeader">Total Equity:</td>
+    										<td class="cellText right">$23,272</td>
+    										<td class="cellHeader">9-Month INAS EFC:</td>
+    										<td class="cellText right">$2,351</td>
+    										<td class="cellHeader">SNG Amount:</td>
+    										<td class="cellText right">$6,449</td>
+    									</tr>
+    									<tr>
+    										<td class="cellHeader">Total Need:</td>
+    										<td class="cellText right">$35,820</td>
+    										<td class="cellHeader">Summer-Only Costs:</td>
+    										<td class="cellText right">$0</td>
+    										<td class="cellHeader">CPS EFC:</td>
+    										<td class="cellText right">$</td>
+    										<td class="cellHeader">SNG Remaining Qrtrs:</td>
+    										<td class="cellText right">0</td>
+    									</tr>
+                                    </tbody>
+                                </table>
+                                <!-- end calculated amounts data table -->
+
+                                <!-- non-collapsing debts and links table -->
 								<table class="borderThin" width="100%">
-									<tbody><tr>
-										<!-- borderTopNo class used to "merge" this table with default.aspx's "Applic. Status" table -->
-										<td class="cellHeader borderTopNo" width="17%">Stafford Debt:</td>
-										<td class="cellText borderTopNo" width="16%">$0</td>
-										<td class="cellHeader borderTopNo" width="17%">Unsub Stafford Debt:</td>
-										<td class="cellText borderTopNo" width="17%">$0</td>
-										<td class="cellHeader borderTopNo" width="17%">Perkins Debt:</td>
-										<td class="cellText borderTopNo" width="16%">$0</td>
-									</tr>
-									<tr>
-										<td class="cellHeader center" colspan="6">
-											<div class="mainLinks">
-												<a href="https://elmone.com/ui/login/#/" target="_elm1" tabindex="-1">ELMOne</a>
-												<a href="https://cod.ed.gov/cod/LoginPage" target="_cod" tabindex="-1">COD</a>
-												<a href="https://faaaccess.ed.gov/FOTWWebApp/faa/faa.jsp" target="_cps" tabindex="-1">FAA Access to CPS</a>
-												<a href="https://nsldsfap.ed.gov/nslds_FAP/" target="_nslds" tabindex="-1">NSLDS Professional Access</a>
-												<a href="https://sdb.admin.uw.edu/sisStudents/securid/spsView.aspx" target="_spsv" tabindex="-1">SPS Counselor View</a>
-											</div>
-										</td>
-									</tr>
-								</tbody></table>
+									<tbody>
+                                        <!-- debts row -->
+                                        <tr>
+    										<!-- borderTopNo class used to "merge" this table with default.aspx's "Applic. Status" table -->
+    										<td class="cellHeader borderTopNo" width="17%">Stafford Debt:</td>
+    										<td class="cellText borderTopNo" width="16%">$0</td>
+    										<td class="cellHeader borderTopNo" width="17%">Unsub Stafford Debt:</td>
+    										<td class="cellText borderTopNo" width="17%">$0</td>
+    										<td class="cellHeader borderTopNo" width="17%">Perkins Debt:</td>
+    										<td class="cellText borderTopNo" width="16%">$0</td>
+    									</tr>
+                                        <!-- end debts row -->
+                                        <!-- links row -->
+    									<tr>
+    										<td class="cellHeader center" colspan="6">
+    											<div class="mainLinks">
+    												<a href="https://elmone.com/ui/login/#/" target="_elm1" tabindex="-1">ELMOne</a>
+    												<a href="https://cod.ed.gov/cod/LoginPage" target="_cod" tabindex="-1">COD</a>
+    												<a href="https://faaaccess.ed.gov/FOTWWebApp/faa/faa.jsp" target="_cps" tabindex="-1">FAA Access to CPS</a>
+    												<a href="https://nsldsfap.ed.gov/nslds_FAP/" target="_nslds" tabindex="-1">NSLDS Professional Access</a>
+    												<a href="https://sdb.admin.uw.edu/sisStudents/securid/spsView.aspx" target="_spsv" tabindex="-1">SPS Counselor View</a>
+    											</div>
+    										</td>
+    									</tr>
+                                        <!-- end links row -->
+                                    </tbody>
+                                </table>
+                                <!-- end non-collapsing debts and links table -->
 							</div>
-							<div id="divUpdatedSuccess" class="updatedSuccess temporaryDisplay">
+
+                            <div id="divUpdatedSuccess" class="updatedSuccess temporaryDisplay">
 								<img src="./OSFA Award Updates_files/Apply30.png" border="0" width="30" height="30" align="absmiddle" alt="success">
 								&nbsp; The student's record has been updated.
 							</div>
+
 							<div id="divUpdatedError" class="updatedError temporaryDisplay" style="cursor:pointer;" onclick="scrollToFirstError();">
 								<img src="./OSFA Award Updates_files/redcow.gif" border="0" width="62" height="56" align="absmiddle" alt="error">
 								&nbsp; Please correct the
 								<a href="https://it-devsis.s.uw.edu/sisOSFA/securid/default.aspx#error" onclick="return false" class="linkdotted">indicated errors</a>
 								and resubmit the form.
 							</div>
-							<div id="divUpdatedWarning" class="updatedWarning temporaryDisplay">
+
+                            <div id="divUpdatedWarning" class="updatedWarning temporaryDisplay">
 								<img src="./OSFA Award Updates_files/Warning30.png" border="0" width="30" height="30" align="absmiddle" alt="warning">
 								 &nbsp; Warning:
 								<span id="spanUpdatedWarningText"></span>
 							</div>
-							<div class="lineBreakSmall"></div>
+
+                        	<div class="lineBreakSmall"></div>
 
 							<table class="borderThin" width="100%">
 								<tbody>
