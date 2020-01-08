@@ -811,48 +811,59 @@
 										</div>
 										<div>
 											<select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-
-		</select>
+                                            </select>
 										</div>
 										<div>
 											<select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-
-		</select>
+                                            </select>
 										</div>
 										<div>
 											<select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-
-		</select>
+                                            </select>
 										</div>
 										<div class="smallest"></div>
 									</td>
-	</tr>
-	<tr>
-		<td class="cellHeader" colspan="2">Award Letter Custom Comment:</td>
-		<td class="cellText" colspan="6"><input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60"></td>
-	</tr>
-	<tr>
-		<td class="cellHeader" valign="top" colspan="2">Print Award Letter:</td>
-		<td class="cellText" colspan="6">NO&nbsp;
-										Last Sent:
-										12/26/19&nbsp;&nbsp;
-										Set flag manually:<span id="radioPrintAwardLetter"><input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y"><label for="radioPrintAwardLetter_0">Yes&nbsp;</label><input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N"><label for="radioPrintAwardLetter_1">No</label></span>
-										&nbsp;
-									</td>
-	</tr>
-</tbody></table>
+                                </tr>
+                                <tr>
+                            		<td class="cellHeader" colspan="2">Award Letter Custom Comment:</td>
+                            		<td class="cellText" colspan="6"><input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60"></td>
+                            	</tr>
+                            	<tr>
+                            		<td class="cellHeader" valign="top" colspan="2">Print Award Letter:</td>
+                            		<td class="cellText" colspan="6">
+                                        NO&nbsp;
+                                        Last Sent:
+                                        12/26/19&nbsp;&nbsp;
+                                        Set flag manually:
+                                        <span id="radioPrintAwardLetter">
+                                            <input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y">
+                                            <label for="radioPrintAwardLetter_0">Yes&nbsp;</label>
+                                            <input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N">
+                                            <label for="radioPrintAwardLetter_1">No</label>
+                                        </span>
+                                        &nbsp;
+                                    </td>
+                            	</tr>
+                            </tbody>
+                            </table>
+                            <!-- end table containing awards, award letter, revision comments -->
 
 							<div class="lineBreakSmall"></div>
+
+                            <!-- revision comment table -->
 							<table class="borderThinPlus" cellpadding="1" width="100%">
-								<tbody><tr>
-									<td class="rowHeader" colspan="2">Revision Comment</td>
-								</tr>
-								<tr>
-									<td class="cellHeader center" id="cellHeaderRevisionComment"><font id="fontHeaderRevisionComment">Enter
-											custom comment &nbsp;<i>OR</i><br>
-											select a prepared comment </font>
-									</td>
-									<td class="cellText"><span class="labelErrorSmall" id="spanRevisionError"></span><select name="dropRevision" id="dropRevision" autocode="T2">
+								<tbody>
+                                    <tr>
+                                        <td class="rowHeader" colspan="2">Revision Comment</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader center" id="cellHeaderRevisionComment">
+                                            <font id="fontHeaderRevisionComment">Enter custom comment &nbsp;<i>OR</i> <br>
+											select a prepared comment</font>
+                                        </td>
+                                        <td class="cellText">
+                                            <span class="labelErrorSmall" id="spanRevisionError"></span>
+                                            <select name="dropRevision" id="dropRevision" autocode="T2">
 	<option value="00">Select a prepared revision comment</option>
 	<option value="02">02 - NEW FAFSA DATA SUBMITTED TO OSFA BY STUDENT AND/OR PARENT</option>
 	<option value="05">05 - PER ADMISSIONS REGISTRAR OR HOUSING INFORMATION</option>
