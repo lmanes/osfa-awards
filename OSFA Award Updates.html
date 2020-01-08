@@ -178,7 +178,7 @@
 <!-- end header (grey bg) -->
 
 <!-- main table -->
-	<table cellspacing="0" cellpadding="0" width="100%" border="0">
+	<table cellspacing="0" cellpadding="0" width="100%" border="1">
 		<tbody>
 			<tr>
 				<td class="pageActive">
@@ -783,12 +783,12 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                                <!-- end new quarterly table -->
                                             </div>
-                                            <!-- end new quarterly table -->
                                         <!-- end bootstrap container div -->
                                     </tr>
                                     <tr>
-                                        <td id="cellAwardLetterLabel" class="rowHeader" colspan="8">
+                                        <td id="cellAwardLetterLabel" class="rowHeader" colspan="">
                                             Award Letter
                                         </td>
                                    </tr>
@@ -798,7 +798,7 @@
                                                Award Letter Comments:
                                            </span>
                                        </td>
-                                       <td class="cellText" width="200" colspan="6">
+                                       <td class="cellText" colspan="6">
                                            <div>
                                                <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
                                                    <option value="48">48 - STAFFORD LOAN CANCELED; YOU ARE NOT ENROLLED AT LEAST HALF-TIME SUMMER</option>
@@ -808,43 +808,43 @@
                                                <select name="dropAwardLetterComment2" id="dropAwardLetterComment2" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
                                                    <option selected="selected" value="00">No award letter comment</option>
                                                </select>
-										</div>
-										<div>
-											<select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                                            </select>
-										</div>
-										<div>
-											<select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                                            </select>
-										</div>
-										<div>
-											<select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                                            </select>
-										</div>
-										<div class="smallest"></div>
-									</td>
-                                </tr>
-                                <tr>
-                            		<td class="cellHeader" colspan="2">Award Letter Custom Comment:</td>
-                            		<td class="cellText" colspan="6"><input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60"></td>
-                            	</tr>
-                            	<tr>
-                            		<td class="cellHeader" valign="top" colspan="2">Print Award Letter:</td>
-                            		<td class="cellText" colspan="6">
-                                        NO&nbsp;
-                                        Last Sent:
-                                        12/26/19&nbsp;&nbsp;
-                                        Set flag manually:
-                                        <span id="radioPrintAwardLetter">
-                                            <input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y">
-                                            <label for="radioPrintAwardLetter_0">Yes&nbsp;</label>
-                                            <input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N">
-                                            <label for="radioPrintAwardLetter_1">No</label>
-                                        </span>
-                                        &nbsp;
-                                    </td>
-                            	</tr>
-                            </tbody>
+                                           </div>
+                                           <div>
+                                               <select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                                               </select>
+                                           </div>
+                                           <div>
+                                               <select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                                               </select>
+                                           </div>
+                                           <div>
+                                               <select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
+                                               </select>
+                                           </div>
+                                           <div class="smallest"></div>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td class="cellHeader" colspan="2">Award Letter Custom Comment:</td>
+                                       <td class="cellText" colspan="6"><input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60"></td>
+                                   </tr>
+                                   <tr>
+                                       <td class="cellHeader" valign="top" colspan="2">Print Award Letter:</td>
+                                       <td class="cellText" colspan="6">
+                                           NO&nbsp;
+                                           Last Sent:
+                                           12/26/19&nbsp;&nbsp;
+                                           Set flag manually:
+                                            <span id="radioPrintAwardLetter">
+                                                <input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y">
+                                                <label for="radioPrintAwardLetter_0">Yes&nbsp;</label>
+                                                <input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N">
+                                                <label for="radioPrintAwardLetter_1">No</label>
+                                            </span>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <!-- end table containing awards, award letter, revision comments -->
 
@@ -883,8 +883,9 @@
                                     <img src="./OSFA Award Updates_files/redcow.gif" height="62" width="62" align="absmiddle" alt="Error">
                                     &nbsp; Please correct the indicated errors and resubmit the form.
                                 </div>
+<!-- end main table -->
 
-
+<!-- begin things that I don't know what they are (contents of other tabs??) -->
 <table cellspacing="0" cellpadding="0" class="tblLeftRight">
 <tbody>
 <tr>
