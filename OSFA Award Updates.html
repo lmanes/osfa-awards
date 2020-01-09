@@ -349,47 +349,8 @@
 
                         <div id="tabWorksheetDiv" style="display: block;">
 							<div class="lineBreakSmallest"></div>
-                            <!-- calculated amounts header -->
-							<table class="borderThin" id="tblCalculatedAmounts" width="100%">
-								<tbody>
-                                    <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
-                                        <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
-                                            <span class="spanToggleImage">
-                                                <img class="imageLink" id="imageCalculatedAmounts" src="./OSFA Award Updates_files/collapse.gif" alt="">
-                                            </span>
-                                            <span>Calculated Amounts</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <!-- end calculated amounts header -->
-
+                            
 							<div id="divCalculatedAmounts">
-                                <!-- calculated amounts data table -->
-								<table class="borderThin" width="100%">
-									<tbody>
-                                        <tr>
-
-    										<td class="cellHeader borderTopNo" width="14%">Scheduled Pell:</td>
-    										<td class="cellText right borderTopNo" width="11%">$3,845</td>
-    										<td class="cellHeader">Total Resources:</td>
-    										<td class="cellText right">$2,351</td>
-    										<td class="cellHeader">9-Month INAS EFC:</td>
-    										<td class="cellText right">$2,351</td>
-    										<td class="cellHeader">SNG Amount:</td>
-    										<td class="cellText right">$6,449</td>
-    									</tr>
-    									<tr>
-    										<td class="cellHeader">Summer-Only Costs:</td>
-    										<td class="cellText right">$0</td>
-    										<td class="cellHeader">CPS EFC:</td>
-    										<td class="cellText right">$</td>
-    										<td class="cellHeader">SNG Remaining Qrtrs:</td>
-    										<td class="cellText right">0</td>
-    									</tr>
-                                    </tbody>
-                                </table>
-                                <!-- end calculated amounts data table -->
 
                                 <!-- non-collapsing debts and links table -->
 								<table class="borderThin" width="100%">
@@ -522,7 +483,7 @@
                             <table id="tblAwards_1" class="borderThinPlus" cellpadding="1" width="100%">
                                 <tbody>
                                     <tr>
-                                        <div class="container">
+                                        <td class="container">
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="table-responsive"><!-- bootstrap container div for table -->
@@ -780,16 +741,52 @@
                                                     <!-- end bootstrap container div -->
                                                 </div>
                                                 <div class="col">
-                                                    <table class="table">
-                                                        <tr>
-                                                            <td>
-                                                                LM put other non-quarterly calculated amounts here
-                                                            </td>
-                                                        </tr>
+                                                    <!-- calculated amounts data table -->
+                                                    <!-- calculated amounts header -->
+                        							<table class="borderThin" id="tblCalculatedAmounts" width="100%">
+                        								<tbody>
+                                                            <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
+                                                                <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
+                                                                    <span class="spanToggleImage">
+                                                                        <img class="imageLink" id="imageCalculatedAmounts" src="./OSFA Award Updates_files/collapse.gif" alt="">
+                                                                    </span>
+                                                                    <span>Non-quarterly Calculated Amounts</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
                                                     </table>
+                                                    <!-- end calculated amounts header -->
+
+                    								<table class="borderThin table">
+                    									<tbody>
+                                                            <tr>
+                        										<td class="cellHeader borderTopNo">Scheduled Pell:</td>
+                        										<td class="cellText right borderTopNo" >$3,845</td>
+                        										<td class="cellHeader">Total Resources:</td>
+                        										<td class="cellText right">$2,351</td>
+                                                            </tr>
+                                                            <tr>
+                                                            	<td class="cellHeader">9-Month INAS EFC:</td>
+                        										<td class="cellText right">$2,351</td>
+                        										<td class="cellHeader">SNG Amount:</td>
+                        										<td class="cellText right">$6,449</td>
+                        									</tr>
+                        									<tr>
+                        										<td class="cellHeader">Summer-Only Costs:</td>
+                        										<td class="cellText right">$0</td>
+                        										<td class="cellHeader">CPS EFC:</td>
+                        										<td class="cellText right">$</td>
+                                                            </tr>
+                                                            <tr>
+                        										<td class="cellHeader">SNG Remaining Qrtrs:</td>
+                        										<td class="cellText right">0</td>
+                        									</tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- end calculated amounts data table -->
                                                 </div>
                                             </div>
-                                        </div>
+                                        </td>
                                     </tr>
                                 </table>
                                 <table>
