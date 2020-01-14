@@ -178,7 +178,7 @@
 <!-- end header (grey bg) -->
 
 <!-- main table -->
-	<table cellspacing="0" cellpadding="0" width="95%" border="1" class="p-3">
+	<table cellspacing="0" cellpadding="0" width="100%" border="1" class="">
 		<tbody>
 			<tr>
 				<td class="pageActive">
@@ -232,7 +232,7 @@
 					<div class="labelError small" style="margin:4px 0"></div>
 
                     <!-- demographic data table -->
-					<table class="borderThin" width="100%" id="tblMain">
+					<table class="borderThin m-0 p-0" width="100%" id="tblMain">
 						<tbody style="display: table-row-group;">
 							<tr>
 								<td id="mainCollapse" class="rowHeader pointer" rowspan="6" width="1%" onclick="toggleMainData(0)" title="Click to hide primary data table">
@@ -371,7 +371,7 @@
                         	<div class="lineBreakSmall"></div>
 
                             <!-- application status table -->
-							<table class="borderThin" width="100%">
+							<table class="borderThin m-0 p-0" width="100%">
 								<tbody>
 									<tr>
 										<td class="cellHeader" width="13%">Application Status:</td>
@@ -446,18 +446,18 @@
 							<div class="lineBreakSmallest"></div>
 
                             <!-- table containing awards table, other calc amts, debts, links  -->
-                            <table id="tblAwards_1" class="borderThinPlus" cellpadding="1" width="100%">
+                            <table id="tblAwards_1" class="borderThinPlus m-0 p-0" cellpadding="1" width="100%">
                                 <tbody>
                                     <tr>
                                         <td class="container">
                                             <div class="row">
                                                 <!-- first column - awards table -->
-                                                <div class="col">
-                                                    <div class="table-responsive table"><!-- bootstrap container div for table -->
+                                                <div class="col-8">
+                                                    <div class="table-responsive"><!-- bootstrap container div for table -->
                                                         <!-- new quarterly table, combined calculated amounts and awards -->
                                                         <table class="table table-sm table-bordered bg-light w-auto" style="font-size: 12px;">
                                                             <thead>
-                                                                <tr class="bg-secondary text-light">
+                                                                <tr class="bg-dark text-light">
                                                                     <th scope="col"></th>
                                                                     <th scope="col">Summer</th>
                                                                     <th scope="col">Autumn</th>
@@ -485,13 +485,10 @@
                                                                         <td><!-- LM: do something to indicate that this cell is not relevant --> </td>
                                                                     </tr>
                                                                     <!-- the expand/collapse JS hangs on this tr -->
-                                                                    <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)" class="bg-secondary">
-                                                                        <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
-                                                                            <span class="spanToggleImage">
-                                                                                <img class="imageLink" id="imageCalculatedAmounts" src="./OSFA Award Updates_files/collapse.gif" alt="">
-                                                                            </span>
-                                                                            <span>Calculated Amounts</span>
-                                                                        </td>
+                                                                    <tr class="bg-secondary">
+                                                                        <th class="pointer bg-secondary" title="Click to show/hide detail" colspan="8">
+                                                                            Calculated Amounts
+                                                                        </th>
                                                                     </tr>
                                                                     <!-- end expand/collapse tr -->
                                                                     <tr>
@@ -542,7 +539,7 @@
                                                                         <td>$9,534</td>
                                                                         <td>$38,171</td>
                                                                     </tr>
-                                                                    <tr style="background: #e7e7e7;">
+                                                                    <tr class="bg-secondary">
                                                                         <th scope="col" colspan=7>
                                                                             OSFA Awards
                                                                             <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
@@ -637,7 +634,7 @@
                                                                         <td id="cellSpringTotal_1" class="cellText right borderNone">$3,333</td>
                                                                         <td id="cellTotal_1" class="cellText right borderNone">$11,000</td>
                                                                     </tr>
-                                                                    <tr style="background: #e7e7e7;">
+                                                                    <tr class="bg-secondary">
                                                                         <th scope="col" colspan=8>
                                                                             <input class="buttonJavascript p-1 m-2 w-auto" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards">
                                                                             <input class="buttonJavascript p-1 m-2 w-auto" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards">
@@ -709,9 +706,9 @@
                                                 </div>
                                                 <!-- end first column -->
                                                 <!-- second column - calc amts, debts, links -->
-                                                <div class="col divCalculatedAmounts p-0 m-0">
+                                                <div class="col-auto p-0 m-0">
                                                     <!-- non-quarterly calculated amounts data table -->
-                        							<table class="borderThin w-auto" id="tblCalculatedAmounts">
+                        							<table class="borderThin w-auto table table-responsive m-0 p-0" id="tblCalculatedAmounts">
                         								<tbody>
                                                             <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
                                                                 <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
@@ -798,7 +795,7 @@
                         </table>
 
                                 <!-- award letter table -->
-                                <table>
+                                <table class="m-0 p-0" width="100%">
                                     <tr>
                                         <td id="cellAwardLetterLabel" class="rowHeader" colspan="3">
                                             Award Letter
@@ -864,7 +861,7 @@
 							<div class="lineBreakSmall"></div>
 
                             <!-- revision comment table -->
-							<table class="borderThinPlus" cellpadding="1" width="100%">
+							<table class="borderThinPlus m-0 p-0" cellpadding="1" width="100%">
 								<tbody>
                                     <tr>
                                         <td class="rowHeader" colspan="2">Revision Comment</td>
