@@ -793,8 +793,7 @@
                                     <!-- <div id="tabWorksheetDiv" style=""> LM: removing this for now -->
                                     <div id="divCalculatedAmounts"> <!-- LM: definitely almost certainly removed things that made the numbers go into the right cells -->
                                         <tr>
-                                            <th></th>
-                                            <th scope="row">Student enrollment status</th>
+                                            <th scope="row" colspan="2">Student enrollment status</th>
                                             <td>L</td>
                                             <td>L</td>
                                             <td>L</td>
@@ -853,13 +852,16 @@
                                             <td>$9,534</td>
                                             <td>$38,171</td>
                                         </tr>
+                                        <tr class="border-0">
+                                            <td colspan="9"></td>
+                                        </tr>
 
                                         <tr class="bg-secondary pt-5">
                                             <th rowspan="6" scope="rowgroup" class="pointer bg-secondary">
                                                 OSFA Awards
                                                 <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
                                             </th>
-                                            <td>
+                                            <td colspan="8" class="text-right">
                                                 <input id="bttnAwardPackaging" onclick="document.forms[0].bttnSubmitPackaging.click()" tabindex="-1" type="button" class="button" value="Generate package">
                                                     <input name="txtHuskyPromiseFlag" type="hidden" id="txtHuskyPromiseFlag">
                                             </td>
@@ -966,6 +968,10 @@
                                         </tr>
 
                                         <!-- end unknown row -->
+                                        <tr class="border-0">
+                                            <td colspan="9"></td>
+                                        </tr>
+
                                         <tr>
                                             <th rowspan="6" scope="rowgroup" class="pointer bg-secondary pt-5">Other stuff</th>
                                             <th scope="row">Husky Promise</th>
