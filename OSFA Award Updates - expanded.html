@@ -456,15 +456,15 @@
                                 <div class="table-responsive"><!-- bootstrap container div for table -->
                                     <!-- new quarterly table, combined calculated amounts and awards -->
                                     <table class="table table-sm table-bordered bg-light w-auto" style="font-size: 12.8px;">
-                                        <thead>
-                                            <tr class="bg-dark text-light">
+                                        <thead class="border-0">
+                                            <tr class="bg-dark text-light border-0">
                                                 <th scope="col" colspan="2"></th>
                                                 <th scope="col">Summer</th>
                                                 <th scope="col">Autumn</th>
                                                 <th scope="col">Winter</th>
                                                 <th scope="col">Spring</th>
                                                 <th scope="col">Annual / Total</th>
-                                                <th scope="col">Last updated</th>
+                                                <th scope="col" class="bg-white border-0"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -478,12 +478,14 @@
                                             <!-- <div id="tabWorksheetDiv" style=""> LM: removing this for now -->
                                             <div id="divCalculatedAmounts"> <!-- LM: definitely almost certainly removed things that made the numbers go into the right cells -->
                                                 <tr>
-                                                    <th scope="row" colspan="2">Student enrollment status</th>
+                                                    <th class="border-right-0"></th>
+                                                    <th scope="row" class="border-left-0">Student enrollment status</th>
                                                     <td>L</td>
                                                     <td>L</td>
                                                     <td>L</td>
                                                     <td>L</td>
                                                     <td><!-- LM: do something to indicate that this cell is not relevant --> </td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <!-- the expand/collapse JS hangs on this tr -->
                                                 <tr>
@@ -496,6 +498,7 @@
                                                     <td>$9,534</td>
                                                     <td>$9,534</td>
                                                     <td>$38,171</td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">INAS EFC (tooltip)</th>
@@ -504,6 +507,7 @@
                                                     <td>$0</td>
                                                     <td>$0</td>
                                                     <td>$0</td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Outside resources (tooltip)</th>
@@ -512,6 +516,7 @@
                                                     <td>$0</td>
                                                     <td>$0</td>
                                                     <td>$0</td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Total equity</th>
@@ -520,6 +525,7 @@
                                                     <td>$5,818</td>
                                                     <td>$5,818</td>
                                                     <td>$23,272</td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Total need</th>
@@ -528,6 +534,7 @@
                                                     <td>$9,534</td>
                                                     <td>$9,534</td>
                                                     <td>$38,171</td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Total eligibility</th>
@@ -536,11 +543,20 @@
                                                     <td>$9,534</td>
                                                     <td>$9,534</td>
                                                     <td>$38,171</td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="9" class="border-0"></td>
+                                                    <td colspan="9" class="border-0 bg-white"></td>
                                                 </tr>
-
+                                                <tr class="bg-dark text-light">
+                                                    <th scope="col" colspan="2"></th>
+                                                    <th scope="col">Summer</th>
+                                                    <th scope="col">Autumn</th>
+                                                    <th scope="col">Winter</th>
+                                                    <th scope="col">Spring</th>
+                                                    <th scope="col">Annual / Total</th>
+                                                    <th scope="col">Last updated</th>
+                                                </tr>
                                                 <tr class="bg-secondary pt-5">
                                                     <th rowspan="24" scope="rowgroup" class="pointer bg-secondary border-right-0">
                                                         OSFA Awards
@@ -888,7 +904,7 @@
                                                     <td class="right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr class="bg-secondary border-left-0">
-                                                    <th scope="col" colspan=7 class="border-left-0">
+                                                    <th scope="col" colspan=8 class="border-left-0">
                                                         <input class="buttonJavascript p-1 m-2 w-auto" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards">
                                                         <input class="buttonJavascript p-1 m-2 w-auto" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards">
                                                         <input class="buttonJavascript p-1 m-2 w-auto" id="bttnRejectAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;R&#39;)" tabindex="-1" type="button" value="Reject All Awards">
@@ -903,8 +919,17 @@
                                                     <td id="cellTotalPackageOffer_1" class="cellTextPackageAward" align="right"></td>
                                                 </tr>
                                                 end unknown row -->
-                                                <tr>
-                                                    <td colspan="8"  class="border-0"></td>
+                                                <tr class="border-0 bg-white">
+                                                    <td colspan="8" class="border-0 bg-white border-bottom-0"></td>
+                                                </tr>
+                                                <tr class="bg-dark text-light border-0">
+                                                    <th scope="col" colspan="2"></th>
+                                                    <th scope="col">Summer</th>
+                                                    <th scope="col">Autumn</th>
+                                                    <th scope="col">Winter</th>
+                                                    <th scope="col">Spring</th>
+                                                    <th scope="col">Annual / Total</th>
+                                                    <th scope="col" class="bg-white border-0 border-top-0"></th>
                                                 </tr>
                                                 <tr>
                                                     <th rowspan="6" scope="rowgroup" class="pointer bg-secondary pt-5">Other stuff</th>
@@ -914,6 +939,7 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">College Bound</th>
@@ -922,6 +948,7 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Remaining equity</th>
@@ -930,6 +957,7 @@
                                                     <td>$5,818</td>
                                                     <td>$5,818</td>
                                                     <td>$23,272</td>
+                                                    <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Remaining need</th>
@@ -938,6 +966,7 @@
                                                     <td>$6,793</td>
                                                     <td>$6,793</td>
                                                     <td>$27,171</td>
+                                                    <td class="bg-white border-0"></td>
                                                  </tr>
                                                  <tr>
                                                      <th scope="row">Remaining eligibility</th>
@@ -946,6 +975,7 @@
                                                      <td>$6,793</td>
                                                      <td>$6,793</td>
                                                      <td>$27,171</td>
+                                                     <td class="bg-white border-0"></td>
                                                  </tr>
                                                  <tr>
                                                      <th scope="row">Total offer</th>
@@ -954,6 +984,7 @@
                                                      <td></td>
                                                      <td></td>
                                                      <td></td>
+                                                     <td class="bg-white border-0"></td>
                                                  </tr>
                                              </tbody>
                                          </table>
