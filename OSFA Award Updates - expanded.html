@@ -551,7 +551,9 @@
                                                     </td>
                                                 </tr>
                                                 <tr id="rowAward_1_1">
-                                                    <td class="cellText borderTopOnly" align="center">
+                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(1)">
+                                                        <input type="hidden" name="txtAwardNumber_1" value="1">
+                                                        <input type="hidden" name="txtAwardText_1_1" value="828925">828925 - PELL&nbsp;&nbsp;<br />
                                                         <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
                                                             <option value=""></option>
                                                             <option value="A">Accept</option>
@@ -559,10 +561,6 @@
                                                             <option value="R">Reject</option>
                                                             <option value="U">Undo</option>
                                                         </select>
-                                                    </td>
-                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(1)">
-                                                        <input type="hidden" name="txtAwardNumber_1" value="1">
-                                                        <input type="hidden" name="txtAwardText_1_1" value="828925">828925 - PELL&nbsp;&nbsp;
                                                     </td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top">
                                                         <input type="text" id="txtSummer_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="315" orig_value="315" award_status="P" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)">
@@ -588,7 +586,6 @@
                                                     </td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="" onclick="awardTableDetail(1)">
-                                                    <td class="cellText right borderNone smaller3"></td>
                                                     <td class="cellText right borderNone smaller3">OFFERED:</td>
                                                     <td class="cellText right borderNone smaller3">6/10/19&nbsp;&nbsp;&nbsp;&nbsp;315</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -598,7 +595,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="" onclick="awardTableDetail(1)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">AUTHORIZED:</td>
                                                     <td class="cellText right borderNone smaller3">6/11/19&nbsp;&nbsp;&nbsp;&nbsp;315</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -608,7 +605,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="" onclick="awardTableDetail(1)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">DISBURSED:</td>
                                                     <td class="cellText right borderNone smaller3">6/19/19&nbsp;&nbsp;&nbsp;&nbsp;315</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -618,7 +615,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="" onclick="awardTableDetail(1)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">REPAID:</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;315</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -628,7 +625,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="" onclick="awardTableDetail(1)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">NET DISBURSED:</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -638,8 +635,15 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr id="rowAward_1_2">
-                                                    <td class="cellText borderTopOnly" align="center"><select id="editSelect_1_2" name="editSelect_1_2" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="A">Accept</option><option value="C">Cancel</option><option value="R">Reject</option><option value="U">Undo</option></select></td>
-                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(2)"><input type="hidden" name="txtAwardNumber_1" value="2"><input type="hidden" name="txtAwardText_1_2" value="828900">828900 - SEOG&nbsp;&nbsp;</td>
+                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(2)"><input type="hidden" name="txtAwardNumber_1" value="2"><input type="hidden" name="txtAwardText_1_2" value="828900">828900 - SEOG&nbsp;&nbsp;<br />
+                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                                            <option value=""></option>
+                                                            <option value="A">Accept</option>
+                                                            <option value="C">Cancel</option>
+                                                            <option value="R">Reject</option>
+                                                            <option value="U">Undo</option>
+                                                    </select>
+                                                    </td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="75" orig_value="75" award_status="P" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">REPAID</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="C" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">CANCELED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="C" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">CANCELED</font></td>
@@ -648,7 +652,7 @@
                                                     <td class="cellText borderTopOnly" align="center">&nbsp;7/17/19 LW</td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail2" id="rowAwardDetail2" style="" onclick="awardTableDetail(2)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">OFFERED:</td>
                                                     <td class="cellText right borderNone smaller3">6/10/19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -658,7 +662,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr class="pointer" name="rowAwardDetail2" id="rowAwardDetail2" style="" onclick="awardTableDetail(2)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">AUTHORIZED:</td>
                                                     <td class="cellText right borderNone smaller3">6/11/19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -668,7 +672,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail2" id="rowAwardDetail2" style="" onclick="awardTableDetail(2)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">DISBURSED:</td>
                                                     <td class="cellText right borderNone smaller3">6/19/19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -678,7 +682,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr class="pointer" name="rowAwardDetail2" id="rowAwardDetail2" style="" onclick="awardTableDetail(2)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">REPAID:</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;75</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -688,7 +692,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail2" id="rowAwardDetail2" style="" onclick="awardTableDetail(2)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">NET DISBURSED:</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
@@ -698,8 +702,14 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr id="rowAward_1_3">
-                                                    <td class="cellText borderTopOnly" align="center"><select id="editSelect_1_3" name="editSelect_1_3" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="U">Undo</option></select></td>
-                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(3)"><input type="hidden" name="txtAwardNumber_1" value="3"><input type="hidden" name="txtAwardText_1_3" value="828072">828072 - UUG&nbsp;&nbsp;&nbsp;</td>
+                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(3)"><input type="hidden" name="txtAwardNumber_1" value="3"><input type="hidden" name="txtAwardText_1_3" value="828072">828072 - UUG&nbsp;&nbsp;&nbsp;<br />
+                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                                            <option value=""></option>
+                                                            <option value="A">Accept</option>
+                                                            <option value="C">Cancel</option>
+                                                            <option value="R">Reject</option>
+                                                            <option value="U">Undo</option>
+                                                    </select></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="5457" orig_value="5457" award_status="D" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 green">DISBURSED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="3664" orig_value="3664" award_status="D" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 green">DISBURSED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="3664" orig_value="3664" award_status="D" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 green">DISBURSED</font></td>
@@ -708,7 +718,7 @@
                                                     <td class="cellText borderTopOnly" align="center">&nbsp;9/12/19 RS</td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail3" id="rowAwardDetail3" style="" onclick="awardTableDetail(3)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">OFFERED:</td>
                                                     <td class="cellText right borderNone smaller3">7/17/19&nbsp;&nbsp;&nbsp;5457</td>
                                                     <td class="cellText right borderNone smaller3">9/12/19&nbsp;&nbsp;&nbsp;3664</td>
@@ -718,7 +728,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr class="pointer" name="rowAwardDetail3" id="rowAwardDetail3" style="" onclick="awardTableDetail(3)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">AUTHORIZED:</td>
                                                     <td class="cellText right borderNone smaller3">7/17/19&nbsp;&nbsp;&nbsp;5457</td>
                                                     <td class="cellText right borderNone smaller3">9/12/19&nbsp;&nbsp;&nbsp;3664</td>
@@ -728,7 +738,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail3" id="rowAwardDetail3" style="" onclick="awardTableDetail(3)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">DISBURSED:</td>
                                                     <td class="cellText right borderNone smaller3">7/17/19&nbsp;&nbsp;&nbsp;5457</td>
                                                     <td class="cellText right borderNone smaller3">9/18/19&nbsp;&nbsp;&nbsp;3664</td>
@@ -738,8 +748,15 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr id="rowAward_1_4">
-                                                    <td class="cellText borderTopOnly" align="center"><select id="editSelect_1_4" name="editSelect_1_4" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="D">Delete</option><option value="U">Undo</option></select></td>
-                                                    <td class="cellText borderTopOnly" align="center"><input type="hidden" name="txtAwardNumber_1" value="4"><input type="hidden" name="txtAwardText_1_4" value="703550">703550 - STAFRD</td>
+
+                                                    <td class="cellText borderTopOnly" align="center"><input type="hidden" name="txtAwardNumber_1" value="4"><input type="hidden" name="txtAwardText_1_4" value="703550">703550 - STAFRD<br />
+                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                                            <option value=""></option>
+                                                            <option value="A">Accept</option>
+                                                            <option value="C">Cancel</option>
+                                                            <option value="R">Reject</option>
+                                                            <option value="U">Undo</option>
+                                                    </select></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
@@ -748,8 +765,14 @@
                                                     <td class="cellText borderTopOnly" align="center">&nbsp;6/11/19 XX</td>
                                                 </tr>
                                                 <tr id="rowAward_1_5">
-                                                    <td class="cellText borderTopOnly" align="center"><select id="editSelect_1_5" name="editSelect_1_5" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="D">Delete</option><option value="U">Undo</option></select></td>
-                                                    <td class="cellText borderTopOnly" align="center"><input type="hidden" name="txtAwardNumber_1" value="5"><input type="hidden" name="txtAwardText_1_5" value="703554">703554 - UNSUBS</td>
+                                                    <td class="cellText borderTopOnly" align="center"><input type="hidden" name="txtAwardNumber_1" value="5"><input type="hidden" name="txtAwardText_1_5" value="703554">703554 - UNSUBS<br />
+                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                                            <option value=""></option>
+                                                            <option value="A">Accept</option>
+                                                            <option value="C">Cancel</option>
+                                                            <option value="R">Reject</option>
+                                                            <option value="U">Undo</option>
+                                                    </select></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_5" name="txtAwardAmount_1_5" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_5" name="txtAwardAmount_1_5" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_5" name="txtAwardAmount_1_5" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
@@ -758,8 +781,14 @@
                                                     <td class="cellText borderTopOnly" align="center">&nbsp;6/11/19 XX</td>
                                                 </tr>
                                                 <tr id="rowAward_1_6">
-                                                    <td class="cellText borderTopOnly" align="center"><select id="editSelect_1_6" name="editSelect_1_6" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="D">Delete</option><option value="U">Undo</option></select></td>
-                                                    <td class="cellText borderTopOnly" align="center"><input type="hidden" name="txtAwardNumber_1" value="6"><input type="hidden" name="txtAwardText_1_6" value="703551">703551 - PLUS&nbsp;&nbsp;</td>
+                                                    <td class="cellText borderTopOnly" align="center"><input type="hidden" name="txtAwardNumber_1" value="6"><input type="hidden" name="txtAwardText_1_6" value="703551">703551 - PLUS&nbsp;&nbsp;<br />
+                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                                            <option value=""></option>
+                                                            <option value="A">Accept</option>
+                                                            <option value="C">Cancel</option>
+                                                            <option value="R">Reject</option>
+                                                            <option value="U">Undo</option>
+                                                    </select></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_6" name="txtAwardAmount_1_6" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_6" name="txtAwardAmount_1_6" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_6" name="txtAwardAmount_1_6" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
@@ -768,16 +797,22 @@
                                                     <td class="cellText borderTopOnly" align="center">&nbsp;6/11/19 XX</td>
                                                 </tr>
                                                 <tr id="rowAward_1_7">
-                                                    <td class="cellText borderTopOnly" align="center"><select id="editSelect_1_7" name="editSelect_1_7" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)"><option value=""></option><option value="U">Undo</option></select></td>
-                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(7)"><input type="hidden" name="txtAwardNumber_1" value="7"><input type="hidden" name="txtAwardText_1_7" value="828500">828500 - SNG&nbsp;&nbsp;&nbsp;</td>
+                                                    <td class="cellText borderTopOnly pointer" align="center" onclick="awardTableDetail(7)"><input type="hidden" name="txtAwardNumber_1" value="7"><input type="hidden" name="txtAwardText_1_7" value="828500">828500 - SNG&nbsp;&nbsp;&nbsp;<br />
+                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                                            <option value=""></option>
+                                                            <option value="A">Accept</option>
+                                                            <option value="C">Cancel</option>
+                                                            <option value="R">Reject</option>
+                                                            <option value="U">Undo</option>
+                                                    </select></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_7" name="txtAwardAmount_1_7" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_7" name="txtAwardAmount_1_7" maxlength="8" size="8" class="inputText right" value="1792" orig_value="1792" award_status="D" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 green">DISBURSED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_7" name="txtAwardAmount_1_7" maxlength="8" size="8" class="inputText right" value="1791" orig_value="1791" award_status="D" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 green">DISBURSED</font></td>
                                                     <td class="cellText borderTopOnly" align="right" valign="top"><input type="text" id="txtSpring_1_7" name="txtAwardAmount_1_7" maxlength="8" size="8" class="inputText right" value="1791" orig_value="1791" award_status="Z" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">AUTHORIZED</font></td>
                                                     <td class="cellText borderTopOnly" align="right"><span id="cellAwardTotal_1_7" name="cellAwardTotal_1">5,374</span></td>
                                                     <td class="cellText borderTopOnly" align="center">&nbsp;9/12/19 RS</td>
-                                                </tr>                                                                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail7" id="rowAwardDetail7" style="" onclick="awardTableDetail(7)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+                                                </tr>                                                                             <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail7" id="rowAwardDetail7" style="" onclick="awardTableDetail(7)">
+
                                                     <td class="cellText right borderNone smaller3">OFFERED:</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
                                                     <td class="cellText right borderNone smaller3">9/12/19&nbsp;&nbsp;&nbsp;1792</td>
@@ -787,7 +822,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr class="pointer" name="rowAwardDetail7" id="rowAwardDetail7" style="" onclick="awardTableDetail(7)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">AUTHORIZED:</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
                                                     <td class="cellText right borderNone smaller3">9/12/19&nbsp;&nbsp;&nbsp;1792</td>
@@ -797,7 +832,7 @@
                                                     <td class="cellText right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail7" id="rowAwardDetail7" style="" onclick="awardTableDetail(7)">
-                                                    <td class="cellText right borderNone smaller3"></td>
+
                                                     <td class="cellText right borderNone smaller3">DISBURSED:</td>
                                                     <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
                                                     <td class="cellText right borderNone smaller3">9/18/19&nbsp;&nbsp;&nbsp;1792</td>
