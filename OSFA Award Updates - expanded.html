@@ -489,7 +489,7 @@
                                                 </tr>
                                                 <!-- the expand/collapse JS hangs on this tr -->
                                                 <tr>
-                                                    <th rowspan="6" scope="rowgroup" class="pointer bg-secondary" title="Click to show/hide detail">
+                                                    <th rowspan="6" scope="rowgroup" class="pointer bg-secondary border-0" title="Click to show/hide detail">
                                                         Calculated <br />Amounts
                                                     </th>
                                                     <th scope="row">Total budget</th>
@@ -734,14 +734,23 @@
                                                     <td class="right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr id="rowAward_1_3">
-                                                    <td class="borderTopOnly pointer" onclick="awardTableDetail(3)"><input type="hidden" name="txtAwardNumber_1" value="3"><input type="hidden" name="txtAwardText_1_3" value="828072">828072 - UUG&nbsp;&nbsp;&nbsp;<br />
-                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
-                                                            <option value=""></option>
-                                                            <option value="A">Accept</option>
-                                                            <option value="C">Cancel</option>
-                                                            <option value="R">Reject</option>
-                                                            <option value="U">Undo</option>
-                                                    </select></td>
+                                                    <td class="borderTopOnly pointer" onclick="awardTableDetail(3)">
+                                                        <input type="hidden" name="txtAwardNumber_1" value="3">
+                                                        <input type="hidden" name="txtAwardText_1_3" value="828072">828072 - UUG&nbsp;&nbsp;&nbsp;<br />
+                                                        <div class="row align-items-center">
+                                                            <div class="col">
+                                                                <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)" class="my-1">
+                                                                    <option value="">Select action</option>
+                                                                    <option value="A">Accept</option>
+                                                                    <option value="C">Cancel</option>
+                                                                    <option value="R">Reject</option>
+                                                                    <option value="U">Undo</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col">
+                                                                <a class="text-primary"><u>Collapse activity</u></a>
+                                                            </div>
+                                                        </div>
                                                     <td class="borderTopOnly" align="right" valign="top">
                                                         <input type="text" id="txtSummer_1_3" name="txtAwardAmount_1_3" maxlength="8" size="8" class="inputText right" value="5457" orig_value="5457" award_status="D" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br>
                                                         <font class="smaller2 green">DISBURSED</font>
@@ -796,15 +805,25 @@
                                                     <td class="right borderNone smaller3"></td>
                                                 </tr>
 
-                                                <tr id="rowAward_1_4">
-                                                    <td class="borderTopOnly"><input type="hidden" name="txtAwardNumber_1" value="4"><input type="hidden" name="txtAwardText_1_4" value="703550">703550 - STAFRD<br />
-                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
-                                                            <option value=""></option>
-                                                            <option value="A">Accept</option>
-                                                            <option value="C">Cancel</option>
-                                                            <option value="R">Reject</option>
-                                                            <option value="U">Undo</option>
-                                                    </select></td>
+                                                 <tr id="rowAward_1_4">
+                                                    <td class="borderTopOnly align-bottom">
+                                                        <input type="hidden" name="txtAwardNumber_1" value="4">
+                                                        <input type="hidden" name="txtAwardText_1_4" value="703550">703550 - STAFRD<br />
+                                                        <div class="row align-items-center">
+                                                            <div class="col">
+                                                                <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)" class="my-1">
+                                                                    <option value="">Select action</option>
+                                                                    <option value="A">Accept</option>
+                                                                    <option value="C">Cancel</option>
+                                                                    <option value="R">Reject</option>
+                                                                    <option value="U">Undo</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col">
+                                                                <a class="text-primary"><u>See all activity</u></a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
                                                     <td class="borderTopOnly" align="right" valign="top"><input type="text" id="txtSummer_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="borderTopOnly" align="right" valign="top"><input type="text" id="txtAutumn_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
                                                     <td class="borderTopOnly" align="right" valign="top"><input type="text" id="txtWinter_1_4" name="txtAwardAmount_1_4" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="R" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2 red">REJECTED</font></td>
@@ -920,7 +939,7 @@
                                                 </tr>
                                                 end unknown row -->
                                                 <tr class="border-0 bg-white">
-                                                    <td colspan="8" class="border-0 bg-white border-bottom-0"></td>
+                                                    <td colspan="8" class="border-0 bg-white"></td>
                                                 </tr>
                                                 <tr class="bg-dark text-light border-0">
                                                     <th scope="col" colspan="2"></th>
@@ -929,10 +948,10 @@
                                                     <th scope="col">Winter</th>
                                                     <th scope="col">Spring</th>
                                                     <th scope="col">Annual / Total</th>
-                                                    <th scope="col" class="bg-white border-0 border-top-0"></th>
+                                                    <th scope="col" class="bg-white border-0"></th>
                                                 </tr>
                                                 <tr>
-                                                    <th rowspan="6" scope="rowgroup" class="pointer bg-secondary pt-5">Other stuff</th>
+                                                    <th rowspan="6" scope="rowgroup" class="pointer bg-secondary pt-5 border-0">Other stuff</th>
                                                     <th scope="row">Husky Promise</th>
                                                     <td></td>
                                                     <td></td>
