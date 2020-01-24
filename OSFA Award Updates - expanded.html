@@ -463,7 +463,7 @@
                                                 <th scope="col">Autumn</th>
                                                 <th scope="col">Winter</th>
                                                 <th scope="col">Spring</th>
-                                                <th scope="col">Annual / Total</th>
+                                                <th scope="col">Total</th>
                                                 <th scope="col" class="bg-white border-0"></th>
                                             </tr>
                                         </thead>
@@ -554,7 +554,7 @@
                                                     <th scope="col">Autumn</th>
                                                     <th scope="col">Winter</th>
                                                     <th scope="col">Spring</th>
-                                                    <th scope="col">Annual / Total</th>
+                                                    <th scope="col">Total</th>
                                                     <th scope="col">Last updated</th>
                                                 </tr>
                                                 <tr class="bg-secondary pt-5">
@@ -651,14 +651,7 @@
                                                     <td class="right borderNone smaller3"></td>
                                                 </tr>
                                                 <tr id="rowAward_1_2">
-                                                    <td class="borderTopOnly pointer" onclick="awardTableDetail(2)"><input type="hidden" name="txtAwardNumber_1" value="2"><input type="hidden" name="txtAwardText_1_2" value="828900">828900 - SEOG&nbsp;&nbsp;<br />
-                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
-                                                            <option value=""></option>
-                                                            <option value="A">Accept</option>
-                                                            <option value="C">Cancel</option>
-                                                            <option value="R">Reject</option>
-                                                            <option value="U">Undo</option>
-                                                    </select>
+                                                    <td class="borderTopOnly pointer" onclick="awardTableDetail(2)"><input type="hidden" name="txtAwardNumber_1" value="2"><input type="hidden" name="txtAwardText_1_2" value="828900">828900 - SEOG<br />
                                                     </td>
                                                     <td class="borderTopOnly" valign="top">
                                                         <input type="text" id="txtSummer_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="75" orig_value="75" award_status="P" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br>
@@ -677,7 +670,14 @@
                                                         <font class="smaller2">CANCELED</font>
                                                     </td>
                                                     <td class="borderTopOnly">
-                                                        <span id="cellAwardTotal_1_2" name="cellAwardTotal_1">75</span>
+                                                        <span id="cellAwardTotal_1_2" name="cellAwardTotal_1">75</span><br />
+                                                        <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)">
+                                                            <option value="">Actions...</option>
+                                                            <option value="A">Accept</option>
+                                                            <option value="C">Cancel</option>
+                                                            <option value="R">Reject</option>
+                                                            <option value="U">Undo</option>
+                                                    </select>
                                                     </td>
                                                     <td class="borderTopOnly" align="center">
                                                         &nbsp;7/17/19 LW
@@ -958,7 +958,7 @@
                                                     <th scope="col">Autumn</th>
                                                     <th scope="col">Winter</th>
                                                     <th scope="col">Spring</th>
-                                                    <th scope="col">Annual / Total</th>
+                                                    <th scope="col">Total</th>
                                                     <th scope="col" class="bg-white border-0"></th>
                                                 </tr>
                                                 <tr>
