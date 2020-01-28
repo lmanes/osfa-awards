@@ -470,11 +470,7 @@ tr.newRow {
 	color: #b66;
 	cursor: pointer;
 	font-size: 80%;
-	margin-left:-40px;
-	margin-right:25px;
-	margin-top:-1px;
 	padding: 0 2px;
-	position: absolute;
 }
 
 
