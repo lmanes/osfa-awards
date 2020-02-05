@@ -171,9 +171,9 @@
                 <tr>
                     <td class="pageActive">
                         <!-- student metadata table (name, ID, DOB, etc.) -->
-                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%" class="p-0 m-0">
                             <tbody>
-                                <tr>
+                                <tr class="p-0 m-0">
                                     <td><input name="txtAwardYear" type="text" value="2020" maxlength="4" id="txtAwardYear" onchange="document.forms[0].bttnSubmitFind.click()"></td>
                                     <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                     <td nowrap="nowrap" class="labelStudentName">
@@ -544,7 +544,7 @@
                                                     <th scope="col">Last updated</th>
                                                 </tr>
                                                 <tr class="bg-secondary pt-5">
-                                                    <th rowspan="24" scope="rowgroup" class="pointer bg-secondary border-right-0">
+                                                    <th rowspan="25" scope="rowgroup" class="pointer bg-secondary border-right-0">
                                                         OSFA Awards
                                                         <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
                                                     </th>
@@ -919,6 +919,11 @@
                                                     <td class="right borderNone smaller3"></td>
                                                     <td class="right borderNone smaller3"></td>
                                                 </tr>
+                                                <tr>
+                                                    <td class="bg-light" colspan="6">
+                                                        <a>Add another award ...</a>
+                                                    </td>
+                                                </tr>
                                                 <tr class="bg-secondary border-left-0">
                                                     <th scope="col" colspan=8 class="border-left-0">
                                                         <input class="buttonJavascript p-1 m-2 w-auto" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards">
@@ -950,7 +955,7 @@
                                                 <div id="huskypromise_elig">
                                                     <tr>
                                                         <th rowspan="7" scope="rowgroup" class="pointer bg-secondary pt-5 border-0">Other stuff</th>
-                                                        <th scope="row">Husky Promise</th>
+                                                        <th scope="row">Husky Promise eligibility</th>
                                                         <td></td>
                                                         <td>1</td>
                                                         <td>1</td>
@@ -959,7 +964,7 @@
                                                         <td class="bg-white border-0"></td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">Husky Promise remaining eligibility</th>
+                                                        <th scope="row">Unmet Husky Promise</th>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
@@ -970,7 +975,7 @@
                                                 </div>
                                                 <div id="collegebound_elig">
                                                     <tr>
-                                                        <th scope="row">College Bound remaining eligibility</th>
+                                                        <th scope="row">Unmet College Bound</th>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
