@@ -1028,7 +1028,7 @@
                                  </div>
                                  <!-- end first column -->
                                  <!-- second column - calc amts, debts, links -->
-                                 <div class="col-auto p-0 m-0">
+                                 <div class="col-3 p-0 m-0">
                                      <!-- non-quarterly calculated amounts data table -->
                                      <table class="borderThin w-auto table-responsive m-0 p-0" id="tblCalculatedAmounts">
                                          <tbody>
@@ -1124,8 +1124,8 @@
                                                 <td colspan="2" class="rowHeader pointer">Links</td>
                                             </tr>
                                              <tr>
-                                                 <td class="cellHeader center" colspan=6>
-                                                     <ul class="mainLinks list-unstyled">
+                                                 <td class="center border border-dark" colspan=2>
+                                                     <ul class="mainLinks list-unstyled" style="font-size: 80%; ">
                                                          <li>
                                                              <a href="https://elmone.com/ui/login/#/" target="_elm1" tabindex="-1">ELMOne</a>
                                                          </li>
@@ -1145,6 +1145,48 @@
                                                  </td>
                                              </tr>
                                              <!-- end links row -->
+                                            <!-- new legend for hotkeys -->
+                                            <tr>
+                                                <td colspan="2" class="border-0 bg-white"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="rowHeader center" colspan=2>
+                                                    Hotkeys
+                                                </td>
+                                            </tr>
+                                            <tr class="border border-dark">
+                                                <td colspan=2 class="border border-dark" style="font-size: 80%;">
+                                                    <dl>
+                                                        <dt>A</dt>
+                                                        <dd>Accept award</dd>
+                                                        <dt>C</dt>
+                                                        <dd>Cancel award</dd>
+                                                        <dt>D</dt>
+                                                        <dd>Detail toggle; identical to clicking the fund number/name</dd>
+                                                        <dt>N</dt>
+                                                        <dd>New award; identical to clicking the New Award button</dd>
+                                                        <dt>R</dt>
+                                                        <dd>Reject award</dd>
+                                                        <dt>T</dt>
+                                                        <dd>Total amount; quarter's amount is divided between the Budget Quarters on record (unless Y modifier is used)</dd>
+                                                        <dt>U</dt>
+                                                        <dd>Undo changes to this quarter</dd>
+                                                        <dt>G, Q, Y</dt>
+                                                        <dd>These are modifiers to precede a hotkey and apply it to more than one award/quarter:
+                                                            <dl>
+                                                                <dt>G</dt>
+                                                                <dd>All quarters for all awards (G = Global)</dd>
+                                                                <dt>Q</dt>
+                                                                <dd>The current quarter for all awards (Q = Quarter)</dd>
+                                                                <dt>Y</dt>
+                                                                <dd>All 4 quarters for the current award (Y = Year)</dd>
+                                                            </dl>
+                                                        </dd>
+                                                        <dt>Esc</dt>
+                                                        <dd>Remove new award row (if the cursor is in the 'Fund' column and all fields are empty)</dd>
+                                                    </dl>
+                                                </td>
+                                            </tr>
                                          </tbody>
                                      </table>
                                      <!-- end non-collapsing debts and links table -->
