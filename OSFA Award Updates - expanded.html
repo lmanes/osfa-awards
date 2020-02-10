@@ -444,13 +444,18 @@
                                     <table class="table table-sm table-bordered bg-light w-auto" style="font-size: 12.8px;">
                                         <thead class="border-0">
                                             <tr class="bg-dark text-light border-0">
-                                                <th scope="col" colspan="2"></th>
+                                                <th scope="col"></th>
                                                 <th scope="col">Summer</th>
                                                 <th scope="col">Autumn</th>
                                                 <th scope="col">Winter</th>
                                                 <th scope="col">Spring</th>
                                                 <th scope="col">Total</th>
                                                 <th scope="col" class="bg-white border-0"></th>
+                                            </tr>
+                                            <tr class="bg-secondary text-light">
+                                                <td colspan="6">
+                                                    <h3 class="h6">Calculated amounts</h3>
+                                                </td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -464,7 +469,6 @@
                                             <!-- <div id="tabWorksheetDiv" style=""> LM: removing this for now -->
                                             <div id="divCalculatedAmounts"> <!-- LM: definitely almost certainly removed things that made the numbers go into the right cells -->
                                                 <tr>
-                                                    <th class="border-right-0"></th>
                                                     <th scope="row" class="border-left-0">Student enrollment status</th>
                                                     <td>L</td>
                                                     <td>L</td>
@@ -475,9 +479,6 @@
                                                 </tr>
                                                 <!-- the expand/collapse JS hangs on this tr -->
                                                 <tr>
-                                                    <th rowspan="6" scope="rowgroup" class="pointer bg-secondary border-0" title="Click to show/hide detail">
-                                                        Calculated <br />Amounts
-                                                    </th>
                                                     <th scope="row">Total budget</th>
                                                     <td>$9,534</td>
                                                     <td>$9,534</td>
@@ -537,7 +538,7 @@
                                             </div>
                                                 <!-- start OSFA Awards table -->
                                                 <tr class="bg-dark text-light">
-                                                    <th scope="col" colspan="2"></th>
+                                                    <th></th>
                                                     <th scope="col">Summer</th>
                                                     <th scope="col">Autumn</th>
                                                     <th scope="col">Winter</th>
@@ -545,12 +546,12 @@
                                                     <th scope="col">Total</th>
                                                     <th scope="col">Last updated</th>
                                                 </tr>
-                                                <tr class="bg-secondary pt-5">
-                                                    <!-- LM: this th rowspan will need to change as rows are expanded and collapsed -->
-                                                    <th rowspan="25" scope="rowgroup" class="pointer bg-secondary border-right-0">
-                                                        OSFA Awards
-                                                        <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
-                                                    </th>
+                                                <tr class="bg-secondary pt-5 text-light">
+                                                    <td colspan="6">
+                                                        <h3 class="h6">OSFA Awards <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0"></h3>
+
+                                                    </td>
+                                                    <!-- LM: what is this cell? -->
                                                     <td colspan="8" class="text-right border-left-0">
                                                         <input id="bttnAwardPackaging" onclick="document.forms[0].bttnSubmitPackaging.click()" tabindex="-1" type="button" class="button" value="Generate package">
                                                         <input name="txtHuskyPromiseFlag" type="hidden" id="txtHuskyPromiseFlag">
@@ -1254,7 +1255,7 @@
                                                     <td colspan="8" class="border-0 bg-white"></td>
                                                 </tr>
                                                 <tr class="bg-dark text-light border-0">
-                                                    <th scope="col" colspan="2"></th>
+                                                    <th></th>
                                                     <th scope="col">Summer</th>
                                                     <th scope="col">Autumn</th>
                                                     <th scope="col">Winter</th>
@@ -1262,9 +1263,13 @@
                                                     <th scope="col">Total</th>
                                                     <th scope="col" class="bg-white border-0"></th>
                                                 </tr>
+                                                <tr class="bg-secondary text-light">
+                                                    <td colspan="6">
+                                                        <h3 class="h6">Other stuff</h3>
+                                                    </td>
+                                                </tr>
                                                 <div id="huskypromise_elig">
                                                     <tr>
-                                                        <th rowspan="7" scope="rowgroup" class="pointer bg-secondary pt-5 border-0">Other stuff</th>
                                                         <th scope="row">Husky Promise eligibility</th>
                                                         <td></td>
                                                         <td>1</td>
