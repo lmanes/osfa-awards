@@ -442,21 +442,17 @@
                                 <div class="table-responsive"><!-- bootstrap container div for table -->
                                     <!-- new quarterly table, combined calculated amounts and awards -->
                                     <table class="table table-sm table-bordered bg-light w-auto" style="font-size: 12.8px;">
-                                        <thead class="border-0">
-                                            <tr class="bg-dark text-light border-0">
+                                        <thead class="border-white">
+                                            <tr class="bg-dark text-light border-white">
                                                 <th scope="col"></th>
                                                 <th scope="col">Summer</th>
                                                 <th scope="col">Autumn</th>
                                                 <th scope="col">Winter</th>
                                                 <th scope="col">Spring</th>
                                                 <th scope="col">Total</th>
-                                                <th scope="col" class="bg-white border-0"></th>
+                                                <th scope="col" class="bg-white border-white"></th>
                                             </tr>
-                                            <tr class="bg-secondary text-light">
-                                                <td colspan="6">
-                                                    <h3 class="h6">Calculated amounts</h3>
-                                                </td>
-                                            </tr>
+
                                         </thead>
                                         <tbody>
                                             <!-- <td class="pageActive"> LM: removing this for now, seems to be related to tab behavior -->
@@ -465,11 +461,17 @@
                                             <div class="labelError small" style="margin:4px 0"></div>
                                             <!-- LM: end unknown div -->
 
+                                            <tr class="bg-secondary text-light border-white">
+                                                <td colspan="6">
+                                                    <h3 class="h6 m-0 p-0">Calculated amounts</h3>
+                                                </td>
+                                                <td class="bg-white border-white"></td>
+                                            </tr>
 
                                             <!-- <div id="tabWorksheetDiv" style=""> LM: removing this for now -->
                                             <div id="divCalculatedAmounts"> <!-- LM: definitely almost certainly removed things that made the numbers go into the right cells -->
                                                 <tr>
-                                                    <th scope="row" class="border-left-0">Student enrollment status</th>
+                                                    <th scope="row">Student enrollment status</th>
                                                     <td>L</td>
                                                     <td>L</td>
                                                     <td>L</td>
@@ -533,7 +535,7 @@
                                                     <td class="bg-white border-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="9" class="border-0 bg-white"></td>
+                                                    <td colspan="9" class="border-white bg-white"></td>
                                                 </tr>
                                             </div>
                                                 <!-- start OSFA Awards table -->
@@ -548,7 +550,7 @@
                                                 </tr>
                                                 <tr class="bg-secondary pt-5 text-light">
                                                     <td colspan="6">
-                                                        <h3 class="h6">OSFA Awards <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0"></h3>
+                                                        <h3 class="h6 m-0 p-0">OSFA Awards <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0"></h3>
 
                                                     </td>
                                                     <!-- LM: what is this cell? -->
@@ -1251,22 +1253,23 @@
                                                     <td id="cellTotalPackageOffer_1" class="cellTextPackageAward" align="right"></td>
                                                 </tr>
                                                 end unknown row -->
-                                                <tr class="border-0 bg-white">
-                                                    <td colspan="8" class="border-0 bg-white"></td>
+                                                <tr class="border-white bg-white">
+                                                    <td colspan="6" class="border-white bg-white"></td>
                                                 </tr>
-                                                <tr class="bg-dark text-light border-0">
+                                                <tr class="bg-dark text-light border-white">
                                                     <th></th>
                                                     <th scope="col">Summer</th>
                                                     <th scope="col">Autumn</th>
                                                     <th scope="col">Winter</th>
                                                     <th scope="col">Spring</th>
                                                     <th scope="col">Total</th>
-                                                    <th scope="col" class="bg-white border-0"></th>
+                                                    <td class="bg-white border-white"></td>
                                                 </tr>
-                                                <tr class="bg-secondary text-light">
+                                                <tr class="bg-secondary text-light border-white">
                                                     <td colspan="6">
-                                                        <h3 class="h6">Other stuff</h3>
+                                                        <h3 class="h6 m-0 p-0">Other stuff</h3>
                                                     </td>
+                                                    <td class="bg-white border-white"></td>
                                                 </tr>
                                                 <div id="huskypromise_elig">
                                                     <tr>
