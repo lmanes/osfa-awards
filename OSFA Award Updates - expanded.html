@@ -1349,102 +1349,103 @@
                                  <!-- second column - calc amts, debts, links -->
                                  <div class="col-3 p-0 m-0">
                                      <!-- non-quarterly calculated amounts data table -->
-                                     <table class="borderThin w-auto table-responsive m-0 p-0" id="tblCalculatedAmounts">
+
+                                     <table class="table table-sm table-bordered bg-light w-auto" style="font-size: 12.8px;" id="tblCalculatedAmounts">
                                          <tbody>
-                                            <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
-                                                <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
-                                                    <span>Other Calculated Amounts</span>
+                                            <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)" class="bg-secondary text-light border-white">
+                                                <td class="pointer h6" title="Click to show/hide detail" colspan="2">
+                                                    Other Calculated Amounts
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">INAS EFC:</td>
-                                                <td class="cellText right">$</td>
+                                                <th scope="row" class="">INAS EFC:</th>
+                                                <td class=" right">$</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">9-Month INAS EFC:</td>
-                                                <td class="cellText right">$2,351</td>
+                                                <th scope="row" class="">9-Month INAS EFC:</th>
+                                                <td class=" right">$2,351</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">CPS EFC:</td>
-                                                <td class="cellText right">$</td>
+                                                <th scope="row" class="">CPS EFC:</th>
+                                                <td class=" right">$</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">Total Resources:</td>
-                                                <td class="cellText right">$2,351</td>
+                                                <th scope="row" class="">Total Resources:</th>
+                                                <td class=" right">$2,351</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader borderTopNo">Scheduled Pell:</td>
-                                                <td class="cellText right borderTopNo" >$3,845</td>
+                                                <th scope="row" class=" ">Scheduled Pell:</th>
+                                                <td class=" right " >$3,845</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">SNG Amount:</td>
-                                                <td class="cellText right">$6,449</td>
+                                                <th scope="row" class="">SNG Amount:</th>
+                                                <td class=" right">$6,449</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">SNG Remaining Qrtrs:</td>
-                                                <td class="cellText right">0</td>
+                                                <th scope="row" class="">SNG Remaining Qrtrs:</th>
+                                                <td class=" right">0</td>
                                             </tr>
                                             <tr>
-                                                <td colspan="9" class="border-0 bg-white"></td>
+                                                <td colspan="2" class="border-white bg-white"></td>
                                             </tr>
                                             <div id="fund_elig_flags">
-                                                <tr>
-                                                    <td colspan="2" class="rowHeader pointer">Fund eligibility things</td>
+                                                <tr class="bg-secondary text-light border-white">
+                                                    <td colspan="2" class="h6">Fund eligibility things</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="cellHeader">Husky Promise Eligible</td>
-                                                    <td class="cellText right">Yes</td>
+                                                    <th scope="row" class="">Husky Promise Eligible</th>
+                                                    <td class=" right">Yes</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="cellHeader">College Bound Eligible</td>
-                                                    <td class="cellText right">Yes</td>
+                                                    <th scope="row" class="">College Bound Eligible</th>
+                                                    <td class=" right">Yes</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="cellHeader">College Bound OK to pay</td>
-                                                    <td class="cellText right">No</td>
+                                                    <th scope="row" class="">College Bound OK to pay</th>
+                                                    <td class=" right">No</td>
                                                 </tr>
                                             </div>
                                              <!-- end non-quarterly calculated amounts data table -->
                                              <!-- non-collapsing debts and links table -->
                                              <!-- debts row -->
                                              <tr>
-                                                 <td colspan="2" class="border-0 bg-white"></td>
+                                                 <td colspan="2" class="border-white bg-white"></td>
                                              </tr>
-                                             <tr>
-                                                 <td colspan="2" class="rowHeader pointer">Debts</td>
+                                             <tr class="bg-secondary text-light border-white">
+                                                 <td colspan="2" class="h6">Debts</td>
                                              </tr>
                                             <tr>
                                                 <!-- borderTopNo class used to "merge" this table with default.aspx's "Applic. Status" table -->
-                                                <td class="cellHeader">Stafford Debt:</td>
-                                                <td class="cellText borderTopNo right">$0</td>
+                                                <th scope="row" >Stafford Debt:</td>
+                                                <td class="  right">$0</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader borderTopNo">Unsub Stafford Debt:</td>
-                                                <td class="cellText borderTopNo right" >$0</td>
+                                                <th scope="row" >Unsub Stafford Debt:</td>
+                                                <td class="right" >$0</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader borderTopNo">Perkins Debt:</td>
-                                                <td class="cellText borderTopNo right" >$0</td>
+                                                <th scope="row" >Perkins Debt:</td>
+                                                <td class="right" >$0</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">Nursing Debt:</td>
-                                                <td class="cellText right">$0</td>
+                                                <th scope="row" >Nursing Debt:</td>
+                                                <td class=" right">$0</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">Summer-Only Costs:</td>
-                                                <td class="cellText right">$0</td>
+                                                <th scope="row" >Summer-Only Costs:</td>
+                                                <td class=" right">$0</td>
                                             </tr>
                                             <!-- end debts row -->
                                             <!-- links row -->
                                             <tr>
-                                                <td colspan="2" class="border-0 bg-white"></td>
+                                                <td colspan="2" class="border-white bg-white"></td>
                                             </tr>
-                                            <tr>
-                                                <td colspan="2" class="rowHeader pointer">Links</td>
+                                            <tr class="bg-secondary text-light border-white">
+                                                <td colspan="2" class="h6">Links</td>
                                             </tr>
                                              <tr>
-                                                 <td class="center border border-dark" colspan=2>
-                                                     <ul class="mainLinks list-unstyled" style="font-size: 80%; ">
+                                                 <td class="center" colspan=2>
+                                                     <ul class="list-unstyled mb-0" style="line-height: 1.25em;">
                                                          <li>
                                                              <a href="https://elmone.com/ui/login/#/" target="_elm1" tabindex="-1">ELMOne</a>
                                                          </li>
@@ -1466,43 +1467,71 @@
                                              <!-- end links row -->
                                             <!-- new legend for hotkeys -->
                                             <tr>
-                                                <td colspan="2" class="border-0 bg-white"></td>
+                                                <td colspan="2" class="border-white bg-white"></td>
                                             </tr>
-                                            <tr>
-                                                <td class="rowHeader center" colspan=2>
+                                            <tr class="bg-secondary text-light border-white">
+                                                <td class="h6" colspan=2>
                                                     Hotkeys
                                                 </td>
                                             </tr>
-                                            <tr class="border border-dark">
-                                                <td colspan=2 class="border border-dark" style="font-size: 80%;">
-                                                    <dl class="row">
-                                                        <dt class="col-sm-2">A</dt>
-                                                        <dd class="col-sm-10">Accept award</dd>
-                                                        <dt class="col-sm-2">C</dt>
-                                                        <dd class="col-sm-10">Cancel award</dd>
-                                                        <dt class="col-sm-2">D</dt>
-                                                        <dd class="col-sm-10">Detail toggle; identical to clicking the fund number/name</dd>
-                                                        <dt class="col-sm-2">N</dt>
-                                                        <dd class="col-sm-10">New award; identical to clicking the New Award button</dd>
-                                                        <dt class="col-sm-2">R</dt>
-                                                        <dd class="col-sm-10">Reject award</dd>
-                                                        <dt class="col-sm-2">T</dt>
-                                                        <dd class="col-sm-10">Total amount; quarter's amount is divided between the Budget Quarters on record (unless Y modifier is used)</dd>
-                                                        <dt class="col-sm-2">U</dt>
-                                                        <dd class="col-sm-10">Undo changes to this quarter</dd>
-                                                        <dt class="col-sm-2">G,Q,Y</dt>
-                                                        <dd class="col-sm-10">These modifiers precede a hotkey and apply it to more than one award/quarter:
-                                                            <dl class="row pt-2">
-                                                                <dt class="col-sm-1">G</dt>
-                                                                <dd class="col-sm-10">All quarters for all awards (G = Global)</dd>
-                                                                <dt class="col-sm-1">Q</dt>
-                                                                <dd class="col-sm-10">The current quarter for all awards (Q = Quarter)</dd>
-                                                                <dt class="col-sm-1">Y</dt>
-                                                                <dd class="col-sm-10">All 4 quarters for the current award (Y = Year)</dd>
-                                                            </dl>
-                                                        </dd>
-                                                        <dt class="col-sm-2">Esc</dt>
-                                                        <dd class="col-sm-10">Remove new award row (if the cursor is in the 'Fund' column and all fields are empty)</dd>
+                                            <tr>
+                                                <td colspan=2 class="p-2">
+                                                    <dl class="mb-0">
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">A</dt>
+                                                            <dd class="col-sm-10">Accept award</dd>
+                                                        </div>
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">C</dt>
+                                                            <dd class="col-sm-10">Cancel award</dd>
+                                                        </div>
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">D</dt>
+                                                            <dd class="col-sm-10">Detail toggle; identical to clicking the fund number/name</dd>
+                                                        </div>
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">N</dt>
+                                                            <dd class="col-sm-10">New award; identical to clicking the New Award button</dd>
+                                                        </div>
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">R</dt>
+                                                            <dd class="col-sm-10">Reject award</dd>
+                                                        </div>
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">T</dt>
+                                                            <dd class="col-sm-10">Total amount; quarter's amount is divided between the Budget Quarters on record (unless Y modifier is used)</dd>
+                                                        </div>
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">U</dt>
+                                                            <dd class="col-sm-10">Undo changes to this quarter</dd>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="row">
+                                                                    <dt class="col-sm-2">G,Q,Y</dt>
+                                                                    <dd class="col-sm-10">These modifiers precede a hotkey and apply it to more than one award/quarter:
+                                                                        <dl class="mb-0 pt-2">
+                                                                            <div class="row">
+                                                                                <dt class="col-sm-1 text-right">G</dt>
+                                                                                <dd class="col-sm-10">All quarters for all awards (G = Global)</dd>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <dt class="col-sm-1 text-right">Q</dt>
+                                                                                <dd class="col-sm-10">The current quarter for all awards (Q = Quarter)</dd>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <dt class="col-sm-1 text-right">Y</dt>
+                                                                                <dd class="col-sm-10">All 4 quarters for the current award (Y = Year)</dd>
+                                                                            </div>
+                                                                        </dl>
+                                                                    </dd>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <dt class="col-sm-1">Esc</dt>
+                                                            <dd class="col-sm-10">Remove new award row (if the cursor is in the 'Fund' column and all fields are empty)</dd>
+                                                        </div>
                                                     </dl>
                                                 </td>
                                             </tr>
