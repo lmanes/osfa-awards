@@ -351,7 +351,7 @@
                         <!-- end application status table -->
 						</div>
 
-                        <div id="tabWorksheetDiv" style="display: block;">
+                        <div id="tabWorksheetDiv" style="display: block;"><!-- success and error messages or something -->
 							<div class="lineBreakSmallest"></div>
 
                             <div id="divUpdatedSuccess" class="updatedSuccess temporaryDisplay">
@@ -448,201 +448,494 @@
 							</table>
                             <!-- end application status table -->
 							<div class="lineBreakSmallest"></div>
+                        </div>
+                    </div>
 
-                            <!-- Lauren's new container for INAS content -->
-                            <table id="tblAwards_1" class="borderThinPlus m-0 p-0" cellpadding="1" width="100%">
-                                <tbody><tr><td class="container">
-                                    <div class="row"><!-- Lauren's student & parent INAS metadata container-->
+                    <div>
+                        <!-- Lauren's new container for INAS content -->
+                        <table id="tblAwards_1" class="borderThinPlus m-0 p-0" cellpadding="1" width="100%">
+                            <tbody><tr><td class="container">
+                                <div class="row"><!-- Lauren's student & parent INAS metadata container-->
 
-                                        <div class="col-12" style="border: 1px solid red;">
-                                            <div class="row">
+                                    <div class="col-12" style="border: 1px solid red;">
+                                        <div class="row">
 
-                                                <div class="col-3" style="border: 1px dashed purple;">
+                                            <div class="col-3" style="border: 1px dashed purple;">
 
-                                                    <table><!-- dependent vs independent table -->
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="row" class="cellHeader">Student is:<br />
-                                                                    <a href="">See or edit details</a>
-                                                                </th>
-                                                                <td class="cellText right">DEPENDENT</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                    <table> <!-- address table -->
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="col" colspan="2" class="rowHeader">Address</th>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Address:</td>
-                                                                <td class="cellText">111 2nd Ave, #34<br />Seattle, WA 98195</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Phone Number</td>
-
-                                                                <td class="cellText">206-222-5555</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                </div>
-
-                                                <div class="col-3">
-
-                                                    <table> <!-- state of legal residence table -->
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="col" colspan="2" class="rowHeader">Legal Residence</th>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">State of Legal Residence:</td>
-                                                                <td class="cellText">WA</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Resident by 1/1/2004?</td>
-                                                                <td class="cellText blank">blank</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Date of Residency</td>
-                                                                <td class="cellText blank">blank</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                    <table><!-- citizenship info table -->
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">US Citizen</td>
-                                                                <td class="cellText">1 - Yes</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                </div>
-
-                                                <div class="col-3">
-
-                                                    <table><!-- educational status table -->
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="col" colspan="2" class="rowHeader">Educational Status</th>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">HS Diploma / GED</td>
-                                                                <td class="cellText">1 - Yes</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Degree by July?</td>
-                                                                <td class="cellText">1 - Yes</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Grade Level</td>
-                                                                <td class="cellText">7</td>
-                                                            </tr><tr>
-                                                                <td class="cellHeader">Degree</td>
-                                                                <td class="cellText">8</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-
-                                                    <table><!-- household demographics table -->
-                                                        <tbody>
-                                                            <tr>
-                                                                <th scope="col" colspan="2" class="rowHeader">Household demographics</th>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Marital Status</td>
-                                                                <td class="cellText">3</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Marital Date</td>
-                                                                <td class="cellText blank">n/a</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Number in Household</td>
-                                                                <td class="cellText">0</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Number in College</td>
-                                                                <td class="cellText">0</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cellHeader">Accept Number in College?</td>
-                                                                <td class="cellText"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-
-                                                <div class="col-3" style="border: 1px dotted green;">
-                                                    <table><!-- parent identity & age table -->
+                                                <table><!-- dependent vs independent table -->
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="col" colspan="3" class="rowHeader">Parent Identity & Age</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="col" class="rowHeader"></th>
-                                                            <th scope="col" class="rowHeader">Parent 1</th>
-                                                            <th scope="col" class="rowHeader">Parent 2</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="cellHeader">SSN</td>
-                                                            <td class="cellText">555-55-5555</td>
-                                                            <td class="cellText">555-55-5555</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="cellHeader">SSN Match Flag</td>
-                                                            <td class="cellText">3</td>
-                                                            <td class="cellText">2</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="cellHeader">Name</td>
-                                                            <td class="cellText">ABCD, E.</td>
-                                                            <td class="cellText">DEFG, H.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="cellHeader">Date of Birth</td>
-                                                            <td class="cellText">11/2/1908</td>
-                                                            <td class="cellText">02/22/1899</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="cellHeader">Oldest Parent Age</td>
-                                                            <td class="cellText" colspan="2">77</td>
+                                                            <th scope="row" class="cellHeader">Student is:<br />
+                                                                <a href="">See or edit details</a>
+                                                            </th>
+                                                            <td class="cellText right">DEPENDENT</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
 
-                                                <table><!-- federal program benefits table -->
-                                                    <tr>
-                                                        <td class="rowHeader">
-                                                            Federal Program Benefits Received: none<br />
-                                                            <a>See details</a>
-                                                        </td>
-                                                    </tr>
+                                                <table> <!-- address table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Address</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Address:</td>
+                                                            <td class="cellText">111 2nd Ave, #34<br />Seattle, WA 98195</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Phone Number</td>
+
+                                                            <td class="cellText">206-222-5555</td>
+                                                        </tr>
+                                                    </tbody>
                                                 </table>
-                                                </div>
+
                                             </div>
 
+                                            <div class="col-3">
+
+                                                <table> <!-- state of legal residence table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Legal Residence</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">State of Legal Residence:</td>
+                                                            <td class="cellText">WA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Resident by 1/1/2004?</td>
+                                                            <td class="cellText blank">blank</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Date of Residency</td>
+                                                            <td class="cellText blank">blank</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <table><!-- citizenship info table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">US Citizen</td>
+                                                            <td class="cellText">1 - Yes</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                            <div class="col-3">
+
+                                                <table><!-- educational status table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Educational Status</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">HS Diploma / GED</td>
+                                                            <td class="cellText">1 - Yes</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Degree by July?</td>
+                                                            <td class="cellText">1 - Yes</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Grade Level</td>
+                                                            <td class="cellText">7</td>
+                                                        </tr><tr>
+                                                            <td class="cellHeader">Degree</td>
+                                                            <td class="cellText">8</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <table><!-- household demographics table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Household demographics</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Marital Status</td>
+                                                            <td class="cellText">3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Marital Date</td>
+                                                            <td class="cellText blank">n/a</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Number in Household</td>
+                                                            <td class="cellText">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Number in College</td>
+                                                            <td class="cellText">0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Accept Number in College?</td>
+                                                            <td class="cellText"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="col-3" style="border: 1px dotted green;">
+                                                <table><!-- parent identity & age table -->
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col" colspan="3" class="rowHeader">Parent Identity & Age</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="rowHeader"></th>
+                                                        <th scope="col" class="rowHeader">Parent 1</th>
+                                                        <th scope="col" class="rowHeader">Parent 2</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">SSN</td>
+                                                        <td class="cellText">555-55-5555</td>
+                                                        <td class="cellText">555-55-5555</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">SSN Match Flag</td>
+                                                        <td class="cellText">3</td>
+                                                        <td class="cellText">2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Name</td>
+                                                        <td class="cellText">ABCD, E.</td>
+                                                        <td class="cellText">DEFG, H.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Date of Birth</td>
+                                                        <td class="cellText">11/2/1908</td>
+                                                        <td class="cellText">02/22/1899</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Oldest Parent Age</td>
+                                                        <td class="cellText" colspan="2">77</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table><!-- federal program benefits table -->
+                                                <tr>
+                                                    <td class="rowHeader">
+                                                        Federal Program Benefits Received: none<br />
+                                                        <a>See details</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            </div>
                                         </div>
 
-                                        </div>
+                                    </div>
 
-                                    </div><!-- end Lauren's student & Parent INAS metadata row -->
+                                    </div>
 
-                                    <div class="row"><!-- lauren's container for the math parts of INAS stuff -->
-                                        <div class="col-4">
-                                            
+                                </div><!-- end Lauren's student & Parent INAS metadata row -->
 
-                                        </div>
+                                <div class="row"><!-- lauren's container for the math parts of INAS stuff -->
+                                    <div class="col-4">
+                                        <table><!-- PJ stuff table -->
+                                            <tr>
+                                                <td class="cellHeader">Professional Judgement Type</td>
+                                                <td class="cellText blank">blank</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Professional Judgement Date</td>
+                                                <td class="cellText">&nbsp;</td>
+                                            </tr>
+                                        </table>
 
-                                </td></tr></tbody>
-                            </table>
-                            <!-- end Lauren's new container for INAS content -->
+
+                                        <table><!--Tax return info table -->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="3" class="rowHeader">Tax Return Information</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col" class="rowHeader"></th>
+                                                <th scope="col" class="rowHeader">Student</th>
+                                                <th scope="col" class="rowHeader">Parents</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">IRS/DRT</td>
+                                                <td class="cellText">02/B</td>
+                                                <td class="cellText">00/A</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Tax Return</td>
+                                                <td class="cellText">1 - Completed</td>
+                                                <td class="cellText">1 - Completed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Return Type</td>
+                                                <td class="cellText">1 - 1040</td>
+                                                <td class="cellText">1 - 1040</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Filing As</td>
+                                                <td class="cellText">1 - Individual</td>
+                                                <td class="cellText">1 - Married Filing Jointly</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Filed Schedule 1?</td>
+                                                <td class="cellText">No</td>
+                                                <td class="cellText">No</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <table><!-- editable analysis duration -->
+                                            <tr>
+                                                <td class="cellHeader">Analysis Duration</td>
+                                                <td class="cellText blank"><input type="TextBox">&nbsp;</input></td>
+                                            </tr>
+                                        </table>
+
+                                        <table><!--income and stuff -->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="5" class="rowHeader">[name of this grouping]</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col" class="rowHeader"></th>
+                                                <th scope="col" class="rowHeader">Student</th>
+                                                <th scope="col" class="rowHeader">Spouse</th>
+                                                <th scope="col" class="rowHeader">Parent 1</th>
+                                                <th scope="col" class="rowHeader">Parent 2</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Work Income</td>
+                                                <td class="cellText right">30,000</td>
+                                                <td class="cellText right">30,000</td>
+                                                <td class="cellText right">30,000</td>
+                                                <td class="cellText right">30,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Total Work Income</td>
+                                                <td class="cellText right" colspan="2">
+                                                    <span class="badge">TOTAL</span><br />
+                                                    60,000
+                                                </td>
+                                                <td class="cellText right" colspan="2">
+                                                    <span class="badge">TOTAL</span><br />
+                                                    60,000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Adjusted Gross Income</td>
+                                                <td class="cellText right" colspan="2">60,000</td>
+                                                <td class="cellText right" colspan="2">90,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Tax Paid</td>
+                                                <td class="cellText right" colspan="2">$0</td>
+                                                <td class="cellText right" colspan="2">$6,407</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+
+                                        <table><!-- Exclusions (additional financial) -->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="3" class="rowHeader">Exclusions (Additional Financial)</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col" class="rowHeader"></th>
+                                                <th scope="col" class="rowHeader">Student</th>
+                                                <th scope="col" class="rowHeader">Parents</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Education Credits</td>
+                                                <td class="cellText right">$1,407</td>
+                                                <td class="cellText right blank">blank</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Co-op Earnings</td>
+                                                <td class="cellText right blank">blank</td>
+                                                <td class="cellText right">$200</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellText" colspan="3"><a>See all exclusions</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Total Exclusions</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />- $1,407</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />- $200</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Accept Worksheet C?</td>
+                                                <td class="cellText">Yes</td>
+                                                <td class="cellText">Yes</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+
+                                        <table><!-- Untaxed Income table -->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="3" class="rowHeader">Untaxed Income</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col" class="rowHeader"></th>
+                                                <th scope="col" class="rowHeader">Student</th>
+                                                <th scope="col" class="rowHeader">Parents</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Total Untaxed Income</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />$0</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellText" colspan="3"><a>See all untaxed income</a></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+
+                                        <table><!-- Allowances against income table -->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="3" class="rowHeader">Exclusions (Additional Financial)</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col" class="rowHeader"></th>
+                                                <th scope="col" class="rowHeader">Student</th>
+                                                <th scope="col" class="rowHeader">Parents</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Total Income</td>
+                                                <td class="cellText right">$63,018</td>
+                                                <td class="cellText right">$90,871</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">US Income Tax Paid</td>
+                                                <td class="cellText right">$812</td>
+                                                <td class="cellText right">$1,817</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+
+                                        <table>
+                                            <tr>
+                                                <th class="rowHeader">JUNK DRAWER GOES HERE</th>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+
+                                    <div class="col-4">
+
+                                        <table><!-- Contribution from assets -->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="3" class="rowHeader">Contribution From Assets</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col" class="rowHeader"></th>
+                                                <th scope="col" class="rowHeader">Student</th>
+                                                <th scope="col" class="rowHeader">Parents</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Cash Assets</td>
+                                                <td class="cellText right">$28,000</td>
+                                                <td class="cellText right">$1,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Net Investments</td>
+                                                <td class="cellText right">+ 14,500</td>
+                                                <td class="cellText right">+ 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Net Business/Farm Equity</td>
+                                                <td class="cellText right">+ 0</td>
+                                                <td class="cellText right">+ 1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Net Assets</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />$43,407</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />$85,261</td>
+                                            </tr>
+
+                                        </tbody>
+                                        </table>
+
+                                        <table><!-- asset protection and discretionary net worth, collapsed -->
+                                            <tr>
+                                                <th class="rowHeader"><a>See Asset Protection and Discretionary Net Worth</a></th>
+                                            </tr>
+                                        </table>
+
+                                        <table><!-- EFC Breakdown -->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" colspan="3" class="rowHeader">EFC Breakdown</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Methodology Type
+                                                <td class="cellText" colspan="2">Regular</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col" class="rowHeader"></th>
+                                                <th scope="col" class="rowHeader">Student</th>
+                                                <th scope="col" class="rowHeader">Parents</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Total Contribution</td>
+                                                <td class="cellText right">$0</td>
+                                                <td class="cellText right">$0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Income</td>
+                                                <td class="cellText right">+ 19,263</td>
+                                                <td class="cellText right">+ 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Assets</td>
+                                                <td class="cellText right">+ 131</td>
+                                                <td class="cellText right">+ 3,218</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Total to Student</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />$19,394</td>
+                                                <td class="cellText right"><span class="badge">TOTAL</span><br />$3,218</td>
+                                            </tr>
+
+                                        </tbody>
+                                        </table>
+
+                                        <table><!-- EFCs -->
+                                            <tr>
+                                                <th scope="col" colspan="2" class="rowHeader">EFCs</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">INAS EFC</td>
+                                                <td class="cellText">19,394</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">9-Month INAS EFC</td>
+                                                <td class="cellText">19,394</td>
+                                            </tr><tr>
+                                                <td class="cellHeader">CPS EFC</td>
+                                                <td class="cellText">19,394</td>
+                                            </tr><tr>
+                                                <td class="cellHeader">Institutional EFC</td>
+                                                <td class="cellText">0</td>
+                                            </tr><tr>
+                                                <td class="cellHeader">Unassessed PC</td>
+                                                <td class="cellText">0</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+
+                            </td></tr></tbody>
+                        </table><!-- end Lauren's new container for INAS content -->
 
 
                             <!-- table containing awards table, other calc amts, debts, links  -->
