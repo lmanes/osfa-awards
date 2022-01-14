@@ -9,3 +9,5 @@ body { line-height: 1;}
 .award-row { border-top: 2px solid #343a40 !important; }
 .badge { font-size: 11px; }
 .button { line-height: 1.25em; }
+
+.blank { font-style: italic; color: #777;}
