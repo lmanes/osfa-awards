@@ -346,6 +346,10 @@
                                             SC - Stafford Entrance Counseling (11/20/19)<br>99 - Pending additional information (11/27/19)<br>82 - Preliminary HB/DACA Award (9/09/09)<br>
                                         </td>
                                     </tr>
+                                    <tr>
+										<td class="cellHeader">Application Comment:</td>
+										<td class="cellText" colspan="5"><input name="txtApplicationComment" type="text" maxlength="70" id="txtApplicationComment" class="inputText" size="70"></td>
+									</tr>
                                 </tbody>
                             </table>
                         <!-- end application status table -->
@@ -521,11 +525,16 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="cellHeader">Resident by 1/1/2004?</td>
-                                                            <td class="cellText"><input type="text" value="blank" class="blank"/></td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">1 - Yes</option>
+                                                                    <option value="2">2 - No</option>
+                                                                </select>
+                                                            </td>
                                                         </tr>
                                                         <tr>
                                                             <td class="cellHeader">Date of Residency</td>
-                                                            <td class="cellText blank"><input type="text" value="blank" class="blank"/></td>
+                                                            <td class="cellText"><input type="text" value="blank" class="blank"/></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -537,7 +546,12 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="cellHeader">US Citizen</td>
-                                                            <td class="cellText">1 - Yes</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">1 - Yes</option>
+                                                                    <option value="2">2 - No</option>
+                                                                </select>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -951,422 +965,16 @@
                                     </div>
 
                             </td></tr></tbody>
+
+<!-- *** add 135 content here? -->
+
                         </table><!-- end Lauren's new container for INAS content -->
 
 
-                            <!-- table containing awards table, other calc amts, debts, links  -->
-                            <table id="tblAwards_1" class="borderThinPlus m-0 p-0" cellpadding="1" width="100%">
-                                <tbody>
-                                    <tr>
-                                        <td class="container">
-                                            <div class="row">
-                                                <!-- first column - awards table -->
-                                                <div class="col-8">
-                                                    <div class="table-responsive"><!-- bootstrap container div for table -->
-                                                        <!-- new quarterly table, combined calculated amounts and awards -->
-                                                        <table class="table table-sm table-bordered bg-light w-auto" style="font-size: 12.8px;">
-                                                            <thead>
-                                                                <tr class="bg-dark text-light">
-                                                                    <th scope="col" colspan="2"></th>
-                                                                    <th scope="col">Summer</th>
-                                                                    <th scope="col">Autumn</th>
-                                                                    <th scope="col">Winter</th>
-                                                                    <th scope="col">Spring</th>
-                                                                    <th scope="col">Annual / Total</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <!-- <td class="pageActive"> LM: removing this for now, seems to be related to tab behavior -->
-
-                                                                    <!-- LM: unknown div? -->
-                                                                    <div class="labelError small" style="margin:4px 0"></div>
-                                                                    <!-- LM: end unknown div -->
 
 
-                                                                <!-- <div id="tabWorksheetDiv" style=""> LM: removing this for now -->
-                                                                <div id="divCalculatedAmounts"> <!-- LM: definitely almost certainly removed things that made the numbers go into the right cells -->
-                                                                    <tr>
-                                                                        <th scope="row" colspan="2">Student enrollment status</th>
-                                                                        <td>L</td>
-                                                                        <td>L</td>
-                                                                        <td>L</td>
-                                                                        <td>L</td>
-                                                                        <td><!-- LM: do something to indicate that this cell is not relevant --> </td>
-                                                                    </tr>
-                                                                    <!-- the expand/collapse JS hangs on this tr -->
-                                                                    <tr>
-                                                                        <th rowspan="6" scope="rowgroup" class="pointer bg-secondary" title="Click to show/hide detail">
-                                                                            Calculated <br />Amounts
-                                                                        </th>
-                                                                        <th scope="row">Total budget</th>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$38,171</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">INAS EFC (tooltip)</th>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Outside resources (tooltip)</th>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                        <td>$0</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Total equity</th>
-                                                                        <td>$5,818</td>
-                                                                        <td>$5,818</td>
-                                                                        <td>$5,818</td>
-                                                                        <td>$5,818</td>
-                                                                        <td>$23,272</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Total need</th>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$38,171</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Total eligibility</th>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$9,534</td>
-                                                                        <td>$38,171</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td colspan="9" class="border-0"></td>
-                                                                    </tr>
 
-                                                                    <tr class="bg-secondary pt-5">
-                                                                        <th rowspan="6" scope="rowgroup" class="pointer bg-secondary border-right-0">
-                                                                            OSFA Awards
-                                                                            <img class="imageLink" onmouseover="this.src=&#39;/sisOSFA/images/question2.gif&#39;" title="Help" onclick="windowOpen(&#39;/sisOSFA/help.htm#awards&#39;,&#39;_help&#39;,525,600)" onmouseout="this.src=&#39;/sisOSFA/images/question.gif&#39;" height="13" alt="Help" src="./OSFA Award Updates_files/question.gif" width="13" border="0">
-                                                                        </th>
-                                                                        <td colspan="8" class="text-right border-left-0">
-                                                                            <input id="bttnAwardPackaging" onclick="document.forms[0].bttnSubmitPackaging.click()" tabindex="-1" type="button" class="button" value="Generate package">
-                                                                                <input name="txtHuskyPromiseFlag" type="hidden" id="txtHuskyPromiseFlag">
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr id="rowAward_1_1" class="bg-white">
-                                                                        <th scope="row" onclick="awardTableDetail(1)" class="bg-light">
-                                                                            <input type="hidden" name="txtAwardNumber_1" value="1">
-                                                                            <input type="hidden" name="txtAwardText_1_1" value="703554">703554 - UNSUBS</input><br /><br />
-                                                                            <select id="editSelect_1_1" name="editSelect_1_1" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)" style="font-size: 12px;">
-                                                                                <option value="Select action">Select action</option>
-                                                                                <option value="A">Accept</option>
-                                                                                <option value="C">Cancel</option>
-                                                                                <option value="R">Reject</option>
-                                                                                <option value="U">Undo</option>
-                                                                            </select>
-                                                                        </th>
-                                                                        <td>
-                                                                            <input type="text" id="txtSummer_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)">
-                                                                        </td>
-                                                                        <td>
-                                                                            <input type="text" id="txtAutumn_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="3334" orig_value="3334" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)">
-                                                                               <br><font class="smaller2">OFFERED</font>
-                                                                        </td>
-                                                                        <td>
-                                                                            <input type="text" id="txtWinter_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="3333" orig_value="3333" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">OFFERED</font
-                                                                        </td>
-                                                                        <td>
-                                                                            <input type="text" id="txtSpring_1_1" name="txtAwardAmount_1_1" maxlength="8" size="8" class="inputText right" value="3333" orig_value="3333" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">OFFERED</font>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span id="cellAwardTotal_1_1" name="cellAwardTotal_1">10,000</span>
-                                                                        </td>
-                                                                        <td class="cellText borderTopOnly bg-light" align="center">Last saved: <br />11/27/19 RP</td>
-                                                                    </tr>
-                                                                    <!-- expanding data row with repayment status etc. -->
-                                                                    <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail1" id="rowAwardDetail1" style="display:none" onclick="awardTableDetail(1)">
-                                                                        <td class="cellText right borderNone smaller3">OFFERED:</td>
-                                                                        <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-                                                                        <td class="cellText right borderNone smaller3">11/27/19&nbsp;&nbsp;&nbsp;3334</td>
-                                                                        <td class="cellText right borderNone smaller3">11/27/19&nbsp;&nbsp;&nbsp;3333</td>
-                                                                        <td class="cellText right borderNone smaller3">11/27/19&nbsp;&nbsp;&nbsp;3333</td>
-                                                                        <td class="cellText right borderNone smaller3"></td>
-                                                                        <td class="cellText right borderNone smaller3"></td>
-                                                                    </tr>
-                                                                    <!-- end data row that I don't understand -->
 
-                                                                    <tr id="rowAward_1_2" class="bg-white">
-                                                                        <th scope="row" onclick="awardTableDetail(2)" class="bg-light">
-                                                                            <input type="hidden" name="txtAwardNumber_1" value="2"><input type="hidden" name="txtAwardText_1_2" value="691410">691410 - SWS-S</input><br /><br />
-                                                                            <select id="editSelect_1_2" name="editSelect_1_2" onkeyup="awardTableSelect(this)" onchange="awardTableSelect(this)" style="font-size: 12px;"><option value="Select action">Select action</option><option value="A">Accept</option><option value="C">Cancel</option><option value="R">Reject</option><option value="U">Undo</option></select>
-                                                                        </th>
-                                                                        <td><input type="text" id="txtSummer_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="1000" orig_value="1000" award_status="O" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"><br><font class="smaller2">OFFERED</font></td>
-                                                                        <td><input type="text" id="txtAutumn_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"></td>
-                                                                        <td><input type="text" id="txtWinter_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"></td>
-                                                                        <td><input type="text" id="txtSpring_1_2" name="txtAwardAmount_1_2" maxlength="8" size="8" class="inputText right" value="0" orig_value="0" award_status="" onkeyup="awardTableCalculateTotal($(this))" onblur="fieldBlur(this)"></td>
-                                                                        <td>
-                                                                            <span id="cellAwardTotal_1_2" name="cellAwardTotal_1">1,000</span>
-                                                                        </td>
-                                                                        <td class="cellText borderTopOnly bg-light" align="center">Last saved: <br />12/18/19 LM</td>
-                                                                    <!-- another example of data row I don't understand -->
-                                                                    <tr bgcolor="#e9e9e9" class="pointer" name="rowAwardDetail2" id="rowAwardDetail2" style="display:none" onclick="awardTableDetail(2)">
-                                                                        <td class="cellText right borderNone smaller3"></td>
-                                                                        <td class="cellText right borderNone smaller3">OFFERED:</td>
-                                                                        <td class="cellText right borderNone smaller3">12/18/19&nbsp;&nbsp;&nbsp;1000</td>
-                                                                        <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-                                                                        <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-                                                                        <td class="cellText right borderNone smaller3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</td>
-                                                                        <td class="cellText right borderNone smaller3"></td>
-                                                                        <td class="cellText right borderNone smaller3"></td>
-                                                                    </tr>
-                                                                    <!-- end data row that I don't understand -->
-
-                                                                    <tr>
-                                                                        <td colspan=7><a href="#">Add another award ...</a></td>
-                                                                    </tr>
-                                                                    <tr id="rowAwardTotals_1">
-                                                                        <th scope="row">Totals</th>
-                                                                        <td id="cellSummerTotal_1" class="cellText right borderNone">$1,000</td>
-                                                                        <td id="cellAutumnTotal_1" class="cellText right borderNone">$3,334</td>
-                                                                        <td id="cellWinterTotal_1" class="cellText right borderNone">$3,333</td>
-                                                                        <td id="cellSpringTotal_1" class="cellText right borderNone">$3,333</td>
-                                                                        <td id="cellTotal_1" class="cellText right borderNone">$11,000</td>
-                                                                    </tr>
-                                                                    <tr class="bg-secondary border-left-0">
-                                                                        <th scope="col" colspan=7 class="border-left-0">
-                                                                            <input class="buttonJavascript p-1 m-2 w-auto" id="bttnUpdateAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;C&#39;)" tabindex="-1" type="button" value="Cancel All Awards">
-                                                                            <input class="buttonJavascript p-1 m-2 w-auto" id="bttnAcceptAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;A&#39;)" tabindex="-1" type="button" value="Accept All Awards">
-                                                                            <input class="buttonJavascript p-1 m-2 w-auto" id="bttnRejectAllAwards" onclick="awardTableActionForAll($(&#39;#txtSummer_1_1&#39;),&#39;R&#39;)" tabindex="-1" type="button" value="Reject All Awards">
-                                                                        </th>
-                                                                    </tr>
-                                                                    <!-- LM: what is this row?
-                                                                    <tr>
-                                                                        <td id="cellSummerPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-                                                                        <td id="cellAutumnPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-                                                                        <td id="cellWinterPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-                                                                        <td id="cellSpringPackageTotal_1" class="cellTextPackageAward" align="right"></td>
-                                                                        <td id="cellTotalPackageOffer_1" class="cellTextPackageAward" align="right"></td>
-                                                                    </tr>
-                                                                    end unknown row -->
-
-                                                                    <tr>
-                                                                        <td colspan="8"  class="border-0"></td>
-                                                                    </tr>
-
-                                                                    <tr>
-                                                                        <th rowspan="6" scope="rowgroup" class="pointer bg-secondary pt-5">Other stuff</th>
-                                                                        <th scope="row">Husky Promise</th>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">College Bound</th>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Remaining equity</th>
-                                                                        <td>$5,818</td>
-                                                                        <td>$5,818</td>
-                                                                        <td>$5,818</td>
-                                                                        <td>$5,818</td>
-                                                                        <td>$23,272</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Remaining need</th>
-                                                                        <td>$6,793</td>
-                                                                        <td>$6,793</td>
-                                                                        <td>$6,793</td>
-                                                                        <td>$6,793</td>
-                                                                        <td>$27,171</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Remaining eligibility</th>
-                                                                        <td>$6,793</td>
-                                                                        <td>$6,793</td>
-                                                                        <td>$6,793</td>
-                                                                        <td>$6,793</td>
-                                                                        <td>$27,171</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row">Total offer</th>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <!-- end new quarterly table -->
-                                                        </div>
-                                                    <!-- end bootstrap container div -->
-                                                </div>
-                                                <!-- end first column -->
-                                                <!-- second column - calc amts, debts, links -->
-                                                <div class="col-auto p-0 m-0">
-                                                    <!-- non-quarterly calculated amounts data table -->
-                        							<table class="borderThin w-auto table table-responsive m-0 p-0" id="tblCalculatedAmounts">
-                        								<tbody>
-                                                            <tr onclick="toggleDiv(&#39;CalculatedAmounts&#39;)">
-                                                                <td class="rowHeader pointer" title="Click to show/hide detail" colspan="8">
-                                                                    <span>Non-quarterly Calculated Amounts</span>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                        										<td class="cellHeader borderTopNo">Scheduled Pell:</td>
-                        										<td class="cellText right borderTopNo" >$3,845</td>
-                                                            </tr>
-                                                            <tr>
-                        										<td class="cellHeader">Total Resources:</td>
-                        										<td class="cellText right">$2,351</td>
-                                                            </tr>
-                                                            <tr>
-                                                            	<td class="cellHeader">9-Month INAS EFC:</td>
-                        										<td class="cellText right">$2,351</td>
-                                                            </tr>
-                                                            <tr>
-                        										<td class="cellHeader">SNG Amount:</td>
-                        										<td class="cellText right">$6,449</td>
-                        									</tr>
-                        									<tr>
-                        										<td class="cellHeader">Summer-Only Costs:</td>
-                        										<td class="cellText right">$0</td>
-                                                            </tr>
-                                                            <tr>
-                        										<td class="cellHeader">CPS EFC:</td>
-                        										<td class="cellText right">$</td>
-                                                            </tr>
-                                                            <tr>
-                        										<td class="cellHeader">SNG Remaining Qrtrs:</td>
-                        										<td class="cellText right">0</td>
-                        									</tr>
-                                                    <!-- end non-quarterly calculated amounts data table -->
-                                                    <!-- non-collapsing debts and links table -->
-                                                            <!-- debts row -->
-                                                            <tr>
-                        										<!-- borderTopNo class used to "merge" this table with default.aspx's "Applic. Status" table -->
-                        										<td class="cellHeader borderTopNo">Stafford Debt:</td>
-                        										<td class="cellText borderTopNo">$0</td>
-                                                            </tr>
-                                                            <tr>
-                        										<td class="cellHeader borderTopNo">Unsub Stafford Debt:</td>
-                        										<td class="cellText borderTopNo" >$0</td>
-                                                            </tr>
-                                                            <tr>
-                        										<td class="cellHeader borderTopNo">Perkins Debt:</td>
-                        										<td class="cellText borderTopNo" >$0</td>
-                        									</tr>
-                                                            <!-- end debts row -->
-                                                            <!-- links row -->
-                        									<tr>
-                        										<td class="cellHeader center" colspan=6>
-                        											<ul class="mainLinks list-unstyled">
-                            											<li>
-                                                                            <a href="https://elmone.com/ui/login/#/" target="_elm1" tabindex="-1">ELMOne</a>
-                                                                        </li>
-                        												<li>
-                                                                            <a href="https://cod.ed.gov/cod/LoginPage" target="_cod" tabindex="-1">COD</a>
-                                                                        </li>
-                                                                        <li>
-                            												<a href="https://faaaccess.ed.gov/FOTWWebApp/faa/faa.jsp" target="_cps" tabindex="-1">FAA Access to CPS</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="https://nsldsfap.ed.gov/nslds_FAP/" target="_nslds" tabindex="-1">NSLDS Professional Access</a>
-                                                                        </li>
-                                                                        <li>
-                            												<a href="https://sdb.admin.uw.edu/sisStudents/securid/spsView.aspx" target="_spsv" tabindex="-1">SPS Counselor View</a>
-                                                                        </li>
-                                                                    </ul>
-                        										</td>
-                        									</tr>
-                                                            <!-- end links row -->
-                                                        </tbody>
-                                                    </table>
-                                                    <!-- end non-collapsing debts and links table -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-
-                                <!-- award letter table -->
-                                <table class="m-0 p-0" width="100%">
-                                    <tr>
-                                        <td id="cellAwardLetterLabel" class="rowHeader" colspan="3">
-                                            Award Letter
-                                        </td>
-                                   </tr>
-                                   <tr>
-                                       <td class="cellHeader" colspan="2">
-                                           <span id="fontAwardLetterCommentLabel">
-                                               Award Letter Comments:
-                                           </span>
-                                       </td>
-                                       <td class="cellText" colspan="6">
-                                           <div>
-                                               <select name="dropAwardLetterComment1" id="dropAwardLetterComment1" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
-                                                   <option value="48">48 - STAFFORD LOAN CANCELED; YOU ARE NOT ENROLLED AT LEAST HALF-TIME SUMMER</option>
-                                               </select>
-                                           </div>
-                                           <div>
-                                               <select name="dropAwardLetterComment2" id="dropAwardLetterComment2" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="">
-                                                   <option selected="selected" value="00">No award letter comment</option>
-                                               </select>
-                                           </div>
-                                           <div>
-                                               <select name="dropAwardLetterComment3" id="dropAwardLetterComment3" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                                               </select>
-                                           </div>
-                                           <div>
-                                               <select name="dropAwardLetterComment4" id="dropAwardLetterComment4" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                                               </select>
-                                           </div>
-                                           <div>
-                                               <select name="dropAwardLetterComment5" id="dropAwardLetterComment5" onchange="dropDownListChange(this)" xxxonfocus="gbIsAwardLetterCommentFocused=true;" autocode="T2" style="DISPLAY:none">
-                                               </select>
-                                           </div>
-                                           <div class="smallest"></div>
-                                       </td>
-                                   </tr>
-                                   <tr>
-                                       <td class="cellHeader" colspan="2">Award Letter Custom Comment:</td>
-                                       <td class="cellText" colspan="6"><input name="txtAwardComment" type="text" maxlength="60" id="txtAwardComment" class="inputText" size="60"></td>
-                                   </tr>
-                                   <tr>
-                                       <td class="cellHeader" valign="top" colspan="2">Print Award Letter:</td>
-                                       <td class="cellText" colspan="6">
-                                           NO&nbsp;
-                                           Last Sent:
-                                           12/26/19&nbsp;&nbsp;
-                                           Set flag manually:
-                                            <span id="radioPrintAwardLetter">
-                                                <input id="radioPrintAwardLetter_0" type="radio" name="radioPrintAwardLetter" value="Y">
-                                                <label for="radioPrintAwardLetter_0">Yes&nbsp;</label>
-                                                <input id="radioPrintAwardLetter_1" type="radio" name="radioPrintAwardLetter" value="N">
-                                                <label for="radioPrintAwardLetter_1">No</label>
-                                            </span>
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <!-- end award letter table -->
-                            <!-- end table containing awards, award letter, revision comments -->
 
 							<div class="lineBreakSmall"></div>
 
