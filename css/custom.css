@@ -16,7 +16,7 @@ body { line-height: 1;}
 .rowheader a, .rowheader a:hover { font-weight: bold !important; color: #333399 !important; text-decoration: underline !important; }
 
 td.cellText { background: white; }
+select, select option { font-size: 12px !important; }
 
-tr.buttonbar { background-color: slategray;
-    border: solid 1px black; }
+tr.buttonbar { background-color: slategray; border: solid 1px black; }
 /* input[type=text] { width: 100%; } */
