@@ -15,4 +15,6 @@ body { line-height: 1;}
 .rowHeader { font-size: .8rem !important; font-weight: 600 !important; padding-top: 4px !important; padding-bottom: 6px !important; }
 .rowheader a, .rowheader a:hover { font-weight: bold !important; color: #333399 !important; text-decoration: underline !important; }
 
+tr.buttonbar { background-color: slategray;
+    border: solid 1px black; }
 /* input[type=text] { width: 100%; } */
