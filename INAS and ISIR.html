@@ -685,6 +685,17 @@
                                         <td class="cellHeader">Professional Judgement Type</td>
                                         <td class="cellText blank"><input type="text" value="blank" class="blank" size="15"/></td>
                                     </tr>
+                                    <tr>
+                                        <th scope="col" colspan="2" class="rowHeader">Tax return reviewed by OSFA</th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="rowHeader">Student</th>
+                                        <th scope="col" class="rowHeader">Parents</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank" /></td>
+                                        <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank"/></td>
+                                    </tr>
                                 </table>
 
                                 <table style="width: 100%;"><!--Tax return info table -->
@@ -755,20 +766,6 @@
                                                     <option value="2" selected="selected">No</option>
                                                 </select>
                                             </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Tax return reviewed by OSFA</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Student</th>
-                                            <th scope="col" class="rowHeader">Parents</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">&nbsp;</td>
-                                            <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank" /></td>
-                                            <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank"/></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1116,6 +1113,22 @@
                                     <div class="col-5"><!-- comments and reject codes -->
                                         <div class="row"> <!-- reject codes table -->
                                             <div class="col-12">
+
+                                                <table class="width: 100"><!-- correction override & stuff -->
+                                                    <tr>
+                                                        <td class="cellHeader">Correction Override Y/N</td>
+                                                        <td class="cellText">Yes</td>
+                                                        <td class="cellHeader">Correction in Process?</td>
+                                                        <td class="cellText">YES</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Number of Corrections Sent</td>
+                                                        <td class="cellText">2</td>
+                                                        <td class="cellHeader">Sent Date</td>
+                                                        <td class="cellText">MM/DD/YYYY</td>
+                                                    </tr>
+                                                </table>
+
                                                 <table style="width: 100%">
                                                     <tr>
                                                         <th colspan="3" class="rowHeader" scope="col">
@@ -1188,22 +1201,7 @@
                                             </tr>
                                         </table>
                                     </div>
-                                    <div class="col-5"><!-- corrections info -->
-                                        <table class="width: 100%;">
-                                            <tr>
-                                                <td class="cellHeader">Correction Override Y/N</td>
-                                                <td class="cellText">Yes</td>
-                                                <td class="cellHeader">Correction in Process?</td>
-                                                <td class="cellText">YES</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Number of Corrections Sent</td>
-                                                <td class="cellText">2</td>
-                                                <td class="cellHeader">Sent Date</td>
-                                                <td class="cellText">MM/DD/YYYY</td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
