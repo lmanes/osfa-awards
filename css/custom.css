@@ -17,6 +17,8 @@ body { line-height: 1;}
 
 td.cellText { background: white; }
 select, select option { font-size: 12px !important; }
+tr.emptyrow td { background: #f7f7f7 !important; color: #777 !important; }
+/* tr.emptyrow td input { background-color: #f9f9f9 !important;} */
 
 tr.buttonbar { background-color: slategray; border: solid 1px black; }
 /* input[type=text] { width: 100%; } */
