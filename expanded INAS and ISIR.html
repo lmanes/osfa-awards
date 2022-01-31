@@ -692,31 +692,55 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+
+                            <div class="col-5">
                                 <table style="width: 100%;"><!-- household demographics table -->
                                     <tbody>
                                         <tr>
-                                            <th scope="col" colspan="2" class="rowHeader">Household demographics</th>
+                                            <th scope="col" colspan="3" class="rowHeader">Household demographics</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" class="rowHeader"></th>
+                                            <th scope="col" class="rowHeader">Student</th>
+                                            <th scope="col" class="rowHeader">Parents</th>
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Marital Status</td>
                                             <td class="cellText">
                                                 <select>
-                                                    <option value="1">3 - Single</option>
+                                                    <option value="1">1 - Single</option>
+                                                </select>
+                                            </td>
+                                            <td class="cellText">
+                                                <select>
+                                                    <option value="1">1 - Married</option>
                                                 </select>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Marital Date</td>
-                                            <td class="cellText blank"><input type="text" value="n/a" class="blank" size="15"/></td>
+                                            <td class="cellText blank">
+                                                <input type="text" value="n/a" class="blank" size="7"/>
+                                            </td>
+                                            <td class="cellText blank">
+                                                <input type="text" value="n/a" class="blank" size="7"/>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Number in Household</td>
-                                            <td class="cellText"><input type="text" value="0" size="15" /></td>
+                                            <td class="cellText blank">
+                                                <input type="text" value="n/a" class="blank" size="7"/>
+                                            </td>
+                                            <td class="cellText"><input type="text" value="0" size="7" /></td>
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Number in College</td>
+                                            <td class="cellText blank">
+                                                <input type="text" value="n/a" class="blank" size="7"/>
+                                            </td>
                                             <td class="cellText">
-                                                <input type="text" value="0"  size="15"/>
+                                                <input type="text" value="0"  size="7"/>
                                             </td>
                                         </tr>
                                         <tr>
@@ -727,12 +751,15 @@
                                                     <option value="2">No</option>
                                                 </select>
                                             </td>
+                                            <td class="cellText">
+                                                <select>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-
-                            <div class="col-5">
                                 <table style="width: 100%;"><!-- parent identity & age table -->
                                     <tbody>
                                         <tr>
