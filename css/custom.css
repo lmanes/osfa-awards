@@ -21,4 +21,9 @@ tr.emptyrow td { background: #f7f7f7 !important; color: #777 !important; }
 /* tr.emptyrow td input { background-color: #f9f9f9 !important;} */
 
 tr.buttonbar { background-color: slategray; border: solid 1px black; }
+tr.buttonbar input[type=submit] { border: solid 1px transparent;
+    border-radius: 4px;
+    color: #555;
+    margin: 5px;
+    padding: 1px 10px; }
 /* input[type=text] { width: 100%; } */
