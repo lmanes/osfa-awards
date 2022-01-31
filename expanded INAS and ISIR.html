@@ -143,7 +143,7 @@
     							<td class="tabSpacer">&nbsp;</td>
     							<td class="tab tabInactive" id="tabWorksheet"><span tabindex="0">OSFA Awards</span></td>
     							<td class="tabSpacer">&nbsp;</td>
-    							<td class="tab tabInactive" id="tabBudget" loaded="true"><span tabindex="-1">Budget</span></td>
+    							<td class="tab tabInactive" id="tabBudget" loaded=""><span tabindex="-1">Budget</span></td>
     							<td class="tabSpacer">&nbsp;</td>
     							<td class="tab tabInactive" id="tabResources" loaded="true"><span tabindex="-1">Resources</span></td>
     							<td class="tabSpacer">&nbsp;</td>
@@ -156,6 +156,8 @@
                                 <td class="tabSpacer" id="tabDocumentsSpacer">&nbsp;</td>
                                 <td class="tab">INAS</td>
                                 <!-- end new -->
+                                <td class="tabSpacer" id="tabDocumentsSpacer">&nbsp;</td>
+                                <td class="tab tabInactive">Packaging Sim</td>
     							<td class="tabSpacer" id="tabMultipleOffersSpacer" style="display:none">&nbsp;</td>
     							<td class="tab tabInactive" id="tabMultipleOffers" style="display:none"><span>Multiple Offers</span></td>
     							<td class="tabSpacer" width="90%">&nbsp;</td>
@@ -863,7 +865,7 @@
                             <div class="col-12">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h4>Calculation stuff</h4>
+                                        <h4>Needs Analysis</h4>
                                     </div>
                                 </div>
                             </div>
@@ -956,13 +958,28 @@
                                                 </select>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td class="cellHeader">Dislocated Worker?</td>
+                                            <td class="cellText">
+                                                <select>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2" selected="selected">No</option>
+                                                </select>
+                                            </td>
+                                            <td class="cellText">
+                                                <select>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2" selected="selected">No</option>
+                                                </select>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
 
                                 <table style="width: 100%;"><!--income and stuff -->
                                     <tbody>
                                         <tr>
-                                            <th scope="col" colspan="5" class="rowHeader">[name of this grouping]</th>
+                                            <th scope="col" colspan="5" class="rowHeader">Income Information</th>
                                         </tr>
                                         <tr>
                                             <th scope="col" class="rowHeader"></th>
@@ -1004,12 +1021,6 @@
                             </div>
 
                             <div class="col-4">
-                                <table style="width: 100%;"><!-- editable analysis duration -->
-                                    <tr>
-                                        <td class="cellHeader">Analysis Duration</td>
-                                        <td class="cellText blank"><input type="text" /></td>
-                                    </tr>
-                                </table>
 
                                 <table style="width: 100%;"><!-- Exclusions (additional financial) -->
                                     <tbody>
@@ -1161,7 +1172,7 @@
 
                                 <table style="width: 100%;">
                                     <tr>
-                                        <th class="rowHeader" colspan="3"><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u style="font-weight: normal;">Collapse [occasional/miscellaneous stuff]</u></a></th>
+                                        <th class="rowHeader" colspan="3"><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u style="font-weight: normal;">Collapse Miscellaneous Fields</u></a></th>
                                     </tr>
                                     <tr>
                                         <th scope="col" class="rowHeader"></th>
@@ -1169,12 +1180,9 @@
                                         <th scope="col" class="rowHeader">Parents</th>
                                     </tr>
                                     <tr>
-                                        <th scope="col" colspan="3" class="rowHeader">[header?]</th>
-                                    </tr>
-                                    <tr>
                                         <td class="cellHeader">State/other paid</td>
                                         <td class="cellText right">- $6,407</td>
-                                        <td class="cellText right">- $200"</td>
+                                        <td class="cellText right">- $200</td>
                                     </tr>
                                     <tr>
                                         <td class="cellHeader">FICA</td>
@@ -1217,9 +1225,6 @@
                                             <span class="badge">TOTAL</span><br />
                                             $43,289
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" colspan="3" class="rowHeader">[header?]</th>
                                     </tr>
                                     <!-- parent AAI -->
                                     <tr>
@@ -1342,6 +1347,13 @@
                                     </tbody>
                                 </table>
 
+                                <table style="width: 100%;"><!-- editable analysis duration -->
+                                    <tr>
+                                        <td class="cellHeader">Analysis Duration</td>
+                                        <td class="cellText blank"><input type="text" /></td>
+                                    </tr>
+                                </table>
+
                                 <table style="width: 100%;"><!-- EFCs -->
                                     <tr>
                                         <th scope="col" colspan="2" class="rowHeader">EFCs</th>
@@ -1380,7 +1392,7 @@
                             <div class="col-12">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h4>For reference: Transaction fields (from SFF135)</h4>
+                                        <h4>ISIR Transaction Information</h4>
                                     </div>
                                 </div>
                                 <div class="row"><!-- metadata -->
