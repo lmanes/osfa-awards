@@ -26,4 +26,5 @@ tr.buttonbar input[type=submit] { border: solid 1px transparent;
     color: #555;
     margin: 5px;
     padding: 1px 10px; }
+select.narrow { width: 130px !important; }
 /* input[type=text] { width: 100%; } */
