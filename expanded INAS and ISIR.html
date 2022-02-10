@@ -709,7 +709,8 @@
                                                     <option value="7">7 - continuing grad/prof or beyond</option>
                                                 </select>
                                             </td>
-                                        </tr><tr>
+                                        </tr>
+                                        <tr>
                                             <td class="cellHeader">Degree/Certificate</td>
                                             <td class="cellText">
                                                 <select class="narrow">
@@ -825,12 +826,24 @@
                                             <td class="cellHeader">SSN Match Flag</td>
                                             <td class="cellText">
                                                 <select class="narrow">
+                                                    <option value="1">1 - No match on SSN</option>
+                                                    <option value="2" selected="selected">2 - SSN and name match, no match on DOB</option>
                                                     <option value="3">3 - SSN match, no match on name</option>
+                                                    <option value="4">4 - SSN, name, and DOB match</option>
+                                                    <option value="5">5 - SSN, name, DOB match with date of death</option>
+                                                    <option value="6">6 - SSN not verified</option>
+                                                    <option value="8">8 - Record not sent to SSA</option>
                                                 </select>
                                             </td>
                                             <td class="cellText">
                                                 <select class="narrow">
+                                                    <option value="1">1 - No match on SSN</option>
                                                     <option value="2">2 - SSN and name match, no match on DOB</option>
+                                                    <option value="3">3 - SSN match, no match on name</option>
+                                                    <option value="4">4 - SSN, name, and DOB match</option>
+                                                    <option value="5" selected="selected">5 - SSN, name, DOB match with date of death</option>
+                                                    <option value="6">6 - SSN not verified</option>
+                                                    <option value="8">8 - Record not sent to SSA</option>
                                                 </select>
                                             </td>
                                         </tr>
