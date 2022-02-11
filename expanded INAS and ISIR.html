@@ -593,6 +593,15 @@
                                     </tbody>
                                 </table>
 
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td class="cellHeader">Signed By</td>
+                                            <td class="cellText">A - Applicant</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
                                 <table style="width: 100%;"> <!-- address table -->
                                     <tbody>
                                         <tr>
@@ -666,6 +675,12 @@
                                             <td class="cellHeader">Second DHS Verification Number</td>
                                             <td class="cellText">543210987654321</td>
                                         </tr>
+                                        <tr>
+                                            <th scope="col" colspan="2" class="rowHeader">ISIR Birthday</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="cellHeader">ISIR Birthday</td>
+                                            <td class="cellText blank"><input type="text" value="mm/dd/yyyy" size="12" class="blank">
                                     </tbody>
                                 </table>
                             </div>
@@ -789,16 +804,12 @@
                                         <tr>
                                             <td class="cellHeader">Accept Number in College?</td>
                                             <td class="cellText">
-                                                <select>
-                                                    <option value="1">Yes</option>
-                                                    <option value="2">No</option>
-                                                </select>
+                                                <input type="checkbox" disabled="disabled">
+                                                <label>Yes</label>
                                             </td>
                                             <td class="cellText">
-                                                <select>
-                                                    <option value="1">Yes</option>
-                                                    <option value="2">No</option>
-                                                </select>
+                                                <input type="checkbox" disabled="disabled">
+                                                <label>Yes</label>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -1007,7 +1018,7 @@
                                         <tr>
                                             <td class="cellHeader">IRS/DRT</td>
                                             <td class="cellText">02/B</td>
-                                            <td class="cellText">"00/A</td>
+                                            <td class="cellText">00/A</td>
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Tax Return</td>
@@ -1211,7 +1222,7 @@
                                             <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
                                         </tr>
                                         <tr class="emptyrow">
-                                            <td class="cellHeader">Tax-eExempt Interest</td>
+                                            <td class="cellHeader">Tax-Exempt Interest</td>
                                             <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
                                             <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
                                         </tr>
@@ -1319,7 +1330,7 @@
                                     <tr>
                                         <td class="cellHeader">
                                             Contribution from Assets <br/>
-                                            <smal>Income Supplement</small>
+                                            <small>Income Supplement</small>
                                         </td>
                                         <td class="cellText right">$0</td>
                                         <td class="cellText right">$2,300</td>
@@ -1363,17 +1374,12 @@
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Asset Threshold Exceeded</td>
-                                            <td class="cellText right">
-                                                <select>
-                                                    <option value="1">1 - Yes</option>
-                                                    <option value="2">2 - No</option>
-                                                </select>
+                                            <td class="cellText center">
+                                                1 - Yes
                                             </td>
-                                            <td class="cellText right">
-                                                <select>
-                                                    <option value="1">1 - Yes</option>
-                                                    <option value="2">2 - No</option>
-                                                </select>
+                                            <td class="cellText center">
+                                                2 - No
+
                                             </td>
                                         </tr>
                                         <tr>
@@ -1521,7 +1527,7 @@
                                     </div>
                                 </div>
                                 <div class="row"><!-- metadata -->
-                                    <div class="col-3"> <!-- metadata I don't understand -->
+                                    <div class="col-5"> <!-- metadata I don't understand -->
                                         <table style="width: 100%;">
                                             <tr>
                                                 <td class="cellHeader">CPS Grad</td>
@@ -1542,6 +1548,14 @@
                                             <tr>
                                                 <td class="cellHeader">SSA Citizen</td>
                                                 <td class="cellText">A - Confirmed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">DHS Match Flag</td>
+                                                <td class="cellText">N - Citizenship not confirmed</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="cellHeader">Secondary DHS Match Flag</td>
+                                                <td class="cellText">X - DHS did not have enough information to confirm eligible noncitizen status</td>
                                             </tr>
                                             <tr>
                                                 <td class="cellHeader">Child of Fallen Hero</td>
@@ -1565,16 +1579,12 @@
                                                 <td class="cellText">0</td>
                                             </tr>
                                             <tr>
-                                                <td class="cellHeader">NSLDS Transaction Number</td>
-                                                <td class="cellText">1</td>
-                                            </tr>
-                                            <tr>
                                                 <td class="cellHeader">Transaction Loaded on</td>
                                                 <td class="cellText">MM/DD/YYYY</td>
                                             </tr>
                                             <tr>
                                                 <td class="cellHeader">Verification Flag</td>
-                                                <td class="cellText"></td>
+                                                <td class="cellText">* Selected for verification on a subsequent transaction</td>
                                             </tr>
                                             <tr>
                                                 <td class="cellHeader">Federal Verification Completed?</td>
@@ -1583,19 +1593,23 @@
                                         </table>
                                     </div>
 
-                                    <div class="col-5"><!-- comments and reject codes -->
+                                    <div class="col-3"><!-- comments and reject codes -->
                                         <div class="row"> <!-- reject codes table -->
                                             <div class="col-12">
-                                                <table class="width: 100"><!-- correction override & stuff -->
+                                                <table style="width: 100%"><!-- correction override & stuff -->
                                                     <tr>
-                                                        <td class="cellHeader">Correction Override Y/N</td>
+                                                        <td class="cellHeader">Correction Override</td>
                                                         <td class="cellText">Yes</td>
+                                                    </tr>
+                                                    <tr>
                                                         <td class="cellHeader">Correction in Process?</td>
-                                                        <td class="cellText">YES</td>
+                                                        <td class="cellText">Yes</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="cellHeader">Number of Corrections Sent</td>
                                                         <td class="cellText">2</td>
+                                                    </tr>
+                                                    <tr>
                                                         <td class="cellHeader">Sent Date</td>
                                                         <td class="cellText">MM/DD/YYYY</td>
                                                     </tr>
@@ -1603,7 +1617,7 @@
                                                 <table style="width: 100%">
                                                     <tr>
                                                         <th colspan="3" class="rowHeader" scope="col">
-                                                            Reject codes
+                                                            Reject Codes
                                                         </th>
                                                     </tr>
                                                     <tr>
@@ -1618,6 +1632,7 @@
                                                     <tr>
                                                         <th colspan="3" class="rowHeader" scope="col">
                                                             Comments
+                                                        </th>
                                                     </tr>
                                                     <tr>
                                                         <td class="cellText">112</td>
@@ -1635,8 +1650,11 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-7"> <!-- transactions table -->
+                                    <div class="col-8"> <!-- transactions table -->
                                         <table class="center">
+                                            <tr>
+                                                <th class="rowHeader" colspan="10">ISIR Transaction History</th>
+                                            </tr>
                                             <tr>
                                                 <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Load Date</th>
                                                 <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS Date</th>
@@ -1647,6 +1665,7 @@
                                                 <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Type</th>
                                                 <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS Flags</th>
                                                 <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Special Flag</th>
+                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Signed By</th>
                                             </tr>
                                             <tr>
                                                 <td class="cellText">MM/DD/YYYY</td>
@@ -1658,6 +1677,7 @@
                                                 <td class="cellText">C</td>
                                                 <td class="cellText">Y 2R 2R 1</td>
                                                 <td class="cellText">3</td>
+                                                <td class="cellText">P - Parent</td>
                                             </tr>
                                             <tr>
                                                 <td class="cellText">MM/DD/YYYY</td>
@@ -1669,6 +1689,7 @@
                                                 <td class="cellText"></td>
                                                 <td class="cellText">Y 2R 1</td>
                                                 <td class="cellText">1</td>
+                                                <td class="cellText">A - Applicant</td>
                                             </tr>
                                         </table>
                                     </div>
