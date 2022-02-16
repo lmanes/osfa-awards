@@ -629,26 +629,6 @@
                                             <td class="cellHeader">State</td>
                                             <td class="cellText">WA</td>
                                         </tr>
-                                        <tr> <!-- state of legal residence table -->
-                                            <th scope="col" colspan="2" class="rowHeader">Legal Residence</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">State of Legal Residence:</td>
-                                            <td class="cellText"><input type="text" value="WA" size="15"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Resident by 1/1/2017?</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">1 - Yes</option>
-                                                    <option value="2">2 - No</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Date of Residency</td>
-                                            <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
-                                        </tr>
                                         <!-- citizenship info table -->
                                         <tr>
                                             <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
@@ -749,7 +729,7 @@
                                 <table style="width: 100%;"><!-- household demographics table -->
                                     <tbody>
                                         <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Household demographics</th>
+                                            <th scope="col" colspan="3" class="rowHeader">Household Demographics & Legal Residence</th>
                                         </tr>
                                         <tr>
                                             <th scope="col" class="rowHeader"></th>
@@ -788,14 +768,14 @@
                                         <tr>
                                             <td class="cellHeader">Number in Household</td>
                                             <td class="cellText blank">
-                                                <input type="text" value="blank" class="blank" size="7"/>
+                                                n/a
                                             </td>
                                             <td class="cellText"><input type="text" value="0" size="7" /></td>
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Number in College</td>
                                             <td class="cellText blank">
-                                                <input type="text" value="blank" class="blank" size="7"/>
+                                                n/a
                                             </td>
                                             <td class="cellText">
                                                 <input type="text" value="0"  size="7"/>
@@ -803,14 +783,39 @@
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Accept Number in College?</td>
-                                            <td class="cellText">
-                                                <input type="checkbox">
-                                                <label>Yes</label>
+                                            <td class="cellText blank">
+                                                n/a
                                             </td>
                                             <td class="cellText">
                                                 <input type="checkbox">
                                                 <label>Yes</label>
                                             </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="cellHeader">State of Legal Residence</td>
+                                            <td class="cellText" class="center blank"><input type="text" value="blank"  size="15"/></td>
+                                            <td class="cellText" class="center"><input type="text" value="WA" size="15"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cellHeader">Resident by 1/1/2017?</td>
+                                            <td class="cellText">
+                                                <select>
+                                                    <option value="1">1 - Yes</option>
+                                                    <option value="2">2 - No</option>
+                                                </select>
+                                            </td>
+                                            <td class="cellText" colspan="2">
+                                                <select>
+                                                    <option value="1">1 - Yes</option>
+                                                    <option value="2">2 - No</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cellHeader">Date of Residency</td>
+                                            <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
+                                            <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -891,31 +896,9 @@
                                                 </select>
                                             </td>
                                         </tr>
-                                    </tbody>
-                                </table>
-
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td class="cellHeader">Parents' State of Legal Residence</td>
-                                            <td class="cellText" colspan="2" class="center blank"><input type="text" value="blank"  size="15"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader" >Resident by 1/1/2017?</td>
-                                            <td class="cellText" colspan="2">
-                                                <select>
-                                                    <option value="1">1 - Yes</option>
-                                                    <option value="2">2 - No</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Date of Residency</td>
-                                            <td class="cellText" colspan="2"><input type="text" value="blank" class="blank" size="15"/></td>
-                                        </tr>
                                         <tr>
                                             <td class="cellHeader">Parent Email Address</td>
-                                            <td class="cellText" colspan="2"><input type="text" value="blank" class="blank" size="15"/></td>
+                                            <td class="cellText" colspan="2"><input type="text" value="blank" class="blank" size="25"/></td>
                                         </tr>
                                     </tbody>
                                 </table>
