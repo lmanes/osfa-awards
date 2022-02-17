@@ -291,12 +291,9 @@ input.error {
 
 input.button,
 input.buttonJavascript {
-	cursor: pointer;
 }
 input.buttonJavascript {
-	font-family: verdana,arial,helvetica,sans-serif;
-	font-size: 85%;
-	width: 125px;
+
 }
 /* //test - added next style: */
 input.button.submit { color:purple; font-weight:bold; padding:5px 10px; }
@@ -421,11 +418,11 @@ tr.newRow {
 }
 
 .mainLinks {
-	padding: 4px 0 1px 0;
+	padding: 4px 0;
+    line-height: 1.5;
 }
 .mainLinks a {
 	color: #303090;
-	margin-right: 15px;
 	text-decoration: none;
 }
 .mainLinks a:hover {
@@ -470,11 +467,7 @@ tr.newRow {
 	color: #b66;
 	cursor: pointer;
 	font-size: 80%;
-	margin-left:-40px;
-	margin-right:25px;
-	margin-top:-1px;
 	padding: 0 2px;
-	position: absolute;
 }
 
 

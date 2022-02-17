@@ -1,5 +1,30 @@
-/* lauren's bootstrap overrides and custom classes */
+/* lauren's bootstrap overrides and custom classes
 body {font-size: 12px; }
 
 dl {margin-bottom: 0; }
-dt {line-height: 1rem; }
+dt {line-height: 1rem; } */
+
+body { line-height: 1;}
+
+.award-row { border-top: 2px solid #343a40 !important; }
+.badge { font-size: 11px; }
+.button { line-height: 1.25em; }
+
+.blank { font-style: italic; color: #777;}
+
+.rowHeader { font-size: .8rem !important; font-weight: 600 !important; padding-top: 4px !important; padding-bottom: 6px !important; }
+.rowheader a, .rowheader a:hover { font-weight: bold !important; color: #333399 !important; text-decoration: underline !important; }
+
+td.cellText { background: white; }
+select, select option { font-size: 12px !important; }
+tr.emptyrow td { background: #f7f7f7 !important; color: #777 !important; }
+/* tr.emptyrow td input { background-color: #f9f9f9 !important;} */
+
+tr.buttonbar { background-color: slategray; border: solid 1px black; }
+tr.buttonbar input[type=submit] { border: solid 1px transparent;
+    border-radius: 4px;
+    color: #555;
+    margin: 5px;
+    padding: 1px 10px; }
+select.narrow { width: 130px !important; }
+/* input[type=text] { width: 100%; } */
