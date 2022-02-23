@@ -447,347 +447,349 @@
 
                     <!-- Lauren's new container for INAS content -->
                     <div class="container-fluid">
-                        <div class="row m-1 p-1" style="border: 1px solid black;"><!-- Lauren's student & parent INAS metadata container-->
-
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12">
+                        <div class="row m-1 p-1" style="border: 1px solid black;"><!-- Lauren's student & parent INAS metadata row-->
+                            <div class-"col-12">
+                                <div class="row"><!-- section header -->
+                                    <div class="col-sm-12">
                                         <h4>Student and parent demographic information</h4>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-4">
+                                <div class="row">
+                                    <div class="col-sm-3"><!-- left column -->
+                                        <table style="width: 100%;"><!-- dependent vs independent table -->
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="cellHeader" style="padding-top: 6px; padding-bottom: 6px; ">Student is:<br />
+                                                        <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><u style="font-weight: normal;"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See or edit details</u></a>
+                                                    </th>
+                                                    <td class="cellText">DEPENDENT</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="width: 100%;"><!-- signed by -->
+                                            <tbody>
+                                                <tr>
+                                                    <td class="cellHeader">Signed By</td>
+                                                    <td class="cellText">A - Applicant</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="width: 100%;"> <!-- address table -->
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col" colspan="2" class="rowHeader">Address</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Address:</td>
+                                                    <td class="cellText">111 2nd Ave, #34<br />
+                                                        Seattle, WA 98195</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Phone Number</td>
 
-                                <table style="width: 100%;"><!-- dependent vs independent table -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row" class="cellHeader" style="padding-top: 6px; padding-bottom: 6px; ">Student is:<br />
-                                                <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><u style="font-weight: normal;"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See or edit details</u></a>
-                                            </th>
-                                            <td class="cellText">DEPENDENT</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                    <td class="cellText">206-222-5555</td>
+                                                </tr>
+                                            <!-- driver's license info -->
+                                                <tr>
+                                                    <th scope="col" colspan="2" class="rowHeader">Driver's License</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">License Number:</td>
+                                                    <td class="cellText">ABCDE1235FG</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">State</td>
+                                                    <td class="cellText">WA</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="width: 100%;"><!-- educational status table -->
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col" colspan="2" class="rowHeader">Educational Status</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">High School Diploma / GED</td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1">1 - High school diploma</option>
+                                                            <option value="2">2 - GED certificate or state certificate</option>
+                                                            <option value="3">3 - Homeschooled</option>
+                                                            <option value="4">4 - None of the above</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Degree by July?</td>
+                                                    <td class="cellText">
+                                                        <select>
+                                                            <option value="1">1 - Yes</option>
+                                                            <option value="2">2 - No</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Grade Level</td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="0">0 - never attended college and 1st yr UG</option>
+                                                            <option value="1">1 - attended collegeg before and 1st yr UG</option>
+                                                            <option value="2">2 - 2nd year UG/Soph</option>
+                                                            <option value="3">3 - 3rd year UG/Jun</option>
+                                                            <option value="4">4 - 4th year UG/sen</option>
+                                                            <option value="5">5 - 5th year/other UG</option>
+                                                            <option value="6">6 - 1st yr col grad/prof (MBA, MD, PhD, etc.)</option>
+                                                            <option value="7">7 - continuing grad/prof or beyond</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Degree/Certificate</td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1">1 - first bachelor's degree</option>
+                                                            <option value="2">2 - 2nd bachelor's degree</option>
+                                                            <option value="3">3 - Associate degree (occupational or technical program)</option>
+                                                            <option value="4">4 - Associate degree (gen ed or transfer prog)</option>
+                                                            <option value="5">5 - Certificate or diploma (occupational, technical, or education program of less than 2 years)</option>
+                                                            <option value="6">6 - Certificate or diploma (occupational, technical, or education program of two or more years)</option>
+                                                            <option value="7">7 - Teaching credential (nondegree program)</option>
+                                                            <option value="8">8 - college graduate or professional degree (MBA, MD, PhD, etc.)</option>
+                                                            <option value="9">9 - other/undecided</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                <table width="100%">
-                                    <tbody>
-                                        <tr>
-                                            <td class="cellHeader">Signed By</td>
-                                            <td class="cellText">A - Applicant</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                    <div class="col-sm-4"><!-- middle column -->
+                                        <table style="width: 100%;"> <!-- address table -->
+                                            <tbody>
+                                                <!-- citizenship info table -->
+                                                <tr>
+                                                    <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Citizenship Status</td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1">1 - U.S. citizen (or U.S. national)</option>
+                                                            <option value="2" selected="selected">2 - Eligible noncitizen</option>
+                                                            <option value="3">3 - Neither 1 nor 2, not eligible</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Alien Registration Number</td>
+                                                    <td class="cellText"><input type="text" value="A123456" size="7"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">DHS Verification Number</td>
+                                                    <td class="cellText">123456789012345</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Second DHS Verification Number</td>
+                                                    <td class="cellText">543210987654321</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" colspan="2" class="rowHeader">ISIR Birthday</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">ISIR Birthday</td>
+                                                    <td class="cellText blank"><input type="text" value="mm/dd/yyyy" size="12" class="blank">
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                <table style="width: 100%;"> <!-- address table -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="2" class="rowHeader">Address</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Address:</td>
-                                            <td class="cellText">111 2nd Ave, #34<br />
-                                                Seattle, WA 98195</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Phone Number</td>
+                                    <div class="col-sm-5"><!-- right column--> 
+                                        <table style="width: 100%;"><!-- household demographics table -->
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col" colspan="3" class="rowHeader">Household Demographics & Legal Residence</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="rowHeader"></th>
+                                                    <th scope="col" class="rowHeader">Student</th>
+                                                    <th scope="col" class="rowHeader">Parents</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Marital Status</td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1" selected="selected">1 - single</option>
+                                                            <option value="2">2 - married/remarried</option>
+                                                            <option value="3">3 - separated</option>
+                                                            <option value="4">4 - divorced or widowed</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1" selected="selected">1 - Married or remarried</option>
+                                                            <option value="2">2 - Never married</option>
+                                                            <option value="3">3 - Divorced or separated</option>
+                                                            <option value="4">4 - Widowed</option>
+                                                            <option value="5">5 - Unmarried and both legal parents living together</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Marital Date</td>
+                                                    <td class="cellText blank">
+                                                        <input type="text" value="blank" class="blank" size="7"/>
+                                                    </td>
+                                                    <td class="cellText blank">
+                                                        <input type="text" value="blank" class="blank" size="7"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Number in Household</td>
+                                                    <td class="cellText blank">
+                                                        n/a
+                                                    </td>
+                                                    <td class="cellText"><input type="text" value="0" size="7" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Number in College</td>
+                                                    <td class="cellText blank">
+                                                        n/a
+                                                    </td>
+                                                    <td class="cellText">
+                                                        <input type="text" value="0"  size="7"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Accept Number in College?</td>
+                                                    <td class="cellText blank">
+                                                        n/a
+                                                    </td>
+                                                    <td class="cellText">
+                                                        <input type="checkbox">
+                                                        <label>Yes</label>
+                                                    </td>
+                                                </tr>
 
-                                            <td class="cellText">206-222-5555</td>
-                                        </tr>
-                                    <!-- driver's license info -->
-                                        <tr>
-                                            <th scope="col" colspan="2" class="rowHeader">Driver's License</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">License Number:</td>
-                                            <td class="cellText">ABCDE1235FG</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">State</td>
-                                            <td class="cellText">WA</td>
-                                        </tr>
-                                        <!-- citizenship info table -->
-                                        <tr>
-                                            <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Citizenship Status</td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1">1 - U.S. citizen (or U.S. national)</option>
-                                                    <option value="2" selected="selected">2 - Eligible noncitizen</option>
-                                                    <option value="3">3 - Neither 1 nor 2, not eligible</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Alien Registration Number</td>
-                                            <td class="cellText"><input type="text" value="A123456" size="7"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">DHS Verification Number</td>
-                                            <td class="cellText">123456789012345</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Second DHS Verification Number</td>
-                                            <td class="cellText">543210987654321</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" colspan="2" class="rowHeader">ISIR Birthday</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">ISIR Birthday</td>
-                                            <td class="cellText blank"><input type="text" value="mm/dd/yyyy" size="12" class="blank">
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-3">
-                                <table style="width: 100%;"><!-- educational status table -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="2" class="rowHeader">Educational Status</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">High School Diploma / GED</td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1">1 - High school diploma</option>
-                                                    <option value="2">2 - GED certificate or state certificate</option>
-                                                    <option value="3">3 - Homeschooled</option>
-                                                    <option value="4">4 - None of the above</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Degree by July?</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">1 - Yes</option>
-                                                    <option value="2">2 - No</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Grade Level</td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="0">0 - never attended college and 1st yr UG</option>
-                                                    <option value="1">1 - attended collegeg before and 1st yr UG</option>
-                                                    <option value="2">2 - 2nd year UG/Soph</option>
-                                                    <option value="3">3 - 3rd year UG/Jun</option>
-                                                    <option value="4">4 - 4th year UG/sen</option>
-                                                    <option value="5">5 - 5th year/other UG</option>
-                                                    <option value="6">6 - 1st yr col grad/prof (MBA, MD, PhD, etc.)</option>
-                                                    <option value="7">7 - continuing grad/prof or beyond</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Degree/Certificate</td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1">1 - first bachelor's degree</option>
-                                                    <option value="2">2 - 2nd bachelor's degree</option>
-                                                    <option value="3">3 - Associate degree (occupational or technical program)</option>
-                                                    <option value="4">4 - Associate degree (gen ed or transfer prog)</option>
-                                                    <option value="5">5 - Certificate or diploma (occupational, technical, or education program of less than 2 years)</option>
-                                                    <option value="6">6 - Certificate or diploma (occupational, technical, or education program of two or more years)</option>
-                                                    <option value="7">7 - Teaching credential (nondegree program)</option>
-                                                    <option value="8">8 - college graduate or professional degree (MBA, MD, PhD, etc.)</option>
-                                                    <option value="9">9 - other/undecided</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="col-5">
-                                <table style="width: 100%;"><!-- household demographics table -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Household Demographics & Legal Residence</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Student</th>
-                                            <th scope="col" class="rowHeader">Parents</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Marital Status</td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1" selected="selected">1 - single</option>
-                                                    <option value="2">2 - married/remarried</option>
-                                                    <option value="3">3 - separated</option>
-                                                    <option value="4">4 - divorced or widowed</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1" selected="selected">1 - Married or remarried</option>
-                                                    <option value="2">2 - Never married</option>
-                                                    <option value="3">3 - Divorced or separated</option>
-                                                    <option value="4">4 - Widowed</option>
-                                                    <option value="5">5 - Unmarried and both legal parents living together</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Marital Date</td>
-                                            <td class="cellText blank">
-                                                <input type="text" value="blank" class="blank" size="7"/>
-                                            </td>
-                                            <td class="cellText blank">
-                                                <input type="text" value="blank" class="blank" size="7"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Number in Household</td>
-                                            <td class="cellText blank">
-                                                n/a
-                                            </td>
-                                            <td class="cellText"><input type="text" value="0" size="7" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Number in College</td>
-                                            <td class="cellText blank">
-                                                n/a
-                                            </td>
-                                            <td class="cellText">
-                                                <input type="text" value="0"  size="7"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Accept Number in College?</td>
-                                            <td class="cellText blank">
-                                                n/a
-                                            </td>
-                                            <td class="cellText">
-                                                <input type="checkbox">
-                                                <label>Yes</label>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="cellHeader">State of Legal Residence</td>
-                                            <td class="cellText" class="center blank"><input type="text" value="blank"  size="15"/></td>
-                                            <td class="cellText" class="center"><input type="text" value="WA" size="15"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Resident by 1/1/2017?</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">1 - Yes</option>
-                                                    <option value="2">2 - No</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText" colspan="2">
-                                                <select>
-                                                    <option value="1">1 - Yes</option>
-                                                    <option value="2">2 - No</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Date of Residency</td>
-                                            <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
-                                            <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table style="width: 100%;"><!-- parent identity & age table -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Parent Identity & Age</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Parent 1</th>
-                                            <th scope="col" class="rowHeader">Parent 2</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">SSN</td>
-                                            <td class="cellText">
-                                                <input type="text" value="555-55-5555" size="15" />
-                                            </td>
-                                            <td class="cellText">
-                                                <input type="text" value="555-55-5555" size="15"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">SSN Match Flag</td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1">1 - No match on SSN</option>
-                                                    <option value="2" selected="selected">2 - SSN and name match, no match on DOB</option>
-                                                    <option value="3">3 - SSN match, no match on name</option>
-                                                    <option value="4">4 - SSN, name, and DOB match</option>
-                                                    <option value="5">5 - SSN, name, DOB match with date of death</option>
-                                                    <option value="6">6 - SSN not verified</option>
-                                                    <option value="8">8 - Record not sent to SSA</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1">1 - No match on SSN</option>
-                                                    <option value="2">2 - SSN and name match, no match on DOB</option>
-                                                    <option value="3">3 - SSN match, no match on name</option>
-                                                    <option value="4">4 - SSN, name, and DOB match</option>
-                                                    <option value="5" selected="selected">5 - SSN, name, DOB match with date of death</option>
-                                                    <option value="6">6 - SSN not verified</option>
-                                                    <option value="8">8 - Record not sent to SSA</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Name</td>
-                                            <td class="cellText"><input type="text" value="ABCD, E."  size="15"/></td>
-                                            <td class="cellText"><input type="text" value="DEFG, H."  size="15"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Date of Birth</td>
-                                            <td class="cellText"><input type="text" value="11/2/1908"  size="15"/></td>
-                                            <td class="cellText"><input type="text" value="02/22/1899"  size="15"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Oldest Parent Age</td>
-                                            <td class="cellText" colspan="2" class="center">77</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Highest Grade Completed:</td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1">1 - Middle school/Jr. high</option>
-                                                    <option value="2">2 - High school</option>
-                                                    <option value="3" selected="selected">3 - College or beyond</option>
-                                                    <option value="4">4 - Other/unknown</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select class="narrow">
-                                                    <option value="1">1 - Middle school/Jr. high</option>
-                                                    <option value="2">2 - High school</option>
-                                                    <option value="3">3 - College or beyond</option>
-                                                    <option value="4" selected="selected">4 - Other/unknown</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Parent Email Address</td>
-                                            <td class="cellText blank" colspan="2">blank</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table style="width: 100%;"><!-- federal program benefits table -->
-                                <tr>
-                                        <td class="rowHeader" colspan="4">
-                                        Federal Program Benefits Received: none<br />
-                                        <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See details</a>
-                                    </td>
-                                </tr>
-                            </table>
+                                                <tr>
+                                                    <td class="cellHeader">State of Legal Residence</td>
+                                                    <td class="cellText" class="center blank"><input type="text" value="blank"  size="15"/></td>
+                                                    <td class="cellText" class="center"><input type="text" value="WA" size="15"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Resident by 1/1/2017?</td>
+                                                    <td class="cellText">
+                                                        <select>
+                                                            <option value="1">1 - Yes</option>
+                                                            <option value="2">2 - No</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="cellText" colspan="2">
+                                                        <select>
+                                                            <option value="1">1 - Yes</option>
+                                                            <option value="2">2 - No</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Date of Residency</td>
+                                                    <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
+                                                    <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="width: 100%;"><!-- parent identity & age table -->
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col" colspan="3" class="rowHeader">Parent Identity & Age</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" class="rowHeader"></th>
+                                                    <th scope="col" class="rowHeader">Parent 1</th>
+                                                    <th scope="col" class="rowHeader">Parent 2</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">SSN</td>
+                                                    <td class="cellText">
+                                                        <input type="text" value="555-55-5555" size="15" />
+                                                    </td>
+                                                    <td class="cellText">
+                                                        <input type="text" value="555-55-5555" size="15"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">SSN Match Flag</td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1">1 - No match on SSN</option>
+                                                            <option value="2" selected="selected">2 - SSN and name match, no match on DOB</option>
+                                                            <option value="3">3 - SSN match, no match on name</option>
+                                                            <option value="4">4 - SSN, name, and DOB match</option>
+                                                            <option value="5">5 - SSN, name, DOB match with date of death</option>
+                                                            <option value="6">6 - SSN not verified</option>
+                                                            <option value="8">8 - Record not sent to SSA</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1">1 - No match on SSN</option>
+                                                            <option value="2">2 - SSN and name match, no match on DOB</option>
+                                                            <option value="3">3 - SSN match, no match on name</option>
+                                                            <option value="4">4 - SSN, name, and DOB match</option>
+                                                            <option value="5" selected="selected">5 - SSN, name, DOB match with date of death</option>
+                                                            <option value="6">6 - SSN not verified</option>
+                                                            <option value="8">8 - Record not sent to SSA</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Name</td>
+                                                    <td class="cellText"><input type="text" value="ABCD, E."  size="15"/></td>
+                                                    <td class="cellText"><input type="text" value="DEFG, H."  size="15"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Date of Birth</td>
+                                                    <td class="cellText"><input type="text" value="11/2/1908"  size="15"/></td>
+                                                    <td class="cellText"><input type="text" value="02/22/1899"  size="15"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Oldest Parent Age</td>
+                                                    <td class="cellText" colspan="2" class="center">77</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Highest Grade Completed:</td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1">1 - Middle school/Jr. high</option>
+                                                            <option value="2">2 - High school</option>
+                                                            <option value="3" selected="selected">3 - College or beyond</option>
+                                                            <option value="4">4 - Other/unknown</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="cellText">
+                                                        <select class="narrow">
+                                                            <option value="1">1 - Middle school/Jr. high</option>
+                                                            <option value="2">2 - High school</option>
+                                                            <option value="3">3 - College or beyond</option>
+                                                            <option value="4" selected="selected">4 - Other/unknown</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cellHeader">Parent Email Address</td>
+                                                    <td class="cellText blank" colspan="2">blank</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="width: 100%;"><!-- federal program benefits table -->
+                                            <tr>
+                                                <td class="rowHeader" colspan="4">
+                                                Federal Program Benefits Received: none<br />
+                                                <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See details</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div><!-- end Lauren's student & Parent INAS metadata row -->
 
