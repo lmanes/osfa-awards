@@ -447,950 +447,941 @@
 
                     <!-- Lauren's new container for INAS content -->
                     <div class="container-fluid">
-                        <div class="row m-1 p-1" style="border: 1px solid black;"><!-- Lauren's student & parent INAS metadata row-->
-                            <div class-"col-12">
-                                <div class="row"><!-- section header -->
-                                    <div class="col-sm-12">
-                                        <h4>Student and parent demographic information</h4>
+                        <div class="row"><!-- the row for the INAS guts -->
+                            <div class="col-12"><!-- the col for the INAS guts -->
+                                <div class="row" style="border: 1px solid black;"><!-- student & parent demographic section -->
+                                    <div class="col-12 no-gutter"><!-- col - row - col for header -->
+                                        <div class="row no-gutter">
+                                            <div class="col-12"><h4>Student and parent demographic information</h4></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 no-gutter"><!-- col - row for content -->
+                                        <div class="row">
+                                            <div class="col-3" style="border: 1px solid orange;"><!-- left column -->
+                                                <table style="width: 100%;"><!-- dependent vs independent table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row" class="cellHeader" style="padding-top: 6px; padding-bottom: 6px; ">Student is:<br />
+                                                                <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><u style="font-weight: normal;"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See or edit details</u></a>
+                                                            </th>
+                                                            <td class="cellText">DEPENDENT</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="width: 100%;"><!-- "signed by" -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="cellHeader">Signed By</td>
+                                                            <td class="cellText">A - Applicant</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-4" style="border: 1px solid pink;"><!-- middle column -->
+                                                <table style="width: 100%;"> <!-- address table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Address</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Address:</td>
+                                                            <td class="cellText">111 2nd Ave, #34<br />
+                                                                Seattle, WA 98195</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Phone Number</td>
+
+                                                            <td class="cellText">206-222-5555</td>
+                                                        </tr>
+                                                    <!-- driver's license info -->
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Driver's License</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">License Number:</td>
+                                                            <td class="cellText">ABCDE1235FG</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">State</td>
+                                                            <td class="cellText">WA</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="width: 100%;"><!-- educational status table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Educational Status</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">High School Diploma / GED</td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1">1 - High school diploma</option>
+                                                                    <option value="2">2 - GED certificate or state certificate</option>
+                                                                    <option value="3">3 - Homeschooled</option>
+                                                                    <option value="4">4 - None of the above</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Degree by July?</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">1 - Yes</option>
+                                                                    <option value="2">2 - No</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Grade Level</td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="0">0 - never attended college and 1st yr UG</option>
+                                                                    <option value="1">1 - attended collegeg before and 1st yr UG</option>
+                                                                    <option value="2">2 - 2nd year UG/Soph</option>
+                                                                    <option value="3">3 - 3rd year UG/Jun</option>
+                                                                    <option value="4">4 - 4th year UG/sen</option>
+                                                                    <option value="5">5 - 5th year/other UG</option>
+                                                                    <option value="6">6 - 1st yr col grad/prof (MBA, MD, PhD, etc.)</option>
+                                                                    <option value="7">7 - continuing grad/prof or beyond</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Degree/Certificate</td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1">1 - first bachelor's degree</option>
+                                                                    <option value="2">2 - 2nd bachelor's degree</option>
+                                                                    <option value="3">3 - Associate degree (occupational or technical program)</option>
+                                                                    <option value="4">4 - Associate degree (gen ed or transfer prog)</option>
+                                                                    <option value="5">5 - Certificate or diploma (occupational, technical, or education program of less than 2 years)</option>
+                                                                    <option value="6">6 - Certificate or diploma (occupational, technical, or education program of two or more years)</option>
+                                                                    <option value="7">7 - Teaching credential (nondegree program)</option>
+                                                                    <option value="8">8 - college graduate or professional degree (MBA, MD, PhD, etc.)</option>
+                                                                    <option value="9">9 - other/undecided</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table width:"100%">
+                                                    <tbody>
+                                                        <!-- citizenship info table -->
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Citizenship Status</td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1">1 - U.S. citizen (or U.S. national)</option>
+                                                                    <option value="2" selected="selected">2 - Eligible noncitizen</option>
+                                                                    <option value="3">3 - Neither 1 nor 2, not eligible</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Alien Registration Number</td>
+                                                            <td class="cellText"><input type="text" value="A123456" size="7"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">DHS Verification Number</td>
+                                                            <td class="cellText">123456789012345</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Second DHS Verification Number</td>
+                                                            <td class="cellText">543210987654321</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" colspan="2" class="rowHeader">ISIR Birthday</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">ISIR Birthday</td>
+                                                            <td class="cellText blank"><input type="text" value="mm/dd/yyyy" size="12" class="blank">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-5" style="border: 1px solid blue;"><!-- right column -->
+                                                <table style="width: 100%;"><!-- household demographics table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">Household Demographics & Legal Residence</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" class="rowHeader"></th>
+                                                            <th scope="col" class="rowHeader">Student</th>
+                                                            <th scope="col" class="rowHeader">Parents</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Marital Status</td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1" selected="selected">1 - single</option>
+                                                                    <option value="2">2 - married/remarried</option>
+                                                                    <option value="3">3 - separated</option>
+                                                                    <option value="4">4 - divorced or widowed</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1" selected="selected">1 - Married or remarried</option>
+                                                                    <option value="2">2 - Never married</option>
+                                                                    <option value="3">3 - Divorced or separated</option>
+                                                                    <option value="4">4 - Widowed</option>
+                                                                    <option value="5">5 - Unmarried and both legal parents living together</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Marital Date</td>
+                                                            <td class="cellText blank">
+                                                                <input type="text" value="blank" class="blank" size="7"/>
+                                                            </td>
+                                                            <td class="cellText blank">
+                                                                <input type="text" value="blank" class="blank" size="7"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Number in Household</td>
+                                                            <td class="cellText blank">
+                                                                n/a
+                                                            </td>
+                                                            <td class="cellText"><input type="text" value="0" size="7" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Number in College</td>
+                                                            <td class="cellText blank">
+                                                                n/a
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <input type="text" value="0"  size="7"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Accept Number in College?</td>
+                                                            <td class="cellText blank">
+                                                                n/a
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <input type="checkbox">
+                                                                <label>Yes</label>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="cellHeader">State of Legal Residence</td>
+                                                            <td class="cellText" class="center blank"><input type="text" value="blank"  size="15"/></td>
+                                                            <td class="cellText" class="center"><input type="text" value="WA" size="15"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Resident by 1/1/2017?</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">1 - Yes</option>
+                                                                    <option value="2">2 - No</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText" colspan="2">
+                                                                <select>
+                                                                    <option value="1">1 - Yes</option>
+                                                                    <option value="2">2 - No</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Date of Residency</td>
+                                                            <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
+                                                            <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="width: 100%;"><!-- parent identity & age table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">Parent Identity & Age</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" class="rowHeader"></th>
+                                                            <th scope="col" class="rowHeader">Parent 1</th>
+                                                            <th scope="col" class="rowHeader">Parent 2</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">SSN</td>
+                                                            <td class="cellText">
+                                                                <input type="text" value="555-55-5555" size="15" />
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <input type="text" value="555-55-5555" size="15"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">SSN Match Flag</td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1">1 - No match on SSN</option>
+                                                                    <option value="2" selected="selected">2 - SSN and name match, no match on DOB</option>
+                                                                    <option value="3">3 - SSN match, no match on name</option>
+                                                                    <option value="4">4 - SSN, name, and DOB match</option>
+                                                                    <option value="5">5 - SSN, name, DOB match with date of death</option>
+                                                                    <option value="6">6 - SSN not verified</option>
+                                                                    <option value="8">8 - Record not sent to SSA</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1">1 - No match on SSN</option>
+                                                                    <option value="2">2 - SSN and name match, no match on DOB</option>
+                                                                    <option value="3">3 - SSN match, no match on name</option>
+                                                                    <option value="4">4 - SSN, name, and DOB match</option>
+                                                                    <option value="5" selected="selected">5 - SSN, name, DOB match with date of death</option>
+                                                                    <option value="6">6 - SSN not verified</option>
+                                                                    <option value="8">8 - Record not sent to SSA</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Name</td>
+                                                            <td class="cellText"><input type="text" value="ABCD, E."  size="15"/></td>
+                                                            <td class="cellText"><input type="text" value="DEFG, H."  size="15"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Date of Birth</td>
+                                                            <td class="cellText"><input type="text" value="11/2/1908"  size="15"/></td>
+                                                            <td class="cellText"><input type="text" value="02/22/1899"  size="15"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Oldest Parent Age</td>
+                                                            <td class="cellText" colspan="2" class="center">77</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Highest Grade Completed:</td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1">1 - Middle school/Jr. high</option>
+                                                                    <option value="2">2 - High school</option>
+                                                                    <option value="3" selected="selected">3 - College or beyond</option>
+                                                                    <option value="4">4 - Other/unknown</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select class="narrow">
+                                                                    <option value="1">1 - Middle school/Jr. high</option>
+                                                                    <option value="2">2 - High school</option>
+                                                                    <option value="3">3 - College or beyond</option>
+                                                                    <option value="4" selected="selected">4 - Other/unknown</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Parent Email Address</td>
+                                                            <td class="cellText blank" colspan="2">blank</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="width: 100%;"><!-- federal program benefits table -->
+                                                    <tr>
+                                                        <td class="rowHeader" colspan="4">
+                                                        Federal Program Benefits Received: none<br />
+                                                        <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See details</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-sm-3"><!-- left column -->
-                                        <table style="width: 100%;"><!-- dependent vs independent table -->
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row" class="cellHeader" style="padding-top: 6px; padding-bottom: 6px; ">Student is:<br />
-                                                        <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><u style="font-weight: normal;"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See or edit details</u></a>
-                                                    </th>
-                                                    <td class="cellText">DEPENDENT</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table style="width: 100%;"><!-- signed by -->
-                                            <tbody>
-                                                <tr>
-                                                    <td class="cellHeader">Signed By</td>
-                                                    <td class="cellText">A - Applicant</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <div class="col-sm-4"><!-- middle column -->
-                                        <table style="width: 100%;"> <!-- address table -->
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="col" colspan="2" class="rowHeader">Address</th>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Address:</td>
-                                                    <td class="cellText">111 2nd Ave, #34<br />
-                                                        Seattle, WA 98195</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Phone Number</td>
-
-                                                    <td class="cellText">206-222-5555</td>
-                                                </tr>
-                                            <!-- driver's license info -->
-                                                <tr>
-                                                    <th scope="col" colspan="2" class="rowHeader">Driver's License</th>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">License Number:</td>
-                                                    <td class="cellText">ABCDE1235FG</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">State</td>
-                                                    <td class="cellText">WA</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table style="width: 100%;"><!-- educational status table -->
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="col" colspan="2" class="rowHeader">Educational Status</th>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">High School Diploma / GED</td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1">1 - High school diploma</option>
-                                                            <option value="2">2 - GED certificate or state certificate</option>
-                                                            <option value="3">3 - Homeschooled</option>
-                                                            <option value="4">4 - None of the above</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Degree by July?</td>
-                                                    <td class="cellText">
-                                                        <select>
-                                                            <option value="1">1 - Yes</option>
-                                                            <option value="2">2 - No</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Grade Level</td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="0">0 - never attended college and 1st yr UG</option>
-                                                            <option value="1">1 - attended collegeg before and 1st yr UG</option>
-                                                            <option value="2">2 - 2nd year UG/Soph</option>
-                                                            <option value="3">3 - 3rd year UG/Jun</option>
-                                                            <option value="4">4 - 4th year UG/sen</option>
-                                                            <option value="5">5 - 5th year/other UG</option>
-                                                            <option value="6">6 - 1st yr col grad/prof (MBA, MD, PhD, etc.)</option>
-                                                            <option value="7">7 - continuing grad/prof or beyond</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Degree/Certificate</td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1">1 - first bachelor's degree</option>
-                                                            <option value="2">2 - 2nd bachelor's degree</option>
-                                                            <option value="3">3 - Associate degree (occupational or technical program)</option>
-                                                            <option value="4">4 - Associate degree (gen ed or transfer prog)</option>
-                                                            <option value="5">5 - Certificate or diploma (occupational, technical, or education program of less than 2 years)</option>
-                                                            <option value="6">6 - Certificate or diploma (occupational, technical, or education program of two or more years)</option>
-                                                            <option value="7">7 - Teaching credential (nondegree program)</option>
-                                                            <option value="8">8 - college graduate or professional degree (MBA, MD, PhD, etc.)</option>
-                                                            <option value="9">9 - other/undecided</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table width:"100%">
-                                            <tbody>
-                                                <!-- citizenship info table -->
-                                                <tr>
-                                                    <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Citizenship Status</td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1">1 - U.S. citizen (or U.S. national)</option>
-                                                            <option value="2" selected="selected">2 - Eligible noncitizen</option>
-                                                            <option value="3">3 - Neither 1 nor 2, not eligible</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Alien Registration Number</td>
-                                                    <td class="cellText"><input type="text" value="A123456" size="7"/></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">DHS Verification Number</td>
-                                                    <td class="cellText">123456789012345</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Second DHS Verification Number</td>
-                                                    <td class="cellText">543210987654321</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col" colspan="2" class="rowHeader">ISIR Birthday</th>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">ISIR Birthday</td>
-                                                    <td class="cellText blank"><input type="text" value="mm/dd/yyyy" size="12" class="blank">
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <div class="col-sm-5"><!-- right column-->
-                                        <table style="width: 100%;"><!-- household demographics table -->
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="col" colspan="3" class="rowHeader">Household Demographics & Legal Residence</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col" class="rowHeader"></th>
-                                                    <th scope="col" class="rowHeader">Student</th>
-                                                    <th scope="col" class="rowHeader">Parents</th>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Marital Status</td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1" selected="selected">1 - single</option>
-                                                            <option value="2">2 - married/remarried</option>
-                                                            <option value="3">3 - separated</option>
-                                                            <option value="4">4 - divorced or widowed</option>
-                                                        </select>
-                                                    </td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1" selected="selected">1 - Married or remarried</option>
-                                                            <option value="2">2 - Never married</option>
-                                                            <option value="3">3 - Divorced or separated</option>
-                                                            <option value="4">4 - Widowed</option>
-                                                            <option value="5">5 - Unmarried and both legal parents living together</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Marital Date</td>
-                                                    <td class="cellText blank">
-                                                        <input type="text" value="blank" class="blank" size="7"/>
-                                                    </td>
-                                                    <td class="cellText blank">
-                                                        <input type="text" value="blank" class="blank" size="7"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Number in Household</td>
-                                                    <td class="cellText blank">
-                                                        n/a
-                                                    </td>
-                                                    <td class="cellText"><input type="text" value="0" size="7" /></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Number in College</td>
-                                                    <td class="cellText blank">
-                                                        n/a
-                                                    </td>
-                                                    <td class="cellText">
-                                                        <input type="text" value="0"  size="7"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Accept Number in College?</td>
-                                                    <td class="cellText blank">
-                                                        n/a
-                                                    </td>
-                                                    <td class="cellText">
-                                                        <input type="checkbox">
-                                                        <label>Yes</label>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="cellHeader">State of Legal Residence</td>
-                                                    <td class="cellText" class="center blank"><input type="text" value="blank"  size="15"/></td>
-                                                    <td class="cellText" class="center"><input type="text" value="WA" size="15"/></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Resident by 1/1/2017?</td>
-                                                    <td class="cellText">
-                                                        <select>
-                                                            <option value="1">1 - Yes</option>
-                                                            <option value="2">2 - No</option>
-                                                        </select>
-                                                    </td>
-                                                    <td class="cellText" colspan="2">
-                                                        <select>
-                                                            <option value="1">1 - Yes</option>
-                                                            <option value="2">2 - No</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Date of Residency</td>
-                                                    <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
-                                                    <td class="cellText"><input type="text" value="blank" class="blank" size="15"/></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table style="width: 100%;"><!-- parent identity & age table -->
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="col" colspan="3" class="rowHeader">Parent Identity & Age</th>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col" class="rowHeader"></th>
-                                                    <th scope="col" class="rowHeader">Parent 1</th>
-                                                    <th scope="col" class="rowHeader">Parent 2</th>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">SSN</td>
-                                                    <td class="cellText">
-                                                        <input type="text" value="555-55-5555" size="15" />
-                                                    </td>
-                                                    <td class="cellText">
-                                                        <input type="text" value="555-55-5555" size="15"/>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">SSN Match Flag</td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1">1 - No match on SSN</option>
-                                                            <option value="2" selected="selected">2 - SSN and name match, no match on DOB</option>
-                                                            <option value="3">3 - SSN match, no match on name</option>
-                                                            <option value="4">4 - SSN, name, and DOB match</option>
-                                                            <option value="5">5 - SSN, name, DOB match with date of death</option>
-                                                            <option value="6">6 - SSN not verified</option>
-                                                            <option value="8">8 - Record not sent to SSA</option>
-                                                        </select>
-                                                    </td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1">1 - No match on SSN</option>
-                                                            <option value="2">2 - SSN and name match, no match on DOB</option>
-                                                            <option value="3">3 - SSN match, no match on name</option>
-                                                            <option value="4">4 - SSN, name, and DOB match</option>
-                                                            <option value="5" selected="selected">5 - SSN, name, DOB match with date of death</option>
-                                                            <option value="6">6 - SSN not verified</option>
-                                                            <option value="8">8 - Record not sent to SSA</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Name</td>
-                                                    <td class="cellText"><input type="text" value="ABCD, E."  size="15"/></td>
-                                                    <td class="cellText"><input type="text" value="DEFG, H."  size="15"/></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Date of Birth</td>
-                                                    <td class="cellText"><input type="text" value="11/2/1908"  size="15"/></td>
-                                                    <td class="cellText"><input type="text" value="02/22/1899"  size="15"/></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Oldest Parent Age</td>
-                                                    <td class="cellText" colspan="2" class="center">77</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Highest Grade Completed:</td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1">1 - Middle school/Jr. high</option>
-                                                            <option value="2">2 - High school</option>
-                                                            <option value="3" selected="selected">3 - College or beyond</option>
-                                                            <option value="4">4 - Other/unknown</option>
-                                                        </select>
-                                                    </td>
-                                                    <td class="cellText">
-                                                        <select class="narrow">
-                                                            <option value="1">1 - Middle school/Jr. high</option>
-                                                            <option value="2">2 - High school</option>
-                                                            <option value="3">3 - College or beyond</option>
-                                                            <option value="4" selected="selected">4 - Other/unknown</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="cellHeader">Parent Email Address</td>
-                                                    <td class="cellText blank" colspan="2">blank</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <table style="width: 100%;"><!-- federal program benefits table -->
-                                            <tr>
-                                                <td class="rowHeader" colspan="4">
-                                                Federal Program Benefits Received: none<br />
-                                                <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See details</a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- end Lauren's student & Parent INAS metadata row -->
-
-                        <div class="row m-1 p-1" style="border: 1px solid black;"><!-- lauren's container for the math parts of INAS stuff -->
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4>Needs Analysis</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <table style="width: 100%;"><!-- PJ stuff table -->
-                                    <tr>
-                                        <td class="cellHeader">Professional Judgement Type</td>
-                                        <td class="cellText blank"><input type="text" value="blank" class="blank" size="15"/></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" colspan="2" class="rowHeader">Tax return reviewed by OSFA</th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col" class="rowHeader">Student</th>
-                                        <th scope="col" class="rowHeader">Parents</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank" /></td>
-                                        <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank"/></td>
-                                    </tr>
-                                </table>
-
-                                <table style="width: 100%;"><!--Tax return info table -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Tax Return Information</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Student</th>
-                                            <th scope="col" class="rowHeader">Parents</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">IRS/DRT</td>
-                                            <td class="cellText">02/B</td>
-                                            <td class="cellText">00/A</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Tax Return</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">1 - Completed</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option>1 - Completed</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Return Type</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option>1 - 1040</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option>1 - 1040</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Filing As</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option>1 - Individual</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option>1 - Married Filing Jointly</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Filed Schedule 1?</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="2">Yes</option>
-                                                    <option value="1" selected="selected">No</option>
-                                                    <option value="3">Don't know</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">Yes</option>
-                                                    <option value="2" selected="selected">No</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Dislocated Worker?</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">Yes</option>
-                                                    <option value="2" selected="selected">No</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">Yes</option>
-                                                    <option value="2" selected="selected">No</option>
-                                                    <option value="3">Don't know</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table style="width: 100%;"><!--income and stuff -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="5" class="rowHeader">Income Information</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Student</th>
-                                            <th scope="col" class="rowHeader">Spouse</th>
-                                            <th scope="col" class="rowHeader">Parent 1</th>
-                                            <th scope="col" class="rowHeader">Parent 2</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Work Income</td>
-                                            <td class="cellText right">$<input type="text" size="6" value="30,000"/></td>
-                                            <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
-                                            <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
-                                            <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Total Work Income</td>
-                                            <td class="cellText right" colspan="2">
-                                                <span class="badge">TOTAL</span><br />
-                                                $60,000
-                                            </td>
-                                            <td class="cellText right" colspan="2">
-                                                <span class="badge">TOTAL</span><br />
-                                                $60,000
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Adjusted Gross Income</td>
-                                            <td class="cellText right" colspan="2">$ <input type="text" size="7" value="60,000" /></td>
-                                            <td class="cellText right" colspan="2">$ <input type="text" size="7" value="90,000" /></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="col-4">
-
-                                <table style="width: 100%;"><!-- Exclusions (additional financial) -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Student</th>
-                                            <th scope="col" class="rowHeader">Parents</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Exclusions (Additional Financial)</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Education Credits</td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="1,407" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Child support paid</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Need-based Earnings</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Grants and Scholarships</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Combat Pay</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Co-op Earnings</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="200" /></td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td class="cellHeader center" style="font-weight: normal;" colspan="3"><a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> <u>See all exclusions</u></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Total Exclusions</td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                - $1,407
-                                            </td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                - $200
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Accept Worksheet C?</td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">Yes</option>
-                                                    <option value="2">No</option>
-                                                </select>
-                                            </td>
-                                            <td class="cellText">
-                                                <select>
-                                                    <option value="1">Yes</option>
-                                                    <option value="2">No</option>
-                                                </select>
-                                            </td>
-                                        </tr>
-                                        <!-- Untaxed Income table -->
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Untaxed Income</th>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Pension and Savings</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">IRA/SEP/SIMPLE/KEOGH</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Child Support Received</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Tax-Exempt Interest</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Untaxed IRA & Pensions</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Living Allowance</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Non-educational VA</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Other Untaxed</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
-                                        </tr>
-                                        <tr class="emptyrow">
-                                            <td class="cellHeader">Received on Your Behalf</td>
-                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
-                                            <td class="cellText blank center">n/a</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Total Untaxed Income</td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $0
-                                            </td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $0
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader center" style="font-weight: normal;" colspan="3"><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u>Hide empty untaxed income</u></a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Allowances Against Income</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Total Income</td>
-                                            <td class="cellText right">$63,018</td>
-                                            <td class="cellText right">$90,871</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">U.S. Income Tax</td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="812" /></td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="1,817" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">State/Other Tax</td>
-                                            <td class="cellText right">- $6,407</td>
-                                            <td class="cellText right">- $200</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">
-                                                FICA<br />
-                                                <small>Social Security Tax</small>
-                                            </td>
-                                            <td class="cellText right">- $2,481</td>
-                                            <td class="cellText right">- $0</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Employment Expense Allowance</td>
-                                            <td class="cellText right">- $0</td>
-                                            <td class="cellText right">- $31,386</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">
-                                                Income Protection Allowance<br />
-                                                <small>Maintenance</small>
-                                            </td>
-                                            <td class="cellText right">- $0</td>
-                                            <td class="cellText right">- $0</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Total Available Income</td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $324,112
-                                            </td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $43,289
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">
-                                                Contribution from Assets <br/>
-                                                <small>Income Supplement</small>
-                                            </td>
-                                            <td class="cellText right">$0</td>
-                                            <td class="cellText right">$2,300</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Adjusted Available Income (AAI)</td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $324,112
-                                            </td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $43,289
-                                            </td>
-                                        </tr>
-                                        <!-- parent AAI -->
-                                        <tr>
-                                            <td class="cellHeader">Allowance for Negative Parent AAI</td>
-                                            <td class="cellText right" colspan="2">$0</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table width="100%">
-                                    <tbody>
-                                        <!-- FISAP table -->
-                                    <tr>
-                                            <td class="cellHeader">FISAP Total Income</td>
-                                            <td class="cellText right">$0</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="col-4">
-                                <table style="width: 100%;"><!-- Contribution from assets -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Contribution From Assets</th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Student</th>
-                                            <th scope="col" class="rowHeader">Parents</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Asset Threshold Exceeded</td>
-                                            <td class="cellText center">
-                                                1 - Yes
-                                            </td>
-                                            <td class="cellText center">
-                                                2 - No
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Cash Assets</td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="28,000" /></td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="1,000" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Net Investments</td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="14,500" /></td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="0" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Net Business/Farm</td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="0" /></td>
-                                            <td class="cellText right">$ <input type="text" size="7" value="1000" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Net Assets</td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $43,407
-                                            </td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $85,261
-                                            </td>
-                                        </tr>
-                                        <!-- asset protection and discretionary net worth, collapsed -->
-                                        <tr>
-                                            <th class="rowHeader" colspan="3"><a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> <u style="font-weight: normal;">See Asset Protection and Discretionary Net Worth</u></a></th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table style="width: 100%;"><!-- EFC Breakdown -->
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">EFC Breakdown</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Methodology Type
-                                            <td class="cellText" colspan="2">
-                                                Regular
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col" class="rowHeader"></th>
-                                            <th scope="col" class="rowHeader">Student</th>
-                                            <th scope="col" class="rowHeader">Parents</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Total Contribution</td>
-                                            <td class="cellText right">$0</td>
-                                            <td class="cellText right">$0</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Income</td>
-                                            <td class="cellText right">$19,263</td>
-                                            <td class="cellText right">$0</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Assets</td>
-                                            <td class="cellText right">$131</td>
-                                            <td class="cellText right">$3,218</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Total to Student</td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $19,394
-                                            </td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $3,218
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-
-                                <table style="width: 100%;"><!-- editable analysis duration -->
-                                    <tr>
-                                        <td class="cellHeader">Analysis Duration</td>
-                                        <td class="cellText"><input type="text" size="7" value="9"/></td>
-                                    </tr>
-                                </table>
-
-                                <table style="width: 100%;"><!-- EFCs -->
-                                    <tr>
-                                        <th scope="col" colspan="2" class="rowHeader">EFCs</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="cellHeader">INAS EFC</td>
-                                        <td class="cellText right">$19,394</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cellHeader">9-Month INAS EFC</td>
-                                        <td class="cellText right">$19,394</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cellHeader">CPS EFC</td>
-                                        <td class="cellText right">$19,394</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cellHeader">Institutional EFC</td>
-                                        <td class="cellText right">$ <input type="text" size="7" value="0" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cellHeader">Unassessed Parent Contribution</td>
-                                        <td class="cellText right">$0</td>
-                                    </tr>
-                                    <tr class="buttonbar">
-                                        <td class="right" colspan="2">
-                                            <input type="submit" value="Recalculate EFCs (Simulation)">
-                                        </td>
-                                    </tr>
-                                </table>
-
-                            </div>
-                        </div>
-
-                        <div class="row m-1 p-1" style="border: 1px solid black;"> <!-- 135 fields -->
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4>ISIR Transaction Information</h4>
-                                        <p class="small">Some fields included for reference only. To edit fields, use the SFT135 screen.</p>
-                                    </div>
-                                </div>
-                                <div class="row"><!-- metadata -->
-                                    <div class="col-5"> <!-- metadata I don't understand -->
-                                        <table style="width: 100%;">
-                                            <tr>
-                                                <td class="cellHeader">CPS Grad</td>
-                                                <td class="cellText">Y</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">CPS Pell Eligibility</td>
-                                                <td class="cellText">Y</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">NSLDS Match Flag</td>
-                                                <td class="cellText">1</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Student SSN Match Flag</td>
-                                                <td class="cellText">4</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">SSA Citizen</td>
-                                                <td class="cellText">A - Confirmed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">DHS Match Flag</td>
-                                                <td class="cellText">N - Citizenship not confirmed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Secondary DHS Match Flag</td>
-                                                <td class="cellText">X - DHS did not have enough information to confirm eligible noncitizen status</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Child of Fallen Hero</td>
-                                                <td class="cellText blank">blank</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <div class="col-4"> <!-- more metadata I don't understand -->
-                                        <table style="width: 100%;">
-                                            <tr>
-                                                <td class="cellHeader">Transaction Number</td>
-                                                <td class="cellText">1</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Transaction Source</td>
-                                                <td class="cellText">2D</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Transaction Override</td>
-                                                <td class="cellText">0</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Transaction Loaded on</td>
-                                                <td class="cellText">MM/DD/YYYY</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Verification Flag</td>
-                                                <td class="cellText">* Selected for verification on a subsequent transaction</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Federal Verification Completed?</td>
-                                                <td class="cellText">V - Verified </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <div class="col-3"><!-- comments and reject codes -->
-                                        <div class="row"> <!-- reject codes table -->
+                                <div class="row" style="border: 1px solid black;"><!-- math stuff -->
+                                    <div class="col-12 no-gutter"><!-- col - row - col for header -->
+                                        <div class="row no-gutter">
                                             <div class="col-12">
+                                                <h4>Needs Analysis</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 no-gutter"><!-- col - row for content -->
+                                        <div class="row">
+                                            <div class="col-4" style="border: 1px solid orange;"><!-- left column -->
+                                                <table style="width: 100%;"><!-- PJ stuff table -->
+                                                    <tr>
+                                                        <td class="cellHeader">Professional Judgement Type</td>
+                                                        <td class="cellText blank"><input type="text" value="blank" class="blank" size="15"/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" colspan="2" class="rowHeader">Tax return reviewed by OSFA</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="rowHeader">Student</th>
+                                                        <th scope="col" class="rowHeader">Parents</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank" /></td>
+                                                        <td class="cellText"><input type="text" size="15" value="MM/DD/YYYY" class="blank"/></td>
+                                                    </tr>
+                                                </table>
+                                                <table style="width: 100%;"><!--Tax return info table -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">Tax Return Information</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" class="rowHeader"></th>
+                                                            <th scope="col" class="rowHeader">Student</th>
+                                                            <th scope="col" class="rowHeader">Parents</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">IRS/DRT</td>
+                                                            <td class="cellText">02/B</td>
+                                                            <td class="cellText">00/A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Tax Return</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">1 - Completed</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option>1 - Completed</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Return Type</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option>1 - 1040</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option>1 - 1040</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Filing As</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option>1 - Individual</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option>1 - Married Filing Jointly</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Filed Schedule 1?</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="2">Yes</option>
+                                                                    <option value="1" selected="selected">No</option>
+                                                                    <option value="3">Don't know</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">Yes</option>
+                                                                    <option value="2" selected="selected">No</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Dislocated Worker?</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">Yes</option>
+                                                                    <option value="2" selected="selected">No</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">Yes</option>
+                                                                    <option value="2" selected="selected">No</option>
+                                                                    <option value="3">Don't know</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table style="width: 100%;"><!--income and stuff -->
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="col" colspan="5" class="rowHeader">Income Information</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col" class="rowHeader"></th>
+                                                        <th scope="col" class="rowHeader">Student</th>
+                                                        <th scope="col" class="rowHeader">Spouse</th>
+                                                        <th scope="col" class="rowHeader">Parent 1</th>
+                                                        <th scope="col" class="rowHeader">Parent 2</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Work Income</td>
+                                                        <td class="cellText right">$<input type="text" size="6" value="30,000"/></td>
+                                                        <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
+                                                        <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
+                                                        <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Total Work Income</td>
+                                                        <td class="cellText right" colspan="2">
+                                                            <span class="badge">TOTAL</span><br />
+                                                            $60,000
+                                                        </td>
+                                                        <td class="cellText right" colspan="2">
+                                                            <span class="badge">TOTAL</span><br />
+                                                            $60,000
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Adjusted Gross Income</td>
+                                                        <td class="cellText right" colspan="2">$ <input type="text" size="7" value="60,000" /></td>
+                                                        <td class="cellText right" colspan="2">$ <input type="text" size="7" value="90,000" /></td>
+                                                    </tr>
+                                                </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-4" style="border: 1px solid pink;"><!-- middle column -->
+                                                <table style="width: 100%;"><!-- Exclusions (additional financial) -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" class="rowHeader"></th>
+                                                            <th scope="col" class="rowHeader">Student</th>
+                                                            <th scope="col" class="rowHeader">Parents</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">Exclusions (Additional Financial)</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Education Credits</td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="1,407" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Child support paid</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Need-based Earnings</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Grants and Scholarships</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Combat Pay</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Co-op Earnings</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="200" /></td>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <td class="cellHeader center" style="font-weight: normal;" colspan="3"><a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> <u>See all exclusions</u></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Total Exclusions</td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                - $1,407
+                                                            </td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                - $200
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Accept Worksheet C?</td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">Yes</option>
+                                                                    <option value="2">No</option>
+                                                                </select>
+                                                            </td>
+                                                            <td class="cellText">
+                                                                <select>
+                                                                    <option value="1">Yes</option>
+                                                                    <option value="2">No</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- Untaxed Income table -->
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">Untaxed Income</th>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Pension and Savings</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">IRA/SEP/SIMPLE/KEOGH</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Child Support Received</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Tax-Exempt Interest</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Untaxed IRA & Pensions</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Living Allowance</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Non-educational VA</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Other Untaxed</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                        </tr>
+                                                        <tr class="emptyrow">
+                                                            <td class="cellHeader">Received on Your Behalf</td>
+                                                            <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            <td class="cellText blank center">n/a</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Total Untaxed Income</td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $0
+                                                            </td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $0
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader center" style="font-weight: normal;" colspan="3"><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u>Hide empty untaxed income</u></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">Allowances Against Income</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Total Income</td>
+                                                            <td class="cellText right">$63,018</td>
+                                                            <td class="cellText right">$90,871</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">U.S. Income Tax</td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="812" /></td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="1,817" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">State/Other Tax</td>
+                                                            <td class="cellText right">- $6,407</td>
+                                                            <td class="cellText right">- $200</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">
+                                                                FICA<br />
+                                                                <small>Social Security Tax</small>
+                                                            </td>
+                                                            <td class="cellText right">- $2,481</td>
+                                                            <td class="cellText right">- $0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Employment Expense Allowance</td>
+                                                            <td class="cellText right">- $0</td>
+                                                            <td class="cellText right">- $31,386</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">
+                                                                Income Protection Allowance<br />
+                                                                <small>Maintenance</small>
+                                                            </td>
+                                                            <td class="cellText right">- $0</td>
+                                                            <td class="cellText right">- $0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Total Available Income</td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $324,112
+                                                            </td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $43,289
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">
+                                                                Contribution from Assets <br/>
+                                                                <small>Income Supplement</small>
+                                                            </td>
+                                                            <td class="cellText right">$0</td>
+                                                            <td class="cellText right">$2,300</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Adjusted Available Income (AAI)</td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $324,112
+                                                            </td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $43,289
+                                                            </td>
+                                                        </tr>
+                                                        <!-- parent AAI -->
+                                                        <tr>
+                                                            <td class="cellHeader">Allowance for Negative Parent AAI</td>
+                                                            <td class="cellText right" colspan="2">$0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table width="100%">
+                                                    <tbody>
+                                                        <!-- FISAP table -->
+                                                    <tr>
+                                                            <td class="cellHeader">FISAP Total Income</td>
+                                                            <td class="cellText right">$0</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-4" style="border: 1px solid blue;"><!-- right column -->
+                                                <table style="width: 100%;"><!-- Contribution from assets -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">Contribution From Assets</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" class="rowHeader"></th>
+                                                            <th scope="col" class="rowHeader">Student</th>
+                                                            <th scope="col" class="rowHeader">Parents</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Asset Threshold Exceeded</td>
+                                                            <td class="cellText center">
+                                                                1 - Yes
+                                                            </td>
+                                                            <td class="cellText center">
+                                                                2 - No
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Cash Assets</td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="28,000" /></td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="1,000" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Net Investments</td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="14,500" /></td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="0" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Net Business/Farm</td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="0" /></td>
+                                                            <td class="cellText right">$ <input type="text" size="7" value="1000" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Net Assets</td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $43,407
+                                                            </td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $85,261
+                                                            </td>
+                                                        </tr>
+                                                        <!-- asset protection and discretionary net worth, collapsed -->
+                                                        <tr>
+                                                            <th class="rowHeader" colspan="3"><a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> <u style="font-weight: normal;">See Asset Protection and Discretionary Net Worth</u></a></th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <table style="width: 100%;"><!-- EFC Breakdown -->
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" colspan="3" class="rowHeader">EFC Breakdown</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Methodology Type
+                                                            <td class="cellText" colspan="2">
+                                                                Regular
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col" class="rowHeader"></th>
+                                                            <th scope="col" class="rowHeader">Student</th>
+                                                            <th scope="col" class="rowHeader">Parents</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Total Contribution</td>
+                                                            <td class="cellText right">$0</td>
+                                                            <td class="cellText right">$0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Income</td>
+                                                            <td class="cellText right">$19,263</td>
+                                                            <td class="cellText right">$0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Assets</td>
+                                                            <td class="cellText right">$131</td>
+                                                            <td class="cellText right">$3,218</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cellHeader">Total to Student</td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $19,394
+                                                            </td>
+                                                            <td class="cellText right">
+                                                                <span class="badge">TOTAL</span><br />
+                                                                $3,218
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                                <table style="width: 100%;"><!-- editable analysis duration -->
+                                                    <tr>
+                                                        <td class="cellHeader">Analysis Duration</td>
+                                                        <td class="cellText"><input type="text" size="7" value="9"/></td>
+                                                    </tr>
+                                                </table>
+
+                                                <table style="width: 100%;"><!-- EFCs -->
+                                                    <tr>
+                                                        <th scope="col" colspan="2" class="rowHeader">EFCs</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">INAS EFC</td>
+                                                        <td class="cellText right">$19,394</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">9-Month INAS EFC</td>
+                                                        <td class="cellText right">$19,394</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">CPS EFC</td>
+                                                        <td class="cellText right">$19,394</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Institutional EFC</td>
+                                                        <td class="cellText right">$ <input type="text" size="7" value="0" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Unassessed Parent Contribution</td>
+                                                        <td class="cellText right">$0</td>
+                                                    </tr>
+                                                    <tr class="buttonbar">
+                                                        <td class="right" colspan="2">
+                                                            <input type="submit" value="Recalculate EFCs (Simulation)">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div><!-- end math stuff -->
+                                </div><!-- end math stuff -->
+                                <div class="row" style="border: 1px solid black;"><!-- ISIR Transaction Info -->
+                                    <div class="col-12 no-gutter"><!-- col - row - col for header -->
+                                        <div class="row no-gutter">
+                                            <div class="col-12">
+                                                <h4>ISIR Transaction Information</h4>
+                                                <p class="small">Some fields included for reference only. To edit fields, use the SFT135 screen.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 no-gutter"><!-- col - row for metadata content -->
+                                        <div class="row">
+                                            <div class="col-5" style="border: 1px solid orange;"><!-- left column -->
+                                                <table style="width: 100%;">
+                                                    <tr>
+                                                        <td class="cellHeader">CPS Grad</td>
+                                                        <td class="cellText">Y</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">CPS Pell Eligibility</td>
+                                                        <td class="cellText">Y</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">NSLDS Match Flag</td>
+                                                        <td class="cellText">1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Student SSN Match Flag</td>
+                                                        <td class="cellText">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">SSA Citizen</td>
+                                                        <td class="cellText">A - Confirmed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">DHS Match Flag</td>
+                                                        <td class="cellText">N - Citizenship not confirmed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Secondary DHS Match Flag</td>
+                                                        <td class="cellText">X - DHS did not have enough information to confirm eligible noncitizen status</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Child of Fallen Hero</td>
+                                                        <td class="cellText blank">blank</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="col-4" style="border: 1px solid pink;"><!-- middle column -->
+                                                <table style="width: 100%;">
+                                                    <tr>
+                                                        <td class="cellHeader">Transaction Number</td>
+                                                        <td class="cellText">1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Transaction Source</td>
+                                                        <td class="cellText">2D</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Transaction Override</td>
+                                                        <td class="cellText">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Transaction Loaded on</td>
+                                                        <td class="cellText">MM/DD/YYYY</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Verification Flag</td>
+                                                        <td class="cellText">* Selected for verification on a subsequent transaction</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellHeader">Federal Verification Completed?</td>
+                                                        <td class="cellText">V - Verified </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="col-3" style="border: 1px solid blue;"><!-- right column -->
                                                 <table style="width: 100%"><!-- correction override & stuff -->
                                                     <tr>
                                                         <td class="cellHeader">Correction Override</td>
@@ -1423,10 +1414,6 @@
                                                         <td class="blank cellText">none</td>
                                                     </tr>
                                                 </table>
-                                            </div>
-                                        </div>
-                                        <div class="row"><!-- comments table -->
-                                            <div class="col-12">
                                                 <table style="width: 100%">
                                                     <tr>
                                                         <th colspan="3" class="rowHeader" scope="col">
@@ -1451,59 +1438,57 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-8"> <!-- transactions table -->
-                                        <table class="center" width="100%">
-                                            <tr>
-                                                <th class="rowHeader" colspan="10">ISIR Transaction History</th>
-                                            </tr>
-                                            <tr>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Load Date</th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS Date</th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Transaction #</th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">NSLDS Transaction # </th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS/EFC</th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">INAS/EFC</th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Type</th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS Flags</th>
-                                                <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Special Flag</th>
-                                                <th class="cellHeader center" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Signed By</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellText">MM/DD/YYYY</td>
-                                                <td class="cellText">MM/DD/YYYY</td>
-                                                <td class="cellText">2</td>
-                                                <td class="cellText blank"></td>
-                                                <td class="cellText">$19,394</td>
-                                                <td class="cellText">$19,394</td>
-                                                <td class="cellText">C</td>
-                                                <td class="cellText">Y 2R 2R 1</td>
-                                                <td class="cellText">3</td>
-                                                <td class="cellText">P - Parent</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellText">MM/DD/YYYY</td>
-                                                <td class="cellText">MM/DD/YYYY</td>
-                                                <td class="cellText">1</td>
-                                                <td class="cellText">1</td>
-                                                <td class="cellText">$19,394</td>
-                                                <td class="cellText">$19,394</td>
-                                                <td class="cellText"></td>
-                                                <td class="cellText">Y 2R 1</td>
-                                                <td class="cellText">1</td>
-                                                <td class="cellText">A - Applicant</td>
-                                            </tr>
-                                        </table>
+                                    <div class="col-12 no-gutter"><!-- col - row - col for transactions list -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <table class="center" width="100%"><!-- ISIR transactions table -->
+                                                    <tr>
+                                                        <th class="rowHeader" colspan="10">ISIR Transaction History</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Load Date</th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS Date</th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Transaction #</th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">NSLDS Transaction # </th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS/EFC</th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">INAS/EFC</th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Type</th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">CPS Flags</th>
+                                                        <th class="cellHeader" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Special Flag</th>
+                                                        <th class="cellHeader center" scope="col" style="padding-top: 6px; padding-bottom: 6px;">Signed By</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellText">MM/DD/YYYY</td>
+                                                        <td class="cellText">MM/DD/YYYY</td>
+                                                        <td class="cellText">2</td>
+                                                        <td class="cellText blank"></td>
+                                                        <td class="cellText">$19,394</td>
+                                                        <td class="cellText">$19,394</td>
+                                                        <td class="cellText">C</td>
+                                                        <td class="cellText">Y 2R 2R 1</td>
+                                                        <td class="cellText">3</td>
+                                                        <td class="cellText">P - Parent</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cellText">MM/DD/YYYY</td>
+                                                        <td class="cellText">MM/DD/YYYY</td>
+                                                        <td class="cellText">1</td>
+                                                        <td class="cellText">1</td>
+                                                        <td class="cellText">$19,394</td>
+                                                        <td class="cellText">$19,394</td>
+                                                        <td class="cellText"></td>
+                                                        <td class="cellText">Y 2R 1</td>
+                                                        <td class="cellText">1</td>
+                                                        <td class="cellText">A - Applicant</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-5"><!-- corrections info -->
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
+                                </div><!-- end ISIR transaction info -->
+                            </div><!-- end col for INAS guts -->
+                        </div><!-- end row for INAS guts -->
                     </div>
-
                     <!-- end Lauren's new container for INAS content -->
 
 
