@@ -15,6 +15,8 @@ body { line-height: 1;}
 .rowHeader { font-size: .8rem !important; font-weight: 600 !important; padding-top: 4px !important; padding-bottom: 6px !important; }
 .rowheader a, .rowheader a:hover { font-weight: bold !important; color: #333399 !important; text-decoration: underline !important; }
 
+.cellText, .cellHeader, .rowHeader { white-space: normal !important; } /* this seems to be what allows it to wrap */
+
 td.cellText { background: white; }
 select, select option { font-size: 12px !important; }
 tr.emptyrow td { background: #f7f7f7 !important; color: #777 !important; }
@@ -26,5 +28,13 @@ tr.buttonbar input[type=submit] { border: solid 1px transparent;
     color: #555;
     margin: 5px;
     padding: 1px 10px; }
-select.narrow { width: 130px !important; }
+select.narrow { width: 200px !important; overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
 /* input[type=text] { width: 100%; } */
+
+/* making fixed widths cells & tables for the different bootstrap column widths */
+div.col-3 td.cellHeader, div.col-3 th.cellHeader,
+div.col-4 td.cellHeader, div.col-4 th.cellHeader { width: 150px !important; padding: 5px !important; }
+
+div.col-5 td.cellHeader, div.col-5 th.cellHeader { width: 250px !important; padding: 5px !important; }
