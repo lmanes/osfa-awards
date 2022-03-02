@@ -449,7 +449,7 @@
                     <div class="container-fluid"><!-- the container for the INAS guts -->
                         <div class="row"><!-- the row for the INAS guts -->
                             <div class="col-12"><!-- the col for the INAS guts -->
-                                <div class="row" style="border: 1px solid black;"><!-- student & parent demographic section -->
+                                <div class="row m-1 p-1" style="border: 1px solid black;"><!-- student & parent demographic section -->
                                     <div class="col-12 no-gutter"><!-- col - row - col for header -->
                                         <div class="row no-gutter">
                                             <div class="col-12"><h4>Student and parent demographic information</h4></div>
@@ -645,7 +645,7 @@
                                                         <tr>
                                                             <td class="cellHeader">High School Diploma / GED</td>
                                                             <td class="cellText">
-                                                                <select class="narrow">
+                                                                <select class="medium">
                                                                     <option value="1">1 - High school diploma</option>
                                                                     <option value="2">2 - GED certificate or state certificate</option>
                                                                     <option value="3">3 - Homeschooled</option>
@@ -665,7 +665,7 @@
                                                         <tr>
                                                             <td class="cellHeader">Grade Level</td>
                                                             <td class="cellText">
-                                                                <select class="narrow">
+                                                                <select class="medium">
                                                                     <option value="0">0 - never attended college and 1st yr UG</option>
                                                                     <option value="1">1 - attended college before and 1st yr UG</option>
                                                                     <option value="2">2 - 2nd year UG/Soph</option>
@@ -680,7 +680,7 @@
                                                         <tr>
                                                             <td class="cellHeader">Degree/Certificate</td>
                                                             <td class="cellText">
-                                                                <select class="narrow">
+                                                                <select class="medium">
                                                                     <option value="1">1 - first bachelor's degree</option>
                                                                     <option value="2">2 - 2nd bachelor's degree</option>
                                                                     <option value="3">3 - Associate degree (occupational or technical program)</option>
@@ -697,13 +697,14 @@
                                                 </table>
                                                 <table style="width: 100%;"><!-- citizenship info table -->
                                                     <tbody>
+                                                        <!-- citizenship info table -->
                                                         <tr>
                                                             <th scope="col" colspan="2" class="rowHeader">Citizenship Information</th>
                                                         </tr>
                                                         <tr>
                                                             <td class="cellHeader">Citizenship Status</td>
                                                             <td class="cellText">
-                                                                <select class="narrow">
+                                                                <select class="medium">
                                                                     <option value="1">1 - U.S. citizen (or U.S. national)</option>
                                                                     <option value="2" selected="selected">2 - Eligible noncitizen</option>
                                                                     <option value="3">3 - Neither 1 nor 2, not eligible</option>
@@ -793,7 +794,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="cellHeader">State of Legal Residence</td>
-                                                            <td class="cellText" class="center blank"><input type="text" class="" value="blank" size="15"/></td>
+                                                            <td class="cellText" class="center blank"><input type="text" value="blank"  size="15"/></td>
                                                             <td class="cellText" class="center"><input type="text" value="WA" size="15"/></td>
                                                         </tr>
                                                         <tr>
@@ -1008,7 +1009,7 @@
                                 </div><!-- end student & parent demographic section -->
 
 
-                                <div class="row" style="border: 1px solid black;"><!-- Needs Analysis section -->
+                                <div class="row m-1 p-1" style="border: 1px solid black;"><!-- Needs Analysis section -->
                                     <div class="col-12 no-gutter"><!-- col - row - col for header -->
                                         <div class="row no-gutter">
                                             <div class="col-12"><h4>Needs Analysis</h4></div>
@@ -1016,7 +1017,7 @@
                                     </div>
                                     <div class="col-12 no-gutter"><!-- col - row for content -->
                                         <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-4"><!-- left column -->
                                                 <table style="width: 100%;"><!-- PJ stuff table -->
                                                     <tr>
                                                         <td class="cellHeader">Professional Judgement Type</td>
@@ -1145,7 +1146,7 @@
                                             <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
                                             <td class="cellText right">$<input type="text" size="6" value="30,000" /></td>
                                         </tr>
-                                        <tr>
+                                        <tr class="totalRow">
                                             <td class="cellHeader">Total Work Income</td>
                                             <td class="cellText right" colspan="2">
                                                 <span class="badge">TOTAL</span><br />
@@ -1164,9 +1165,7 @@
                                     </tbody>
                                 </table>
                             </div>
-
-                            <div class="col-4">
-
+                            <div class="col-4"><!-- middle column -->
                                 <table style="width: 100%;"><!-- Exclusions (additional financial) -->
                                     <tbody>
                                         <tr>
@@ -1175,7 +1174,10 @@
                                             <th scope="col" class="rowHeader">Parents</th>
                                         </tr>
                                         <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Exclusions (Additional Financial)</th>
+                                            <th scope="col" colspan="3" class="rowHeader">
+                                                Exclusions (Additional Financial)<br />
+                                                <small><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u>Hide empty exclusions</u></a></small>
+                                        </th>
                                         </tr>
                                         <tr>
                                             <td class="cellHeader">Education Credits</td>
@@ -1207,10 +1209,7 @@
                                             <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
                                             <td class="cellText right">$ <input type="text" size="7" value="200" /></td>
                                         </tr>
-                                        <tr>
-                                            <td class="cellHeader center" style="font-weight: normal;" colspan="3"><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u>Hide empty exclusions</u></a></td>
-                                        </tr>
-                                        <tr>
+                                        <tr class="totalRow">
                                             <td class="cellHeader">Total Exclusions</td>
                                             <td class="cellText right">
                                                 <span class="badge">TOTAL</span><br />
@@ -1238,7 +1237,10 @@
                                         </tr>
                                         <!-- Untaxed Income table -->
                                         <tr>
-                                            <th scope="col" colspan="3" class="rowHeader">Untaxed Income</th>
+                                            <th scope="col" colspan="3" class="rowHeader">
+                                                Untaxed Income<br />
+                                                <small><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u>Hide empty untaxed income</u></a></small>
+                                            </th>
                                         </tr>
                                         <tr class="emptyrow">
                                             <td class="cellHeader">Pension and Savings</td>
@@ -1246,7 +1248,7 @@
                                             <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
                                         </tr>
                                         <tr class="emptyrow">
-                                            <td class="cellHeader">IRA/SEP/SIMPLE/KEOGH</td>
+                                            <td class="cellHeader">IRA / SEP / SIMPLE / KEOGH</td>
                                             <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
                                             <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
                                         </tr>
@@ -1285,7 +1287,7 @@
                                             <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
                                             <td class="cellText blank center">n/a</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="totalRow">
                                             <td class="cellHeader">Total Untaxed Income</td>
                                             <td class="cellText right">
                                                 <span class="badge">TOTAL</span><br />
@@ -1295,9 +1297,6 @@
                                                 <span class="badge">TOTAL</span><br />
                                                 $0
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader center" style="font-weight: normal;" colspan="3"><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u>Hide empty untaxed income</u></a></td>
                                         </tr>
                                         <tr>
                                             <th scope="col" colspan="3" class="rowHeader">Allowances Against Income</th>
@@ -1338,7 +1337,7 @@
                                             <td class="cellText right">- $0</td>
                                             <td class="cellText right">- $0</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="totalRow">
                                             <td class="cellHeader">Total Available Income</td>
                                             <td class="cellText right">
                                                 <span class="badge">TOTAL</span><br />
@@ -1357,7 +1356,7 @@
                                             <td class="cellText right">$0</td>
                                             <td class="cellText right">$2,300</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="totalRow">
                                             <td class="cellHeader">Adjusted Available Income (AAI)</td>
                                             <td class="cellText right">
                                                 <span class="badge">TOTAL</span><br />
@@ -1375,9 +1374,8 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <table width="100%">
+                                <table style="width: 100%;"><!-- FISAP table -->
                                     <tbody>
-                                        <!-- FISAP table -->
                                         <tr>
                                             <td class="cellHeader">FISAP Total Income</td>
                                             <td class="cellText right">$0</td>
@@ -1385,8 +1383,7 @@
                                     </tbody>
                                 </table>
                             </div>
-
-                            <div class="col-4">
+                            <div class="col-4"><!-- right column -->
                                 <table style="width: 100%;"><!-- Contribution from assets -->
                                     <tbody>
                                         <tr>
@@ -1422,7 +1419,7 @@
                                             <td class="cellText right">$ <input type="text" size="7" value="0" /></td>
                                             <td class="cellText right">$ <input type="text" size="7" value="1000" /></td>
                                         </tr>
-                                        <tr>
+                                                        <tr class="totalRow">
                                             <td class="cellHeader">Net Assets</td>
                                             <td class="cellText right">
                                                 <span class="badge">TOTAL</span><br />
@@ -1436,22 +1433,6 @@
                                         <!-- asset protection and discretionary net worth, collapsed -->
                                         <tr>
                                             <th class="rowHeader" colspan="3"><a href="file:///Users/laurenmanes/Documents/GitHub/osfa-awards/INAS%20and%20ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/collapse.gif"> <u style="font-weight: normal;">Collapse Asset Protection & Discretionary Net Worth</u></a></th>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Asset Protection Allowance</td>
-                                            <td class="cellText right">- $2,600</td>
-                                            <td class="cellText right">- $0</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="cellHeader">Discretionary Net Worth</td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $39,900
-                                            </td>
-                                            <td class="cellText right">
-                                                <span class="badge">TOTAL</span><br />
-                                                $2,871
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1487,7 +1468,7 @@
                                             <td class="cellText right">$131</td>
                                             <td class="cellText right">$3,218</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="totalRow">
                                             <td class="cellHeader">Total to Student</td>
                                             <td class="cellText right">
                                                 <span class="badge">TOTAL</span><br />
@@ -1539,57 +1520,57 @@
                                         </td>
                                     </tr>
                                 </table>
-
                             </div>
                         </div>
-
-                        <div class="row m-1 p-1" style="border: 1px solid black;"> <!-- 135 fields -->
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4>ISIR Transaction Information</h4>
-                                        <p class="small">Some fields included for reference only. To edit fields, use the SFT135 screen.</p>
-                                    </div>
-                                </div>
-                                <div class="row"><!-- metadata -->
-                                    <div class="col-5"> <!-- metadata I don't understand -->
-                                        <table style="width: 100%;">
-                                            <tr>
-                                                <td class="cellHeader">CPS Grad</td>
-                                                <td class="cellText">Y</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">CPS Pell Eligibility</td>
-                                                <td class="cellText">Y</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">NSLDS Match Flag</td>
-                                                <td class="cellText">1</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Student SSN Match Flag</td>
-                                                <td class="cellText">4</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">SSA Citizen</td>
-                                                <td class="cellText">A - Confirmed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">DHS Match Flag</td>
-                                                <td class="cellText">N - Citizenship not confirmed</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Secondary DHS Match Flag</td>
-                                                <td class="cellText">X - DHS did not have enough information to confirm eligible noncitizen status</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="cellHeader">Child of Fallen Hero</td>
-                                                <td class="cellText blank">blank</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <div class="col-4"> <!-- more metadata I don't understand -->
+                    </div><!-- end math stuff -->
+                    <div class="row m-1 p-1" style="border: 1px solid black;"><!-- ISIR Transaction Info -->
+                        <div class="col-12 no-gutter"><!-- col - row - col for header -->
+                            <div class="row no-gutter">
+                                                <div class="col-12">
+                                <h4>ISIR Transaction Information</h4>
+                                <p class="small">Some fields included for reference only. To edit fields, use the SFT135 screen.</p>
+                            </div>
+                        </div>
+                                        </div>
+                                        <div class="col-12 no-gutter"><!-- col - row for metadata content -->
+                                            <div class="row">
+                                                <div class="col-5"><!-- left column -->
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td class="cellHeader">CPS Grad</td>
+                                        <td class="cellText">Y</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">CPS Pell Eligibility</td>
+                                        <td class="cellText">Y</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">NSLDS Match Flag</td>
+                                        <td class="cellText">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">Student SSN Match Flag</td>
+                                        <td class="cellText">4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">SSA Citizen</td>
+                                        <td class="cellText">A - Confirmed</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">DHS Match Flag</td>
+                                        <td class="cellText">N - Citizenship not confirmed</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">Secondary DHS Match Flag</td>
+                                        <td class="cellText">X - DHS did not have enough information to confirm eligible noncitizen status</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cellHeader">Child of Fallen Hero</td>
+                                        <td class="cellText blank">blank</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-4"><!-- middle column -->
                                         <table style="width: 100%;">
                                             <tr>
                                                 <td class="cellHeader">Transaction Number</td>
@@ -1681,10 +1662,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="col-12 no-gutter"><!-- col - row - col for transactions list -->
                                 <div class="row">
-                                    <div class="col-8"> <!-- transactions table -->
-                                        <table class="center" width="100%">
+                                            <div class="col">
+                                                <table class="center" width="100%"><!-- ISIR transactions table -->
                                             <tr>
                                                 <th class="rowHeader" colspan="10">ISIR Transaction History</th>
                                             </tr>
@@ -1726,14 +1707,12 @@
                                             </tr>
                                         </table>
                                     </div>
-                                    <div class="col-5"><!-- corrections info -->
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
+                                </div><!-- end ISIR transaction info -->
+                            </div><!-- end col for INAS guts -->
+                        </div><!-- end row for INAS guts -->
                     </div>
-
                     <!-- end Lauren's new container for INAS content -->
 
 
