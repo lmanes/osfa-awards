@@ -28,7 +28,14 @@ tr.buttonbar input[type=submit] { border: solid 1px transparent;
     color: #555;
     margin: 5px;
     padding: 1px 10px; }
-select.narrow { width: 200px !important; overflow: hidden;
+
+select.narrow { width: 150px !important; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;}
+
+select.medium { width: 200px !important;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;}
 /* input[type=text] { width: 100%; } */
