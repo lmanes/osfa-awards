@@ -50,3 +50,13 @@ div.col-5 td.cellHeader, div.col-5 td.cellHeader { width: 160px !important; padd
 
 /* override the above to make the labels narrower on the first Needs Analysis column so the $ + input can stay on one line in the work income field */
 div.col-4 td.cellHeader.narrow, div.col-4 th.cellHeader.narrow { width: 115px !important; }
+
+/* new banner for corrections in process */
+div#corrInProcess {
+    background-color: #dcf;
+    border: solid 1px #a9d;
+    color: #160043;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 0.3rem;
+    text-align: center; }
