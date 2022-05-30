@@ -801,11 +801,55 @@
                                                 <table style="width: 100%;"><!-- federal program benefits table -->
                                                     <tr>
                                                         <td class="rowHeader" colspan="4">
-                                                        Federal Program Benefits Received: none<br />
-                                                        <a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See details</a>
+                                                        Federal Program Benefits Received<br />
+                                                        <small style="font-weight: normal; text-decoration: underline;"><a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> See details</a></small>
                                                         </td>
                                                     </tr>
-                                                </table>                                            </div>
+                                                    <!-- non-empty rows for example screenshot -->
+                                                    <tr>
+                                                        <th scope="col" class="rowHeader"></th>
+                                                        <th scope="col" class="rowHeader">Student<br />
+                                                            <small>Independent</small></th>
+                                                        <th scope="col" class="rowHeader">Parents <br />
+                                                            <small>Dependent Student</small>
+                                                        </th>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td class="cellHeader">Medicaid or SSI</td>
+                                                        <td class="cellText">
+                                                            <select>
+                                                                <option value="">blank</option>
+                                                                <option value="1" selected="selected">Yes</option>
+                                                                <option value="2">No</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="cellText blank">
+                                                            <select>
+                                                                <option value="">blank</option>
+                                                                <option value="1">Yes</option>
+                                                                <option value="2" selected="selected">No</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td class="cellHeader">SNAP</td>
+                                                        <td class="cellText blank">
+                                                            <select>
+                                                                <option value="">blank</option>
+                                                                <option value="1">Yes</option>
+                                                                <option value="2" selected="selected">No</option>
+                                                            </select>
+                                                        </td>
+                                                        <td class="cellText blank">
+                                                            <select>
+                                                                <option value="">blank</option>
+                                                                <option value="1" selected="selected">Yes</option>
+                                                                <option value="2">No</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr><!-- end non-empty rows -->
+                                                </table>
+
                                             </div>
                                         </div><!-- end col-row for content -->
                                     </div><!-- end student & parent demographic section -->
@@ -993,29 +1037,49 @@
                                                             </tr>
                                                             <tr>
                                                                 <th scope="col" colspan="3" class="rowHeader">Exclusions (Additional Financial)<br />
-                                                                <small><a href="/Users/laurenmanes/Documents/GitHub/osfa-awards/expanded INAS and ISIR.html"><img src="/Users/laurenmanes/Documents/GitHub/osfa-awards/OSFA Award Updates_files/expand.gif"> <u>See all exclusions</u></a></small>
+                                                                <small style="color: grey;"> <u>No exclusions to hide</u></></small>
                                                                 </th>
                                                             </tr>
-                                                            <tr>
+                                                            <!-- hiding rows for screenshot <tr>-->
                                                                 <td class="cellHeader">Education Credits</td>
                                                                 <td class="cellText right">$ <input type="text" size="7" value="1,407" /></td>
                                                                 <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td class="cellHeader">Child support paid</td>
+                                                                <td class="cellText right">$ <input type="text" size="7" class="" value="28,713" /></td>
+                                                                <td class="cellText right blank">$ <input type="text" size="7" value="blank" class="blank"/></td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td class="cellHeader">Need-based Earnings</td>
+                                                                <td class="cellText right">$ <input type="text" size="7" class="" value="31" /></td>
+                                                                <td class="cellText right">$ <input type="text" size="7" value="1100" class=""/></td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td class="cellHeader">Grants and Scholarships</td>
+                                                                <td class="cellText right">$ <input type="text" size="7" class="" value="12,091" /></td>
+                                                                <td class="cellText right">$ <input type="text" size="7" value="8971" class=""/></td>
+                                                            </tr>
+                                                            <tr class="">
+                                                                <td class="cellHeader">Combat Pay</td>
+                                                                <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
+                                                                <td class="cellText right">$ <input type="text" size="7" value="20,012" class=""/></td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="cellHeader">Co-op Earnings</td>
                                                                 <td class="cellText right blank">$ <input type="text" size="7" class="blank" value="blank" /></td>
                                                                 <td class="cellText right">$ <input type="text" size="7" value="200" /></td>
-                                                            </tr>
+                                                            </tr><!-- end hiding rows for screenshot -->
 
                                                             <tr class="totalRow">
                                                                 <td class="cellHeader">Total Exclusions</td>
                                                                 <td class="cellText right">
                                                                     <span class="badge">TOTAL</span><br />
-                                                                    - $1,407
+                                                                    - $0
                                                                 </td>
                                                                 <td class="cellText right">
                                                                     <span class="badge">TOTAL</span><br />
-                                                                    - $200
+                                                                    - $0
                                                                 </td>
                                                             </tr>
                                                             <tr>
